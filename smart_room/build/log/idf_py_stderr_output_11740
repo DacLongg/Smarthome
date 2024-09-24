@@ -1,0 +1,61 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400db295: mqtt_msg_subscribe at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c:524
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400db292: mqtt_msg_subscribe at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c:524
+0x400daae7: esp_mqtt_client_subscribe_multiple at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1874
+0x400dab89: esp_mqtt_client_subscribe_single at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1906
+0x400d85f5: mqtt_event_handler at D:/App/ESP32/smart_room/user/user_mqtt/user_mqtt.c:44
+0x4016d3d9: handler_execute at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/esp_event.c:137
+0x4016ce4e: esp_event_loop_run at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/esp_event.c:593
+0x400d89da: esp_mqtt_dispatch_event at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d8e77: esp_mqtt_dispatch_event_with_msgid at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d9ac4: esp_mqtt_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1613
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400db295: mqtt_msg_subscribe at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c:524
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400db292: mqtt_msg_subscribe at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c:524
+0x400daae7: esp_mqtt_client_subscribe_multiple at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1874
+0x400dab89: esp_mqtt_client_subscribe_single at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1906
+0x400d85f5: mqtt_event_handler at D:/App/ESP32/smart_room/user/user_mqtt/user_mqtt.c:44
+0x4016d3d9: handler_execute at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/esp_event.c:137
+0x4016ce4e: esp_event_loop_run at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/esp_event.c:593
+0x400d89da: esp_mqtt_dispatch_event at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d8e77: esp_mqtt_dispatch_event_with_msgid at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d9ac4: esp_mqtt_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1613
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400db295: mqtt_msg_subscribe at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c:524
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400db292: mqtt_msg_subscribe at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/lib/mqtt_msg.c:524
+0x400daae7: esp_mqtt_client_subscribe_multiple at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1874
+0x400dab89: esp_mqtt_client_subscribe_single at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1906
+0x400d85f5: mqtt_event_handler at D:/App/ESP32/smart_room/user/user_mqtt/user_mqtt.c:44
+0x4016d3d9: handler_execute at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/esp_event.c:137
+0x4016ce4e: esp_event_loop_run at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/esp_event.c:593
+0x400d89da: esp_mqtt_dispatch_event at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400d8e77: esp_mqtt_dispatch_event_with_msgid at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:991
+0x400d9ac4: esp_mqtt_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1613
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

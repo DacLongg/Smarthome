@@ -1,0 +1,31 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400834c2: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x4008b6be: _frxt_int_enter at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:140
+[0m
+[0;33m0x4000c2e0: memcpy in ROM
+0x4000c2f6: memcpy in ROM
+[0m
+[0;33m0x400d3a9b: uart_hal_write_txfifo at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/uart_hal_iram.c:27
+0x400834c2: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400834bf: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+[0m
+[0;33m0x400885c2: esp_cpu_wait_for_intr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:145
+[0m
+[0;33m0x400856b0: ipc_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/esp_ipc.c:48
+[0m
+[0;33m0x400885bf: xt_utils_wait_for_intr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/cpu.c:132
+0x400d389f: esp_vApplicationIdleHook at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/freertos_hooks.c:59
+0x4008c359: prvIdleTask at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:4273 (discriminator 1)
+0x4008b295: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

@@ -1,0 +1,288 @@
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/App/ESP32/smart_room/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "smart_room" version: 1
+-- Adding linker script D:/App/ESP32/smart_room/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: App app_trace app_update bootloader bootloader_support bt cmock console cxx dht22 driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json lcd log lwip main mbedtls mq2 mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc sim soc spi_flash spiffs tcp_transport ulp unity usb user_mqtt vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/App/ESP32/smart_room/user/App D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/app_trace D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/app_update D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bt D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/cmock D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/console D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/cxx D:/App/ESP32/smart_room/user/dht22 D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/efuse D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp-tls D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_app_format D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_bootloader_format D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_coex D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_eth D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_gdbstub D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hid D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_client D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_server D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_https_ota D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_https_server D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_lcd D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_local_ctrl D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_mm D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_netif D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_netif_stack D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_partition D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_phy D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_pm D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_psram D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_ringbuf D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_timer D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/espcoredump D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/heap D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/http_parser D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/idf_test D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/ieee802154 D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/json D:/App/ESP32/smart_room/user/lcd D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip D:/App/ESP32/smart_room/main D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls D:/App/ESP32/smart_room/user/mq2 D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_flash D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_sec_provider D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/openthread D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/perfmon D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protobuf-c D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/pthread D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/sdmmc D:/App/ESP32/smart_room/user/sim D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/spi_flash D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/spiffs D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/tcp_transport D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/ulp D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/unity D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/usb D:/App/ESP32/smart_room/user/user_mqtt D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/vfs D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wear_levelling D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wifi_provisioning D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/App/ESP32/smart_room/build
+[0/1] Re-running CMake...
+[1/16] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_room/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/14] Building C object esp-idf/sim/CMakeFiles/__idf_sim.dir/sim.c.obj
+FAILED: esp-idf/sim/CMakeFiles/__idf_sim.dir/sim.c.obj 
+ccache D:\App\ESP32\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/App/ESP32/smart_room/build/config -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/include -ID:/App/ESP32/smart_room/user/sim -ID:/App/ESP32/smart_room/user/user_mqtt -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_partition/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/nvs_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/tcp_transport/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel-SMP/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_netif/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/driver/uart/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_ringbuf/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/platform_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/esp_additions/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/port/esp32/. -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/heap/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/platform_port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/include/private -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/deprecated_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps/sntp -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/arch -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/sys -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/App/ESP32/smart_room=. -fmacro-prefix-map=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/sim/CMakeFiles/__idf_sim.dir/sim.c.obj -MF esp-idf\sim\CMakeFiles\__idf_sim.dir\sim.c.obj.d -o esp-idf/sim/CMakeFiles/__idf_sim.dir/sim.c.obj -c D:/App/ESP32/smart_room/user/sim/sim.c
+In file included from D:/App/ESP32/smart_room/user/sim/sim.c:4:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/driver/uart/include/driver/uart.h:447:57: error: unknown type name 'uart_config_t'
+  447 | esp_err_t uart_param_config(uart_port_t uart_num, const uart_config_t *uart_config);
+      |                                                         ^~~~~~~~~~~~~
+[3/14] Building C object esp-idf/App/CMakeFiles/__idf_App.dir/sesion_communication.c.obj
+[4/14] Building C object esp-idf/App/CMakeFiles/__idf_App.dir/mainApp.c.obj
+[5/14] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+ccache D:\App\ESP32\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/App/ESP32/smart_room/build/config -ID:/App/ESP32/smart_room/main -ID:/App/ESP32/smart_room/user/App -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/platform_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/esp_additions/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/port/esp32/. -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/heap/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/platform_port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/include/private -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/deprecated_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps/sntp -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/arch -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/sys -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_ringbuf/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/efuse/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/efuse/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_mm/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/analog_comparator/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/dac/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gptimer/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2s/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/ledc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/mcpwm/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/parlio/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/pcnt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/rmt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sdio_slave/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sdmmc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sigma_delta/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/spi/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/temperature_sensor/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/touch_sensor/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/twai/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/usb_serial_jtag/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/touch_sensor/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_pm/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/library -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/esp_crt_bundle/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/3rdparty/everest/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/3rdparty/p256-m -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_bootloader_format/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_app_format/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support/bootloader_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_partition/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/app_update/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/spi_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/pthread/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_timer/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/app_trace/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_phy/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_phy/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_netif/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant/esp_supplicant/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_coex/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/wifi_apps/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/unity/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/unity/unity/src -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/cmock/CMock/src -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/console -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/http_parser -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp-tls -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp-tls/esp-tls-crypto -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/interface -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/deprecated/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_eth/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_gdbstub/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hid/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/tcp_transport/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_client/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_server/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_https_ota/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_psram/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_lcd/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_lcd/interface -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protobuf-c/protobuf-c -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/common -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/security -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/transports -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/crypto/srp6a -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_local_ctrl/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/espcoredump/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/espcoredump/include/port/xtensa -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wear_levelling/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/sdmmc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs/diskio -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs/src -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs/vfs -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/idf_test/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/idf_test/include/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/ieee802154/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/json/cJSON -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_sec_provider/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/perfmon/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/spiffs/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wifi_provisioning/include -ID:/App/ESP32/smart_room/user/lcd -ID:/App/ESP32/smart_room/user/mq2 -ID:/App/ESP32/smart_room/user/dht22 -ID:/App/ESP32/smart_room/user/user_mqtt -ID:/App/ESP32/smart_room/user/sim -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/mqtt/esp-mqtt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel-SMP/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_ringbuf/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_netif/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_partition/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/nvs_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/driver/uart/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/driver/deprecated -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/App/ESP32/smart_room=. -fmacro-prefix-map=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c D:/App/ESP32/smart_room/main/main.c
+In file included from D:/App/ESP32/smart_room/user/App/mainApp.h:28,
+                 from D:/App/ESP32/smart_room/main/main.c:2:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:21:13: error: conflicting types for 'uart_port_t'; have 'int'
+   21 | typedef int uart_port_t;
+      |             ^~~~~~~~~~~
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/include/driver/uart.h:21,
+                 from D:/App/ESP32/smart_room/user/App/mainApp.h:26:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:38:3: note: previous declaration of 'uart_port_t' with type 'uart_port_t'
+   38 | } uart_port_t;
+      |   ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:27:5: error: redeclaration of enumerator 'UART_MODE_UART'
+   27 |     UART_MODE_UART = 0x00,                      /*!< mode: regular UART mode*/
+      |     ^~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:46:5: note: previous definition of 'UART_MODE_UART' with type 'enum <anonymous>'
+   46 |     UART_MODE_UART = 0x00,                      /*!< mode: regular UART mode*/
+      |     ^~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:28:5: error: redeclaration of enumerator 'UART_MODE_RS485_HALF_DUPLEX'
+   28 |     UART_MODE_RS485_HALF_DUPLEX = 0x01,         /*!< mode: half duplex RS485 UART mode control by RTS pin */
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:47:5: note: previous definition of 'UART_MODE_RS485_HALF_DUPLEX' with type 'enum <anonymous>'
+   47 |     UART_MODE_RS485_HALF_DUPLEX = 0x01,         /*!< mode: half duplex RS485 UART mode control by RTS pin */
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:29:5: error: redeclaration of enumerator 'UART_MODE_IRDA'
+   29 |     UART_MODE_IRDA = 0x02,                      /*!< mode: IRDA  UART mode*/
+      |     ^~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:48:5: note: previous definition of 'UART_MODE_IRDA' with type 'enum <anonymous>'
+   48 |     UART_MODE_IRDA = 0x02,                      /*!< mode: IRDA  UART mode*/
+      |     ^~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:30:5: error: redeclaration of enumerator 'UART_MODE_RS485_COLLISION_DETECT'
+   30 |     UART_MODE_RS485_COLLISION_DETECT = 0x03,    /*!< mode: RS485 collision detection UART mode (used for test purposes)*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:49:5: note: previous definition of 'UART_MODE_RS485_COLLISION_DETECT' with type 'enum <anonymous>'
+   49 |     UART_MODE_RS485_COLLISION_DETECT = 0x03,    /*!< mode: RS485 collision detection UART mode (used for test purposes)*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:31:5: error: redeclaration of enumerator 'UART_MODE_RS485_APP_CTRL'
+   31 |     UART_MODE_RS485_APP_CTRL = 0x04,            /*!< mode: application control RS485 UART mode (used for test purposes)*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:50:5: note: previous definition of 'UART_MODE_RS485_APP_CTRL' with type 'enum <anonymous>'
+   50 |     UART_MODE_RS485_APP_CTRL = 0x04,            /*!< mode: application control RS485 UART mode (used for test purposes)*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:32:3: error: conflicting types for 'uart_mode_t'; have 'enum <anonymous>'
+   32 | } uart_mode_t;
+      |   ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:51:3: note: previous declaration of 'uart_mode_t' with type 'uart_mode_t'
+   51 | } uart_mode_t;
+      |   ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:38:5: error: redeclaration of enumerator 'UART_DATA_5_BITS'
+   38 |     UART_DATA_5_BITS   = 0x0,    /*!< word length: 5bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:57:5: note: previous definition of 'UART_DATA_5_BITS' with type 'enum <anonymous>'
+   57 |     UART_DATA_5_BITS   = 0x0,    /*!< word length: 5bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:39:5: error: redeclaration of enumerator 'UART_DATA_6_BITS'
+   39 |     UART_DATA_6_BITS   = 0x1,    /*!< word length: 6bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:58:5: note: previous definition of 'UART_DATA_6_BITS' with type 'enum <anonymous>'
+   58 |     UART_DATA_6_BITS   = 0x1,    /*!< word length: 6bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:40:5: error: redeclaration of enumerator 'UART_DATA_7_BITS'
+   40 |     UART_DATA_7_BITS   = 0x2,    /*!< word length: 7bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:59:5: note: previous definition of 'UART_DATA_7_BITS' with type 'enum <anonymous>'
+   59 |     UART_DATA_7_BITS   = 0x2,    /*!< word length: 7bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:41:5: error: redeclaration of enumerator 'UART_DATA_8_BITS'
+   41 |     UART_DATA_8_BITS   = 0x3,    /*!< word length: 8bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:60:5: note: previous definition of 'UART_DATA_8_BITS' with type 'enum <anonymous>'
+   60 |     UART_DATA_8_BITS   = 0x3,    /*!< word length: 8bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:42:5: error: redeclaration of enumerator 'UART_DATA_BITS_MAX'
+   42 |     UART_DATA_BITS_MAX = 0x4,
+      |     ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:61:5: note: previous definition of 'UART_DATA_BITS_MAX' with type 'enum <anonymous>'
+   61 |     UART_DATA_BITS_MAX = 0x4,
+      |     ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:43:3: error: conflicting types for 'uart_word_length_t'; have 'enum <anonymous>'
+   43 | } uart_word_length_t;
+      |   ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:62:3: note: previous declaration of 'uart_word_length_t' with type 'uart_word_length_t'
+   62 | } uart_word_length_t;
+      |   ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:49:5: error: redeclaration of enumerator 'UART_STOP_BITS_1'
+   49 |     UART_STOP_BITS_1   = 0x1,  /*!< stop bit: 1bit*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:68:5: note: previous definition of 'UART_STOP_BITS_1' with type 'enum <anonymous>'
+   68 |     UART_STOP_BITS_1   = 0x1,  /*!< stop bit: 1bit*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:50:5: error: redeclaration of enumerator 'UART_STOP_BITS_1_5'
+   50 |     UART_STOP_BITS_1_5 = 0x2,  /*!< stop bit: 1.5bits*/
+      |     ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:69:5: note: previous definition of 'UART_STOP_BITS_1_5' with type 'enum <anonymous>'
+   69 |     UART_STOP_BITS_1_5 = 0x2,  /*!< stop bit: 1.5bits*/
+      |     ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:51:5: error: redeclaration of enumerator 'UART_STOP_BITS_2'
+   51 |     UART_STOP_BITS_2   = 0x3,  /*!< stop bit: 2bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:70:5: note: previous definition of 'UART_STOP_BITS_2' with type 'enum <anonymous>'
+   70 |     UART_STOP_BITS_2   = 0x3,  /*!< stop bit: 2bits*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:52:5: error: redeclaration of enumerator 'UART_STOP_BITS_MAX'
+   52 |     UART_STOP_BITS_MAX = 0x4,
+      |     ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:71:5: note: previous definition of 'UART_STOP_BITS_MAX' with type 'enum <anonymous>'
+   71 |     UART_STOP_BITS_MAX = 0x4,
+      |     ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:53:3: error: conflicting types for 'uart_stop_bits_t'; have 'enum <anonymous>'
+   53 | } uart_stop_bits_t;
+      |   ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:72:3: note: previous declaration of 'uart_stop_bits_t' with type 'uart_stop_bits_t'
+   72 | } uart_stop_bits_t;
+      |   ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:59:5: error: redeclaration of enumerator 'UART_PARITY_DISABLE'
+   59 |     UART_PARITY_DISABLE  = 0x0,  /*!< Disable UART parity*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:78:5: note: previous definition of 'UART_PARITY_DISABLE' with type 'enum <anonymous>'
+   78 |     UART_PARITY_DISABLE  = 0x0,  /*!< Disable UART parity*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:60:5: error: redeclaration of enumerator 'UART_PARITY_EVEN'
+   60 |     UART_PARITY_EVEN     = 0x2,  /*!< Enable UART even parity*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:79:5: note: previous definition of 'UART_PARITY_EVEN' with type 'enum <anonymous>'
+   79 |     UART_PARITY_EVEN     = 0x2,  /*!< Enable UART even parity*/
+      |     ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:61:5: error: redeclaration of enumerator 'UART_PARITY_ODD'
+   61 |     UART_PARITY_ODD      = 0x3   /*!< Enable UART odd parity*/
+      |     ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:80:5: note: previous definition of 'UART_PARITY_ODD' with type 'enum <anonymous>'
+   80 |     UART_PARITY_ODD      = 0x3   /*!< Enable UART odd parity*/
+      |     ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:62:3: error: conflicting types for 'uart_parity_t'; have 'enum <anonymous>'
+   62 | } uart_parity_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:81:3: note: previous declaration of 'uart_parity_t' with type 'uart_parity_t'
+   81 | } uart_parity_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:68:5: error: redeclaration of enumerator 'UART_HW_FLOWCTRL_DISABLE'
+   68 |     UART_HW_FLOWCTRL_DISABLE = 0x0,   /*!< disable hardware flow control*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:87:5: note: previous definition of 'UART_HW_FLOWCTRL_DISABLE' with type 'enum <anonymous>'
+   87 |     UART_HW_FLOWCTRL_DISABLE = 0x0,   /*!< disable hardware flow control*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:69:5: error: redeclaration of enumerator 'UART_HW_FLOWCTRL_RTS'
+   69 |     UART_HW_FLOWCTRL_RTS     = 0x1,   /*!< enable RX hardware flow control (rts)*/
+      |     ^~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:88:5: note: previous definition of 'UART_HW_FLOWCTRL_RTS' with type 'enum <anonymous>'
+   88 |     UART_HW_FLOWCTRL_RTS     = 0x1,   /*!< enable RX hardware flow control (rts)*/
+      |     ^~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:70:5: error: redeclaration of enumerator 'UART_HW_FLOWCTRL_CTS'
+   70 |     UART_HW_FLOWCTRL_CTS     = 0x2,   /*!< enable TX hardware flow control (cts)*/
+      |     ^~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:89:5: note: previous definition of 'UART_HW_FLOWCTRL_CTS' with type 'enum <anonymous>'
+   89 |     UART_HW_FLOWCTRL_CTS     = 0x2,   /*!< enable TX hardware flow control (cts)*/
+      |     ^~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:71:5: error: redeclaration of enumerator 'UART_HW_FLOWCTRL_CTS_RTS'
+   71 |     UART_HW_FLOWCTRL_CTS_RTS = 0x3,   /*!< enable hardware flow control*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:90:5: note: previous definition of 'UART_HW_FLOWCTRL_CTS_RTS' with type 'enum <anonymous>'
+   90 |     UART_HW_FLOWCTRL_CTS_RTS = 0x3,   /*!< enable hardware flow control*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:72:5: error: redeclaration of enumerator 'UART_HW_FLOWCTRL_MAX'
+   72 |     UART_HW_FLOWCTRL_MAX     = 0x4,
+      |     ^~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:91:5: note: previous definition of 'UART_HW_FLOWCTRL_MAX' with type 'enum <anonymous>'
+   91 |     UART_HW_FLOWCTRL_MAX     = 0x4,
+      |     ^~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:73:3: error: conflicting types for 'uart_hw_flowcontrol_t'; have 'enum <anonymous>'
+   73 | } uart_hw_flowcontrol_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:92:3: note: previous declaration of 'uart_hw_flowcontrol_t' with type 'uart_hw_flowcontrol_t'
+   92 | } uart_hw_flowcontrol_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:79:5: error: redeclaration of enumerator 'UART_SIGNAL_INV_DISABLE'
+   79 |     UART_SIGNAL_INV_DISABLE  =  0,            /*!< Disable UART signal inverse*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:98:5: note: previous definition of 'UART_SIGNAL_INV_DISABLE' with type 'enum <anonymous>'
+   98 |     UART_SIGNAL_INV_DISABLE  =  0,            /*!< Disable UART signal inverse*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:80:5: error: redeclaration of enumerator 'UART_SIGNAL_IRDA_TX_INV'
+   80 |     UART_SIGNAL_IRDA_TX_INV  = (0x1 << 0),    /*!< inverse the UART irda_tx signal*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:99:5: note: previous definition of 'UART_SIGNAL_IRDA_TX_INV' with type 'enum <anonymous>'
+   99 |     UART_SIGNAL_IRDA_TX_INV  = (0x1 << 0),    /*!< inverse the UART irda_tx signal*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:81:5: error: redeclaration of enumerator 'UART_SIGNAL_IRDA_RX_INV'
+   81 |     UART_SIGNAL_IRDA_RX_INV  = (0x1 << 1),    /*!< inverse the UART irda_rx signal*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:100:5: note: previous definition of 'UART_SIGNAL_IRDA_RX_INV' with type 'enum <anonymous>'
+  100 |     UART_SIGNAL_IRDA_RX_INV  = (0x1 << 1),    /*!< inverse the UART irda_rx signal*/
+      |     ^~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:82:5: error: redeclaration of enumerator 'UART_SIGNAL_RXD_INV'
+   82 |     UART_SIGNAL_RXD_INV      = (0x1 << 2),    /*!< inverse the UART rxd signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:101:5: note: previous definition of 'UART_SIGNAL_RXD_INV' with type 'enum <anonymous>'
+  101 |     UART_SIGNAL_RXD_INV      = (0x1 << 2),    /*!< inverse the UART rxd signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:83:5: error: redeclaration of enumerator 'UART_SIGNAL_CTS_INV'
+   83 |     UART_SIGNAL_CTS_INV      = (0x1 << 3),    /*!< inverse the UART cts signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:102:5: note: previous definition of 'UART_SIGNAL_CTS_INV' with type 'enum <anonymous>'
+  102 |     UART_SIGNAL_CTS_INV      = (0x1 << 3),    /*!< inverse the UART cts signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:84:5: error: redeclaration of enumerator 'UART_SIGNAL_DSR_INV'
+   84 |     UART_SIGNAL_DSR_INV      = (0x1 << 4),    /*!< inverse the UART dsr signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:103:5: note: previous definition of 'UART_SIGNAL_DSR_INV' with type 'enum <anonymous>'
+  103 |     UART_SIGNAL_DSR_INV      = (0x1 << 4),    /*!< inverse the UART dsr signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:85:5: error: redeclaration of enumerator 'UART_SIGNAL_TXD_INV'
+   85 |     UART_SIGNAL_TXD_INV      = (0x1 << 5),    /*!< inverse the UART txd signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:104:5: note: previous definition of 'UART_SIGNAL_TXD_INV' with type 'enum <anonymous>'
+  104 |     UART_SIGNAL_TXD_INV      = (0x1 << 5),    /*!< inverse the UART txd signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:86:5: error: redeclaration of enumerator 'UART_SIGNAL_RTS_INV'
+   86 |     UART_SIGNAL_RTS_INV      = (0x1 << 6),    /*!< inverse the UART rts signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:105:5: note: previous definition of 'UART_SIGNAL_RTS_INV' with type 'enum <anonymous>'
+  105 |     UART_SIGNAL_RTS_INV      = (0x1 << 6),    /*!< inverse the UART rts signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:87:5: error: redeclaration of enumerator 'UART_SIGNAL_DTR_INV'
+   87 |     UART_SIGNAL_DTR_INV      = (0x1 << 7),    /*!< inverse the UART dtr signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:106:5: note: previous definition of 'UART_SIGNAL_DTR_INV' with type 'enum <anonymous>'
+  106 |     UART_SIGNAL_DTR_INV      = (0x1 << 7),    /*!< inverse the UART dtr signal*/
+      |     ^~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:88:3: error: conflicting types for 'uart_signal_inv_t'; have 'enum <anonymous>'
+   88 | } uart_signal_inv_t;
+      |   ^~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:107:3: note: previous declaration of 'uart_signal_inv_t' with type 'uart_signal_inv_t'
+  107 | } uart_signal_inv_t;
+      |   ^~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:105:3: error: conflicting types for 'uart_at_cmd_t'; have 'struct <anonymous>'
+  105 | } uart_at_cmd_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:131:3: note: previous declaration of 'uart_at_cmd_t' with type 'uart_at_cmd_t'
+  131 | } uart_at_cmd_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:115:3: error: conflicting types for 'uart_sw_flowctrl_t'; have 'struct <anonymous>'
+  115 | } uart_sw_flowctrl_t;
+      |   ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/uart_types.h:141:3: note: previous declaration of 'uart_sw_flowctrl_t' with type 'uart_sw_flowctrl_t'
+  141 | } uart_sw_flowctrl_t;
+      |   ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include/hal/uart_types.h:128:3: error: conflicting types for 'uart_config_t'; have 'struct <anonymous>'
+  128 | } uart_config_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/include/driver/uart.h:52:3: note: previous declaration of 'uart_config_t' with type 'uart_config_t'
+   52 | } uart_config_t;
+      |   ^~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

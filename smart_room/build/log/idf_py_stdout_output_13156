@@ -1,0 +1,900 @@
+[0;32mI (13) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a39ch (172956) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0003a3c4 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0003e088 vaddr=40080000 size=01f90h (  8080) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a27a8h (665512) map[0m
+[0;32mI (388) esp_image: segment 4: paddr=000e27d0 vaddr=40081f90 size=15d58h ( 89432) load[0m
+[0;32mI (435) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (435) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (455) cpu_start: Application information:[0m
+[0;32mI (458) cpu_start: Project name:     smart_room[0m
+[0;32mI (463) cpu_start: App version:      1[0m
+[0;32mI (468) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (474) cpu_start: ELF file SHA256:  5ce0c824c...[0m
+[0;32mI (479) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (485) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (489) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (494) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (546) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (559) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (570) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (578) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (587) main_task: Started on CPU0[0m
+[0;32mI (597) main_task: Calling app_main()[0m
+[0;32mI (597) uart: queue free spaces: 20[0m
+I (657) wifi:wifi driver task: 3ffc146c, prio:23, stack:6656, core=0
+I (677) wifi:wifi firmware version: a9f5b59
+I (677) wifi:wifi certification version: v7.0
+I (677) wifi:config NVS flash: enabled
+I (677) wifi:config nano formating: disabled
+I (687) wifi:Init data frame dynamic rx buffer num: 32
+I (687) wifi:Init static rx mgmt buffer num: 5
+I (697) wifi:Init management short buffer num: 32
+I (697) wifi:Init dynamic tx buffer num: 32
+I (707) wifi:Init static rx buffer size: 1600
+I (707) wifi:Init static rx buffer num: 10
+I (707) wifi:Init dynamic rx buffer num: 32
+[0;32mI (717) wifi_init: rx ba win: 6[0m
+[0;32mI (717) wifi_init: tcpip mbox: 32[0m
+[0;32mI (727) wifi_init: udp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp tx win: 5760[0m
+[0;32mI (737) wifi_init: tcp rx win: 5760[0m
+[0;32mI (737) wifi_init: tcp mss: 1440[0m
+[0;32mI (747) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (747) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (757) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (847) wifi:mode : sta (a0:dd:6c:85:ec:e0)
+I (847) wifi:enable tsf
+handlehandlewifi connectI (877) wifi:new:<8,0>, old:<1,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (877) wifi:state: init -> auth (b0)
+handleI (897) wifi:state: auth -> init (8a0)
+I (897) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+handle[0;32mI (897) wifi station: retry to connect to the AP[0m
+[0;32mI (907) wifi station: connect to the AP fail[0m
+handle[0;32mI (3317) wifi station: retry to connect to the AP[0m
+[0;32mI (3317) wifi station: connect to the AP fail[0m
+I (3337) wifi:new:<8,0>, old:<8,0>, ap:<255,255>, sta:<8,0>, prof:1
+I (3337) wifi:state: init -> auth (b0)
+I (3347) wifi:state: auth -> assoc (0)
+I (3377) wifi:state: assoc -> run (10)
+I (3477) wifi:connected with Long Bien, aid = 6, channel 8, BW20, bssid = 3c:55:76:82:b6:50
+I (3487) wifi:security: WPA2-PSK, phy: bgn, rssi: -65
+I (3487) wifi:pm start, type: 1
+
+I (3487) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (3657) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4497) esp_netif_handlers: sta ip: 192.168.1.25, mask: 255.255.255.0, gw: 192.168.1.1[0m
+handle[0;32mI (4497) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (4497) wifi station: got ip:192.168.1.25[0m
+[0;32mI (4497) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (4497) wifi station: connected to ap SSID:Long Bien password:phuongphuong[0m
+[0;32mI (4517) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4527) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (4527) wifi:<ba-add>idx:0 (ifx:0, 3c:55:76:82:b6:50), tid:0, ssn:5, winSize:64
+[0;32mI (4537) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4547) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4557) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4567) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4577) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;31mE (4637) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (4637) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (4647) mqtt_client: Error transport connect[0m
+[0;32mI (4647) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (4657) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+uart task 
+AT
+
+
+OK
+
+return ok 
+AT+CPIN?
+respond = AT+CPIN?, 8 
+time out 
+time out 
+
+AT Ready
+
+AST_POWERON
+
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.003
+gas = 0.010
+smoke = 0.027
+Temp :29.4°C 
+Humi :69.3% 
+co = 0.003
+gas = 0.010
+smoke = 0.026
+Temp :29.4°C 
+Humi :69.3% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+
++CREG: 2
+
+AST_POWERON
+
+error2 time out  i = 0 , j = 5
+co = 0.002
+gas = 0.008
+smoke = 0.020
+error2 time out  i = 0 , j = 6
+co = 0.003
+gas = 0.009
+smoke = 0.025
+Temp :29.4°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+Temp :29.4°C 
+Humi :69.2% 
+co = 0.001
+gas = 0.006
+smoke = 0.017
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.4°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.4°C 
+Humi :69.3% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.4°C 
+Humi :69.3% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :29.4°C 
+Humi :69.3% 
+co = 0.002
+gas = 0.007
+smoke = 0.017
+Temp :29.4°C 
+Humi :69.3% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+
+AT Ready
+
+AST_POWERON
+
+[0;32mI (19657) MQTT_EXAMPLE: Other event id:7[0m
+Temp :29.4°C 
+Humi :69.3% 
+co = 0.001
+gas = 0.006
+smoke = 0.017
+[0;31mE (20147) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (20147) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (20147) mqtt_client: Error transport connect[0m
+[0;32mI (20157) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (20157) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.4°C 
+Humi :69.3% 
+co = 0.001
+gas = 0.007
+smoke = 0.018
+Temp :29.4°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.4°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.020
+Temp :29.5°C 
+Humi :69.3% 
+co = 0.001
+gas = 0.006
+smoke = 0.017
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.001
+gas = 0.007
+smoke = 0.017
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+[0;32mI (30167) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (30377) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (30387) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (30387) mqtt_client: Error transport connect[0m
+[0;32mI (30387) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (30397) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.001
+gas = 0.006
+smoke = 0.016
+Temp :29.5°C 
+Humi :69.3% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :29.5°C 
+Humi :69.1% 
+co = 0.001
+gas = 0.006
+smoke = 0.016
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.5°C 
+Humi :69.1% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.001
+gas = 0.007
+smoke = 0.018
+Temp :29.5°C 
+Humi :69.1% 
+co = 0.001
+gas = 0.006
+smoke = 0.016
+
+AT Ready
+
+AST_POWERON
+
+respond error 
+error2 time out  i = 0 , j = 6
+co = 0.001
+gas = 0.006
+smoke = 0.017
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.001
+gas = 0.006
+smoke = 0.017
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+
++CREG: 2
+
+AST_POWERON
+
+[0;32mI (45397) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (45747) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (45747) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (45747) mqtt_client: Error transport connect[0m
+[0;32mI (45747) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (45757) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+error2 time out  i = 0 , j = 1
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+error2 time out  i = 0 , j = 2
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+
++CREG: 2
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.003
+gas = 0.008
+smoke = 0.023
+Temp :29.5°C 
+Humi :69.3% 
+
+AT Ready
+
+AST_POWERON
+
+co = 0.001
+gas = 0.006
+smoke = 0.016
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+[0;32mI (60757) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (60867) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (60867) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (60867) mqtt_client: Error transport connect[0m
+[0;32mI (60877) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (60877) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+Temp :29.5°C 
+Humi :69.1% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.5°C 
+Humi :69.3% 
+co = 0.001
+gas = 0.007
+smoke = 0.018
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+
++CREG: 2
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :29.5°C 
+Humi :69.3% 
+co = 0.002
+gas = 0.009
+smoke = 0.025
+Temp :29.5°C 
+
+AT Ready
+
+AST_POWERON
+
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.017
+[0;32mI (70887) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (71037) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (71037) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (71037) mqtt_client: Error transport connect[0m
+[0;32mI (71047) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (71047) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+error2 time out  i = 0 , j = 5
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.6°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+respond error 
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+
++CREG: 2
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.2% 
+[0;32mI (81057) MQTT_EXAMPLE: Other event id:7[0m
+co = 0.002
+gas = 0.007
+smoke = 0.019
+[0;31mE (81487) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (81487) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (81487) mqtt_client: Error transport connect[0m
+[0;32mI (81497) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (81497) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.1% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :29.5°C 
+Humi :69.1% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+Temp :29.5°C 
+Humi :69.1% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.003
+gas = 0.009
+smoke = 0.023
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+[0;32mI (91507) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (91927) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (91927) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (91927) mqtt_client: Error transport connect[0m
+[0;32mI (91937) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (91937) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+Temp :29.5°C 
+Humi :69.1% 
+co = 0.002
+gas = 0.008
+smoke = 0.024
+Temp :29.6°C 
+Humi :69.2% 
+co = 0.003
+gas = 0.008
+smoke = 0.023
+Temp :29.5°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+respond error 
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.008
+smoke = 0.023
+Temp :29.6°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+
+AT Ready
+
+AST_POWERON
+
+Temp :29.6°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :29.6°C 
+Humi :69.2% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+respond error 
+error2 time out  i = 0 , j = 6
+co = 0.001
+gas = 0.007
+smoke = 0.017
+0 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.004
+gas = 0.013
+smoke = 0.035
+[0;32mI (101947) MQTT_EXAMPLE: Other event id:7[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.004
+gas = 0.012
+smoke = 0.032
+[0;31mE (102167) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (102167) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (102167) mqtt_client: Error transport connect[0m
+[0;32mI (102177) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (102177) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.005
+gas = 0.013
+smoke = 0.037
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.003
+gas = 0.011
+smoke = 0.030
+
+AT Ready
+
+AST_POWERON
+
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.005
+gas = 0.013
+smoke = 0.037
+call 
+cmd : ATD0962758485;
+ 
+respond = 
+AT Ready
+
+AST_POWERON
+, 27 
+ATD0962758485;
+
+respond = ATD0962758485;
+, 16 
+
+OK
+
+return ok 
+calling 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.005
+gas = 0.015
+smoke = 0.043
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.007
+gas = 0.017
+smoke = 0.048
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.016
+smoke = 0.045
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.007
+gas = 0.016
+smoke = 0.045
+end call 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.016
+smoke = 0.045
+[0;32mI (112187) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (112407) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (112407) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (112417) mqtt_client: Error transport connect[0m
+[0;32mI (112417) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (112427) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+
+AT Ready
+
+AST_POWERON
+
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.015
+smoke = 0.043
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.007
+gas = 0.017
+smoke = 0.047
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.016
+smoke = 0.044
+
++CREG: 2
+
+AST_POWERON
+
+respond = 
++CREG: 2
+
+AST_POWERON
+, 27 
+AT+CMGF=1
+
+respond = AT+CMGF=1
+, 11 
+
+OK
+
+return ok 
+AT+CMGS="0962758485"
+
+> 
+respond = AT+CMGS="0962758485"
+
+> , 26 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.007
+gas = 0.017
+smoke = 0.048
+time out 
+PHAT HIEN CHAY, GOI CUU HOA KHAN CAP
+respond = PHAT HIEN CHAY, GOI CUU HOA KHAN CAP, 37 
+time out 
+phat hien lua 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.005
+gas = 0.015
+smoke = 0.041
+
+AT Ready
+
+AST_POWERON
+
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.016
+smoke = 0.044
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.016
+smoke = 0.043
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.007
+gas = 0.017
+smoke = 0.048
+
++CREG: 2
+
+AST_POWERON
+
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.017
+smoke = 0.048
+
+AT Ready
+
+AST_POWERON
+
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.007
+gas = 0.017
+smoke = 0.046
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.007
+gas = 0.017
+smoke = 0.046
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.007
+gas = 0.017
+smoke = 0.047
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.015
+smoke = 0.043
+[0;32mI (127427) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (127657) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (127667) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (127667) mqtt_client: Error transport connect[0m
+[0;32mI (127667) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (127677) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.017
+smoke = 0.046
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.016
+smoke = 0.046

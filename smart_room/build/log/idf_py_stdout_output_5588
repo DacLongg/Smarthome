@@ -1,0 +1,613 @@
+[0;32mI (13) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a39ch (172956) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0003a3c4 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0003e088 vaddr=40080000 size=01f90h (  8080) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a27a4h (665508) map[0m
+[0;32mI (388) esp_image: segment 4: paddr=000e27cc vaddr=40081f90 size=15d58h ( 89432) load[0m
+[0;32mI (435) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (435) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (455) cpu_start: Application information:[0m
+[0;32mI (458) cpu_start: Project name:     smart_room[0m
+[0;32mI (463) cpu_start: App version:      1[0m
+[0;32mI (468) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (474) cpu_start: ELF file SHA256:  13f49ff13...[0m
+[0;32mI (479) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (485) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (489) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (494) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (546) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (559) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (570) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (578) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (587) main_task: Started on CPU0[0m
+[0;32mI (597) main_task: Calling app_main()[0m
+[0;32mI (597) uart: queue free spaces: 20[0m
+I (657) wifi:wifi driver task: 3ffc14ac, prio:23, stack:6656, core=0
+I (677) wifi:wifi firmware version: a9f5b59
+I (677) wifi:wifi certification version: v7.0
+I (687) wifi:config NVS flash: enabled
+I (687) wifi:config nano formating: disabled
+I (687) wifi:Init data frame dynamic rx buffer num: 32
+I (687) wifi:Init static rx mgmt buffer num: 5
+I (697) wifi:Init management short buffer num: 32
+I (697) wifi:Init dynamic tx buffer num: 32
+I (707) wifi:Init static rx buffer size: 1600
+I (707) wifi:Init static rx buffer num: 10
+I (707) wifi:Init dynamic rx buffer num: 32
+[0;32mI (717) wifi_init: rx ba win: 6[0m
+[0;32mI (717) wifi_init: tcpip mbox: 32[0m
+[0;32mI (727) wifi_init: udp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp tx win: 5760[0m
+[0;32mI (737) wifi_init: tcp rx win: 5760[0m
+[0;32mI (737) wifi_init: tcp mss: 1440[0m
+[0;32mI (747) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (747) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (757) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (847) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (847) wifi:enable tsf
+handlehandlewifi connectI (867) wifi:new:<5,0>, old:<1,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (867) wifi:state: init -> auth (b0)
+handleI (867) wifi:state: auth -> init (8a0)
+I (867) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+handle[0;32mI (877) wifi station: retry to connect to the AP[0m
+[0;32mI (877) wifi station: connect to the AP fail[0m
+handle[0;32mI (3297) wifi station: retry to connect to the AP[0m
+[0;32mI (3297) wifi station: connect to the AP fail[0m
+I (3307) wifi:new:<5,0>, old:<5,0>, ap:<255,255>, sta:<5,0>, prof:1
+I (3307) wifi:state: init -> auth (b0)
+I (3317) wifi:state: auth -> assoc (0)
+I (3337) wifi:state: assoc -> run (10)
+I (3437) wifi:connected with Long Bien, aid = 4, channel 5, BW20, bssid = 3c:55:76:82:b6:50
+I (3437) wifi:security: WPA2-PSK, phy: bgn, rssi: -66
+I (3447) wifi:pm start, type: 1
+
+I (3447) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (3507) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4457) esp_netif_handlers: sta ip: 192.168.1.21, mask: 255.255.255.0, gw: 192.168.1.1[0m
+handle[0;32mI (4457) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (4457) wifi station: got ip:192.168.1.21[0m
+[0;32mI (4457) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (4467) wifi station: connected to ap SSID:Long Bien password:phuongphuong[0m
+[0;32mI (4477) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (4477) wifi:<ba-add>idx:0 (ifx:0, 3c:55:76:82:b6:50), tid:0, ssn:7, winSize:64
+[0;32mI (4497) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4497) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4507) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4517) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4527) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4537) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+uart task 
+
+OK
+
+return ok 
+[0;32mI (4857) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4857) MQTT_EXAMPLE: sent subscribe successful, msg_id=23523[0m
+[0;32mI (4857) MQTT_EXAMPLE: sent subscribe successful, msg_id=1398[0m
+[0;32mI (4867) MQTT_EXAMPLE: sent subscribe successful, msg_id=23903[0m
+[0;32mI (5357) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=23523[0m
+[0;32mI (5557) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=1398[0m
+[0;32mI (5557) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=23903[0m
+ 0, 0, 0.000 
+time out 
+time out 
+ 0, 0, 0.000 
+respond timeout 
+ 0, 0, 0.000 
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :28.4°C 
+Humi :71.7% 
+ 19, 78, 0.021 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :28.4°C 
+ 19, 78, 0.022 
+Humi :71.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 20, 80, 0.021 
+Temp :28.4°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 19, 77, 0.021 
+Temp :28.4°C 
+Humi :71.7% 
+ 19, 77, 0.021 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :28.4°C 
+Humi :71.8% 
+ 20, 80, 0.021 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 19, 76, 0.021 
+Temp :28.4°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 22, 78, 0.021 
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 22, 77, 0.021 
+Temp :28.4°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 19, 78, 0.021 
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.008
+smoke = 0.020
+ 19, 76, 0.020 
+Temp :28.4°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 20, 80, 0.022 
+call 
+cmd : ATD0962758485;
+ 
+
++CME ERROR: 58
+
+respond = 
++CME ERROR: 58
+, 18 
+[0;32mI (21847) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.008
+smoke = 0.020
+time out 
+[0;32mI (22867) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+time out 
+[0;32mI (23797) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+Humi :71.7% 
+time out 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (24807) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (25837) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (26777) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (27817) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (28817) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+error2 time out  i = 0 , j = 7
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (29867) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (30787) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.6% 
+[0;32mI (31877) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+time out 
+Temp :28.5°C 
+[0;32mI (32897) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Humi :71.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+time out 
+[0;32mI (33817) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+Humi :71.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+time out 
+[0;32mI (34847) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+time out 
+Humi :71.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (35787) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (36897) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (37917) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.007
+smoke = 0.020
+[0;32mI (38847) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (39867) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+error2 time out  i = 0 , j = 1
+co = 0.002
+gas = 0.007
+smoke = 0.019
+[0;32mI (40827) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+cmd : ATD0962758485;
+ 
+
+OK
+
++CIEV: "CALL",0
+
+
+
+return ok 
+calling 
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.007
+smoke = 0.019
+[0;32mI (41877) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+Humi :71.6% 
+co = 0.002
+gas = 0.007
+smoke = 0.020
+[0;32mI (42837) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+Humi :71.6% 
+[0;32mI (43857) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+Temp :28.5°C 
+Humi :71.5% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+[0;32mI (44997) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+[0;32mI (45907) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+Humi :71.5% 
+co = 0.002
+gas = 0.007
+smoke = 0.020
+end call 
+[0;32mI (46927) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+Humi :71.5% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+[0;32mI (47847) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+Humi :71.5% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+[0;32mI (48877) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.007
+smoke = 0.020
+[0;32mI (49907) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+Temp :28.5°C 
+Humi :71.5% 
+co = 0.002
+gas = 0.007
+smoke = 0.020
+[0;32mI (50797) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+
+OK
+
+return ok 
+
+> 
+respond = 
+> , 4 
+Temp :28.5°C 
+Humi :71.5% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+[0;32mI (51807) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+Temp :28.5°C 
+Humi :71.5% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+[0;32mI (52817) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+time out 
+phat hien lua 
+Temp :28.5°C 
+Humi :71.5% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+[0;32mI (53807) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+ 16, 70, 0.019 
+Temp :28.5°C 
+Humi :71.4% 
+[0;32mI (54817) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:siren/feature/mqtt:15/state
+DATA=1
+turn fan 1 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+ 16, 68, 0.018 
+error2 time out  i = 0 , j = 5
+co = 0.002
+gas = 0.007
+smoke = 0.018
+ 15, 67, 0.018 
+error2 time out  i = 0 , j = 5
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :28.5°C 
+ 15, 69, 0.018 
+Humi :71.4% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :28.5°C 
+ 15, 67, 0.018 
+Humi :71.4% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+ 15, 67, 0.018 
+error2 time out  i = 0 , j = 2
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :28.6°C 
+Humi :71.4% 
+ 16, 69, 0.018 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+
++CMS ERROR: 500
+
+Temp :28.6°C 
+Humi :71.4% 
+ 16, 69, 0.019 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+Temp :28.6°C 
+ 16, 68, 0.018 
+Humi :71.4% 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.007
+smoke = 0.019
+ 16, 70, 0.019 
+Temp :28.6°C 
+Humi :71.4% 
+co = 0.002
+ 16, 69, 0.019 
+gas = 0.007
+smoke = 0.019
+Temp :28.5°C 
+Humi :71.4% 
+ 16, 69, 0.019 
+co = 0.002
+gas = 0.007
+smoke = 0.018
+error2 time out  i = 0 , j = 1
+co = 0.002
+gas = 0.007
+smoke = 0.019
+ 16, 69, 0.019 
+Temp :28.6°C 
+Humi :71.4% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+ 16, 69, 0.019 
+Temp :28.6°C 
+Humi :71.4% 
+co = 0.002
+gas = 0.007
+smoke = 0.019
+ 16, 69, 0.019 

@@ -1,0 +1,235 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+[0m
+[0;33m0x400815ee: panic_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4008595d: esp_system_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4008b291: abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/abort.c:38
+0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+0x4008276d: _lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:158
+0x400827e6: __retarget_lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:314
+0x400da35a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9931: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4d45: esp_log_writev at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4008b145: esp_log_write at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d71fa: timer_get_counter_value at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/timer_legacy.c:70 (discriminator 1)
+0x400d559b: gpio_isr_handler at D:/App/ESP32/smart_room/user/dht22/dht22.c:64
+0x40083489: gpio_isr_loop at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:470
+0x4008351a: gpio_intr_service at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:492
+0x40082ff5: _xt_medint2 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x40087be1: vTaskDelete at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:1434
+0x400d550f: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e45a0: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+[0m
+[0;33m0x400815ee: panic_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4008595d: esp_system_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4008b291: abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/abort.c:38
+0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+0x4008276d: _lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:158
+0x400827e6: __retarget_lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:314
+0x400da35a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9931: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4d45: esp_log_writev at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4008b145: esp_log_write at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d72c5: timer_set_counter_value at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/timer_legacy.c:98 (discriminator 1)
+0x400d5581: gpio_isr_handler at D:/App/ESP32/smart_room/user/dht22/dht22.c:59
+0x40083489: gpio_isr_loop at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:470
+0x4008351a: gpio_intr_service at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:492
+0x40082ff5: _xt_medint2 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x400d6891: gpio_ll_set_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/gpio_ll.h:486
+ (inlined by) gpio_set_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:239
+0x400d55c8: gpio_pin_set at D:/App/ESP32/smart_room/user/dht22/dht22.c:46
+0x400d5521: mainApp at D:/App/ESP32/smart_room/user/App/mainApp.c:13
+0x400d550f: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e45a0: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+[0m
+[0;33m0x400815ee: panic_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4008595d: esp_system_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4008b291: abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/abort.c:38
+0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+0x4008276d: _lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:158
+0x400827e6: __retarget_lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:314
+0x400da35a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9931: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4d45: esp_log_writev at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4008b145: esp_log_write at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d71fa: timer_get_counter_value at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/timer_legacy.c:70 (discriminator 1)
+0x400d559b: gpio_isr_handler at D:/App/ESP32/smart_room/user/dht22/dht22.c:64
+0x40083489: gpio_isr_loop at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:470
+0x4008351a: gpio_intr_service at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:492
+0x40082ff5: _xt_medint2 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x40087be1: vTaskDelete at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:1434
+0x400d550f: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e45a0: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+[0m
+[0;33m0x400815ee: panic_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4008595d: esp_system_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4008b291: abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/abort.c:38
+0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+0x4008276d: _lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:158
+0x400827e6: __retarget_lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:314
+0x400da35a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9931: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4d45: esp_log_writev at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4008b145: esp_log_write at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d72c5: timer_set_counter_value at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/timer_legacy.c:98 (discriminator 1)
+0x400d5581: gpio_isr_handler at D:/App/ESP32/smart_room/user/dht22/dht22.c:59
+0x40083489: gpio_isr_loop at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:470
+0x4008351a: gpio_intr_service at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:492
+0x40082ff5: _xt_medint2 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x400d6891: gpio_ll_set_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/gpio_ll.h:486
+ (inlined by) gpio_set_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:239
+0x400d55c8: gpio_pin_set at D:/App/ESP32/smart_room/user/dht22/dht22.c:46
+0x400d5521: mainApp at D:/App/ESP32/smart_room/user/App/mainApp.c:13
+0x400d550f: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e45a0: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+[0m
+[0;33m0x400815ee: panic_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4008595d: esp_system_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4008b291: abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/abort.c:38
+0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+0x4008276d: _lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:158
+0x400827e6: __retarget_lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:314
+0x400da35a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9931: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4d45: esp_log_writev at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4008b145: esp_log_write at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d71fa: timer_get_counter_value at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/timer_legacy.c:70 (discriminator 1)
+0x400d559b: gpio_isr_handler at D:/App/ESP32/smart_room/user/dht22/dht22.c:64
+0x40083489: gpio_isr_loop at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:470
+0x4008351a: gpio_intr_service at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:492
+0x40082ff5: _xt_medint2 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x40087be1: vTaskDelete at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:1434
+0x400d550f: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e45a0: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+[0m
+[0;33m0x400815ee: panic_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4008595d: esp_system_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4008b291: abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/abort.c:38
+0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+0x4008276d: _lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:158
+0x400827e6: __retarget_lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:314
+0x400da35a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9931: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4d45: esp_log_writev at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4008b145: esp_log_write at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d72c5: timer_set_counter_value at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/timer_legacy.c:98 (discriminator 1)
+0x400d5581: gpio_isr_handler at D:/App/ESP32/smart_room/user/dht22/dht22.c:59
+0x40083489: gpio_isr_loop at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:470
+0x4008351a: gpio_intr_service at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:492
+0x40082ff5: _xt_medint2 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x400d6891: gpio_ll_set_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/gpio_ll.h:486
+ (inlined by) gpio_set_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:239
+0x400d55c8: gpio_pin_set at D:/App/ESP32/smart_room/user/dht22/dht22.c:46
+0x400d5521: mainApp at D:/App/ESP32/smart_room/user/App/mainApp.c:13
+0x400d550f: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e45a0: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+[0m
+[0;33m0x400815ee: panic_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4008595d: esp_system_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4008b291: abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/abort.c:38
+0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+0x4008276d: _lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:158
+0x400827e6: __retarget_lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:314
+0x400da35a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9931: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4d45: esp_log_writev at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4008b145: esp_log_write at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d71fa: timer_get_counter_value at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/timer_legacy.c:70 (discriminator 1)
+0x400d559b: gpio_isr_handler at D:/App/ESP32/smart_room/user/dht22/dht22.c:64
+0x40083489: gpio_isr_loop at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:470
+0x4008351a: gpio_intr_service at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:492
+0x40082ff5: _xt_medint2 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x40087be1: vTaskDelete at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:1434
+0x400d550f: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e45a0: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+[0m
+[0;33m0x400815ee: panic_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4008595d: esp_system_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4008b291: abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/abort.c:38
+0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+0x4008276d: _lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:158
+0x400827e6: __retarget_lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:314
+0x400da35a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9931: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4d45: esp_log_writev at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4008b145: esp_log_write at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d72c5: timer_set_counter_value at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/timer_legacy.c:98 (discriminator 1)
+0x400d5581: gpio_isr_handler at D:/App/ESP32/smart_room/user/dht22/dht22.c:59
+0x40083489: gpio_isr_loop at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:470
+0x4008351a: gpio_intr_service at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:492
+0x40082ff5: _xt_medint2 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x400d6891: gpio_ll_set_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/gpio_ll.h:486
+ (inlined by) gpio_set_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:239
+0x400d55c8: gpio_pin_set at D:/App/ESP32/smart_room/user/dht22/dht22.c:46
+0x400d5521: mainApp at D:/App/ESP32/smart_room/user/App/mainApp.c:13
+0x400d550f: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e45a0: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+[0m
+[0;33m0x400815ee: panic_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/panic.c:472
+0x4008595d: esp_system_abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/esp_system_chip.c:93
+0x4008b291: abort at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/abort.c:38
+0x4008262f: lock_acquire_generic at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:130
+0x4008276d: _lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:158
+0x400827e6: __retarget_lock_acquire_recursive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/locks.c:314
+0x400da35a: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x400d9931: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x400e4d45: esp_log_writev at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:215
+0x4008b145: esp_log_write at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/log.c:225
+0x400d71fa: timer_get_counter_value at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/timer_legacy.c:70 (discriminator 1)
+0x400d559b: gpio_isr_handler at D:/App/ESP32/smart_room/user/dht22/dht22.c:64
+0x40083489: gpio_isr_loop at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:470
+0x4008351a: gpio_intr_service at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:492
+0x40082ff5: _xt_medint2 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1329
+0x40087be1: vTaskDelete at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/tasks.c:1434
+0x400d550f: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e45a0: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

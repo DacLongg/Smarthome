@@ -1,0 +1,19 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_door_lock\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_door_lock/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/lcd/CMakeFiles/__idf_lcd.dir/lcd.c.obj
+D:/App/ESP32/smart_door_lock/user/device/lcd/lcd.c: In function 'LCD_task':
+D:/App/ESP32/smart_door_lock/user/device/lcd/lcd.c:95:21: warning: variable 'waitEndEvent' set but not used [-Wunused-but-set-variable]
+   95 |         EventBits_t waitEndEvent;
+      |                     ^~~~~~~~~~~~
+[3/7] Linking C static library esp-idf\lcd\liblcd.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable smart_door_lock.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/App/ESP32/smart_door_lock/build/smart_door_lock.bin
+[7/7] cmd.exe /C "cd /D D:\App\ESP32\smart_door_lock\build\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/App/ESP32/smart_door_lock/build/partition_table/partition-table.bin D:/App/ESP32/smart_door_lock/build/smart_door_lock.bin"
+smart_door_lock.bin binary size 0xe5aa0 bytes. Smallest app partition is 0x100000 bytes. 0x1a560 bytes (10%) free.

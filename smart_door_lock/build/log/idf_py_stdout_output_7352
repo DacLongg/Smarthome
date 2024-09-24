@@ -1,0 +1,772 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 30 2024 09:37:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29ab4h (170676) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00039adc vaddr=3ffb0000 size=03d3ch ( 15676) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003d820 vaddr=40080000 size=027f8h ( 10232) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a0394h (656276) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000e03bc vaddr=400827f8 size=15690h ( 87696) load[0m
+[0;32mI (449) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (449) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) cpu_start: Application information:[0m
+[0;32mI (472) cpu_start: Project name:     smart_door_lock[0m
+[0;32mI (478) cpu_start: App version:      1[0m
+[0;32mI (482) cpu_start: Compile time:     Apr 30 2024 09:36:52[0m
+[0;32mI (488) cpu_start: ELF file SHA256:  2f3fb870057032d8...[0m
+[0;32mI (494) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (500) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (505) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (509) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (514) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (521) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB8620 len 000279E0 (158 KiB): DRAM[0m
+[0;32mI (534) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (540) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (546) heap_init: At 40097E88 len 00008178 (32 KiB): IRAM[0m
+[0;32mI (554) spi_flash: detected chip: generic[0m
+[0;32mI (557) spi_flash: flash io: dio[0m
+[0;33mW (562) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (573) main_task: Started on CPU0[0m
+[0;32mI (583) main_task: Calling app_main()[0m
+Start
+I (643) wifi:wifi driver task: 3ffc0708, prio:23, stack:6656, core=0
+I (663) wifi:wifi firmware version: a9f5b59
+I (663) wifi:wifi certification version: v7.0
+I (663) wifi:config NVS flash: enabled
+I (663) wifi:config nano formating: disabled
+I (673) wifi:Init data frame dynamic rx buffer num: 32
+I (673) wifi:Init static rx mgmt buffer num: 5
+I (683) wifi:Init management short buffer num: 32
+I (683) wifi:Init dynamic tx buffer num: 32
+I (693) wifi:Init static rx buffer size: 1600
+I (693) wifi:Init static rx buffer num: 10
+I (693) wifi:Init dynamic rx buffer num: 32
+[0;32mI (703) wifi_init: rx ba win: 6[0m
+[0;32mI (703) wifi_init: tcpip mbox: 32[0m
+[0;32mI (713) wifi_init: udp mbox: 6[0m
+[0;32mI (713) wifi_init: tcp mbox: 6[0m
+[0;32mI (713) wifi_init: tcp tx win: 5760[0m
+[0;32mI (723) wifi_init: tcp rx win: 5760[0m
+[0;32mI (723) wifi_init: tcp mss: 1440[0m
+[0;32mI (733) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (733) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (743) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (833) wifi:mode : sta (e8:6b:ea:d3:6d:34)
+I (833) wifi:enable tsf
+handlehandlewifi connectI (843) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1
+I (853) wifi:state: init -> auth (b0)
+handleI (853) wifi:state: auth -> assoc (0)
+I (863) wifi:state: assoc -> run (10)
+W (863) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (863) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (973) wifi:connected with be Moon, aid = 5, channel 2, 40U, bssid = b0:4e:26:bf:7b:86
+I (973) wifi:security: WPA2-PSK, phy: bgn, rssi: -47
+I (983) wifi:pm start, type: 1
+
+I (983) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (1033) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1043) wifi:<ba-add>idx:0 (ifx:0, b0:4e:26:bf:7b:86), tid:0, ssn:3, winSize:64
+[0;32mI (2493) esp_netif_handlers: sta ip: 192.168.0.116, mask: 255.255.255.0, gw: 192.168.0.1[0m
+handle[0;32mI (2493) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (2493) wifi station: got ip:192.168.0.116[0m
+[0;32mI (2493) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (2493) wifi station: connected to ap SSID:be Moon password:yeubemoon[0m
+Start
+[0;32mI (2513) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2523) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2533) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2533) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2543) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2553) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2563) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2573) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2583) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2593) uart: queue free spaces: 20[0m
+lcdtask 
+Done
+Reading restart counter from NVS ... Done
+Restart counter = 6 
+6Done
+Done
+Reading restart counter from NVS ... The value is not initialized yet!
+Done
+fg task 
+[0;31mE (2643) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (2643) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2643) mqtt_client: Error transport connect[0m
+[0;32mI (2653) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (2653) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (12663) MQTT_EXAMPLE: Other event id:7[0m
+ error 
+[0;31mE (12823) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (12823) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (12823) mqtt_client: Error transport connect[0m
+[0;32mI (12833) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (12833) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+[0;32mI (22843) MQTT_EXAMPLE: Other event id:7[0m
+fg task 
+[0;31mE (23073) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (23073) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (23073) mqtt_client: Error transport connect[0m
+[0;32mI (23073) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (23083) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (38083) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (38333) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (38333) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (38333) mqtt_client: Error transport connect[0m
+[0;32mI (38343) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (38343) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (48353) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (48583) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (48583) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (48583) mqtt_client: Error transport connect[0m
+[0;32mI (48593) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (48593) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (58603) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (58693) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (58693) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (58693) mqtt_client: Error transport connect[0m
+[0;32mI (58703) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (58703) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (73713) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (73863) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (73863) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (73863) mqtt_client: Error transport connect[0m
+[0;32mI (73873) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (73873) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (83883) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (83933) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (83933) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (83943) mqtt_client: Error transport connect[0m
+[0;32mI (83943) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (83953) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (98953) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (99033) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (99033) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (99033) mqtt_client: Error transport connect[0m
+[0;32mI (99043) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (99043) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (109053) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (109103) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (109103) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (109103) mqtt_client: Error transport connect[0m
+[0;32mI (109113) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (109113) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (119123) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (119173) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (119173) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (119183) mqtt_client: Error transport connect[0m
+[0;32mI (119183) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (119193) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (134193) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (134363) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (134373) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (134373) mqtt_client: Error transport connect[0m
+[0;32mI (134373) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (134383) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (149383) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (149443) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (149443) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (149443) mqtt_client: Error transport connect[0m
+[0;32mI (149453) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (149453) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (159463) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (159533) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (159543) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (159543) mqtt_client: Error transport connect[0m
+[0;32mI (159543) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (159553) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (174553) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (174613) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (174613) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (174613) mqtt_client: Error transport connect[0m
+[0;32mI (174613) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (174623) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (189623) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (189803) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (189813) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (189813) mqtt_client: Error transport connect[0m
+[0;32mI (189813) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (189823) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (204823) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (204873) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (204873) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (204873) mqtt_client: Error transport connect[0m
+[0;32mI (204883) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (204883) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (214893) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (214943) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (214943) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (214943) mqtt_client: Error transport connect[0m
+[0;32mI (214953) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (214953) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (224963) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (225043) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (225043) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (225043) mqtt_client: Error transport connect[0m
+[0;32mI (225053) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (225053) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (235063) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (235113) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (235113) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (235123) mqtt_client: Error transport connect[0m
+[0;32mI (235123) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (235133) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (250133) MQTT_EXAMPLE: Other event id:7[0m
+ error 
+[0;31mE (250183) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (250183) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (250193) mqtt_client: Error transport connect[0m
+[0;32mI (250193) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (250203) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (265203) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (265343) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (265343) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (265343) mqtt_client: Error transport connect[0m
+[0;32mI (265353) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (265353) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (275363) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (275423) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (275423) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (275423) mqtt_client: Error transport connect[0m
+[0;32mI (275433) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (275433) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (285443) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (285683) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (285683) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (285683) mqtt_client: Error transport connect[0m
+[0;32mI (285693) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (285693) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (295703) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (295753) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (295753) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (295753) mqtt_client: Error transport connect[0m
+[0;32mI (295763) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (295763) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (310773) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (310823) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (310823) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (310833) mqtt_client: Error transport connect[0m
+[0;32mI (310833) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (310843) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (325843) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (325953) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (325963) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (325963) mqtt_client: Error transport connect[0m
+[0;32mI (325963) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (325973) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (340973) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (341123) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (341123) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (341123) mqtt_client: Error transport connect[0m
+[0;32mI (341133) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (341133) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (356143) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (356223) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (356223) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (356223) mqtt_client: Error transport connect[0m
+[0;32mI (356223) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (356233) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (371233) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (371283) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (371283) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (371293) mqtt_client: Error transport connect[0m
+[0;32mI (371293) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (371303) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (386303) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (386363) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (386363) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (386363) mqtt_client: Error transport connect[0m
+[0;32mI (386373) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (386373) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+[0;32mI (396383) MQTT_EXAMPLE: Other event id:7[0m
+fg task 
+[0;31mE (396443) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (396443) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (396443) mqtt_client: Error transport connect[0m
+[0;32mI (396453) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (396453) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (406463) MQTT_EXAMPLE: Other event id:7[0m
+ error 
+[0;31mE (406563) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (406563) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (406573) mqtt_client: Error transport connect[0m
+[0;32mI (406573) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (406583) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (421583) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (421673) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (421673) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (421673) mqtt_client: Error transport connect[0m
+[0;32mI (421673) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (421683) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (436683) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (436863) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (436863) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (436863) mqtt_client: Error transport connect[0m
+[0;32mI (436873) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (436873) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (451873) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (452013) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (452013) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (452013) mqtt_client: Error transport connect[0m
+[0;32mI (452023) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (452023) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (467033) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (467083) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (467083) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (467093) mqtt_client: Error transport connect[0m
+[0;32mI (467093) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (467103) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (482103) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (483163) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (483163) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (483163) mqtt_client: Error transport connect[0m
+[0;32mI (483173) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (483173) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (493183) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (493233) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (493233) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (493233) mqtt_client: Error transport connect[0m
+[0;32mI (493243) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (493243) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (503253) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (503303) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (503303) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (503303) mqtt_client: Error transport connect[0m
+[0;32mI (503313) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (503313) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+[0;32mI (513323) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (513373) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (513373) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (513373) mqtt_client: Error transport connect[0m
+[0;32mI (513383) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (513383) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (523393) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (523593) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (523593) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (523603) mqtt_client: Error transport connect[0m
+[0;32mI (523603) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (523613) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+ error 
+ error 
+fg task 
+[0;32mI (538613) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (538663) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (538663) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (538673) mqtt_client: Error transport connect[0m
+[0;32mI (538673) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (538683) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m

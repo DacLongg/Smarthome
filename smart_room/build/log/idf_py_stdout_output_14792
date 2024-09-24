@@ -1,0 +1,3389 @@
+[0;32mI (13) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a2dch (172764) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0003a304 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0003dfc8 vaddr=40080000 size=02050h (  8272) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a277ch (665468) map[0m
+[0;32mI (387) esp_image: segment 4: paddr=000e27a4 vaddr=40082050 size=15c98h ( 89240) load[0m
+[0;32mI (435) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (435) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (455) cpu_start: Application information:[0m
+[0;32mI (458) cpu_start: Project name:     smart_room[0m
+[0;32mI (463) cpu_start: App version:      1[0m
+[0;32mI (468) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (474) cpu_start: ELF file SHA256:  5af3849ec...[0m
+[0;32mI (479) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (484) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (489) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (494) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (546) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (559) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (570) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (578) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (587) main_task: Started on CPU0[0m
+[0;32mI (597) main_task: Calling app_main()[0m
+[0;32mI (597) uart: queue free spaces: 20[0m
+I (657) wifi:wifi driver task: 3ffc14ac, prio:23, stack:6656, core=0
+I (677) wifi:wifi firmware version: a9f5b59
+I (677) wifi:wifi certification version: v7.0
+I (677) wifi:config NVS flash: enabled
+I (677) wifi:config nano formating: disabled
+I (687) wifi:Init data frame dynamic rx buffer num: 32
+I (687) wifi:Init static rx mgmt buffer num: 5
+I (697) wifi:Init management short buffer num: 32
+I (697) wifi:Init dynamic tx buffer num: 32
+I (707) wifi:Init static rx buffer size: 1600
+I (707) wifi:Init static rx buffer num: 10
+I (707) wifi:Init dynamic rx buffer num: 32
+[0;32mI (717) wifi_init: rx ba win: 6[0m
+[0;32mI (717) wifi_init: tcpip mbox: 32[0m
+[0;32mI (727) wifi_init: udp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp tx win: 5760[0m
+[0;32mI (737) wifi_init: tcp rx win: 5760[0m
+[0;32mI (737) wifi_init: tcp mss: 1440[0m
+[0;32mI (747) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (747) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (757) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (847) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (847) wifi:enable tsf
+handlehandlewifi connectI (867) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (867) wifi:state: init -> auth (b0)
+handleI (867) wifi:state: auth -> init (8a0)
+I (867) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+handle[0;32mI (877) wifi station: retry to connect to the AP[0m
+[0;32mI (877) wifi station: connect to the AP fail[0m
+handle[0;32mI (3297) wifi station: retry to connect to the AP[0m
+[0;32mI (3297) wifi station: connect to the AP fail[0m
+I (3327) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (3327) wifi:state: init -> auth (b0)
+I (3327) wifi:state: auth -> assoc (0)
+I (3347) wifi:state: assoc -> run (10)
+I (3457) wifi:connected with Long Bien, aid = 8, channel 10, BW20, bssid = 3c:55:76:82:b6:50
+I (3457) wifi:security: WPA2-PSK, phy: bgn, rssi: -67
+I (3457) wifi:pm start, type: 1
+
+I (3457) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (3527) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4467) esp_netif_handlers: sta ip: 192.168.1.28, mask: 255.255.255.0, gw: 192.168.1.1[0m
+handle[0;32mI (4467) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (4467) wifi station: got ip:192.168.1.28[0m
+[0;32mI (4467) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (4477) wifi station: connected to ap SSID:Long Bien password:phuongphuong[0m
+[0;32mI (4487) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4497) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (4497) wifi:<ba-add>idx:0 (ifx:0, 3c:55:76:82:b6:50), tid:0, ssn:5, winSize:64
+[0;32mI (4507) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4517) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4527) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4537) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4547) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+uart task 
+[0;32mI (4967) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4967) MQTT_EXAMPLE: sent subscribe successful, msg_id=3770[0m
+[0;32mI (4967) MQTT_EXAMPLE: sent subscribe successful, msg_id=794[0m
+time out 
+[0;32mI (5197) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=3770[0m
+[0;32mI (5377) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=794[0m
+time out 
+time out 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.006
+gas = 0.009
+smoke = 0.023
+error2 time out  i = 0 , j = 1
+co = 0.005
+gas = 0.008
+smoke = 0.022
+error2 time out  i = 0 , j = 2
+co = 0.003
+gas = 0.006
+smoke = 0.014
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.003
+gas = 0.005
+smoke = 0.013
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+error2 time out  i = 0 , j = 4
+co = 0.003
+gas = 0.005
+smoke = 0.014
+error2 time out  i = 0 , j = 6
+co = 0.003
+gas = 0.005
+smoke = 0.012
+1 
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.008
+gas = 0.010
+smoke = 0.027
+1 
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.007
+gas = 0.010
+smoke = 0.026
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.007
+gas = 0.010
+smoke = 0.028
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.012
+gas = 0.014
+smoke = 0.040
+Temp :35.6°C 
+Humi :71.1% 
+co = 0.012
+gas = 0.015
+smoke = 0.040
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+error2 time out  i = 0 , j = 3
+co = 0.007
+gas = 0.010
+smoke = 0.028
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.008
+gas = 0.011
+smoke = 0.029
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.008
+gas = 0.010
+smoke = 0.030
+Temp :35.7°C 
+Humi :70.9% 
+co = 0.008
+gas = 0.010
+smoke = 0.028
+error2 time out  i = 0 , j = 4
+co = 0.014
+gas = 0.015
+smoke = 0.043
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.008
+gas = 0.011
+smoke = 0.033
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.009
+gas = 0.011
+smoke = 0.031
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.013
+gas = 0.016
+smoke = 0.044
+Temp :35.7°C 
+Humi :70.9% 
+co = 0.013
+gas = 0.016
+smoke = 0.043
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.014
+gas = 0.016
+smoke = 0.044
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.012
+gas = 0.016
+smoke = 0.043
+Temp :35.7°C 
+Humi :70.9% 
+[0;33mW (46797) transport_base: Poll timeout or error, errno=Success, fd=54, timeout_ms=10000[0m
+[0;31mE (46797) mqtt_client: Writing didn't complete in specified timeout: errno=0[0m
+[0;32mI (46797) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (46807) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (46807) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (46817) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (46827) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (46837) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+co = 0.016
+gas = 0.018
+smoke = 0.050
+Temp :35.7°C 
+Humi :70.9% 
+co = 0.017
+gas = 0.019
+smoke = 0.052
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.019
+gas = 0.018
+smoke = 0.055
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.017
+gas = 0.019
+smoke = 0.054
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.016
+gas = 0.017
+smoke = 0.051
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.017
+gas = 0.019
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.019
+gas = 0.020
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.018
+gas = 0.020
+smoke = 0.054
+error2 time out  i = 0 , j = 7
+co = 0.018
+gas = 0.020
+smoke = 0.057
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.017
+gas = 0.019
+smoke = 0.056
+[0;32mI (56827) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (57237) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (57237) MQTT_EXAMPLE: sent subscribe successful, msg_id=38724[0m
+[0;32mI (57237) MQTT_EXAMPLE: sent subscribe successful, msg_id=53180[0m
+[0;32mI (57497) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=38724[0m
+[0;32mI (57537) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=53180[0m
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.017
+gas = 0.019
+smoke = 0.050
+error2 time out  i = 0 , j = 5
+co = 0.017
+gas = 0.018
+smoke = 0.052
+0 
+error2 time out  i = 0 , j = 4
+co = 0.016
+gas = 0.018
+smoke = 0.051
+error2 time out  i = 0 , j = 5
+co = 0.016
+gas = 0.019
+smoke = 0.051
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.017
+gas = 0.018
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.018
+gas = 0.019
+smoke = 0.054
+Temp :35.7°C 
+Humi :70.9% 
+co = 0.015
+gas = 0.018
+smoke = 0.050
+0 
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.018
+gas = 0.019
+smoke = 0.053
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.018
+gas = 0.019
+smoke = 0.053
+1 
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.016
+gas = 0.018
+smoke = 0.053
+0 
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.016
+gas = 0.017
+smoke = 0.051
+error2 time out  i = 0 , j = 2
+co = 0.016
+gas = 0.017
+smoke = 0.050
+Temp :35.6°C 
+1 
+Humi :71.0% 
+co = 0.017
+gas = 0.018
+smoke = 0.052
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.017
+gas = 0.018
+smoke = 0.051
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.018
+gas = 0.018
+smoke = 0.055
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.017
+gas = 0.019
+smoke = 0.055
+Temp :35.6°C 
+Humi :70.9% 
+co = 0.017
+gas = 0.019
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.016
+gas = 0.018
+smoke = 0.052
+0 
+turn on 1turn on 1turn on 1error2 time out  i = 0 , j = 4
+co = 0.016
+gas = 0.020
+smoke = 0.055
+turn on 1turn on 1error2 time out  i = 0 , j = 4
+co = 0.016
+gas = 0.019
+smoke = 0.051
+1 
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.016
+gas = 0.018
+smoke = 0.052
+1 
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.018
+gas = 0.020
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.017
+gas = 0.019
+smoke = 0.049
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.017
+gas = 0.017
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.017
+gas = 0.018
+smoke = 0.050
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.016
+gas = 0.018
+smoke = 0.052
+0 
+turn on 1turn on 1Temp :35.6°C 
+Humi :71.0% 
+co = 0.015
+gas = 0.018
+smoke = 0.048
+turn on 1turn on 1turn on 1turn on 1turn on 1turn on 1error2 time out  i = 0 , j = 1
+co = 0.016
+gas = 0.017
+smoke = 0.050
+turn on 1turn on 1turn on 1turn on 1turn on 1Temp :35.7°C 
+Humi :71.0% 
+co = 0.016
+gas = 0.018
+smoke = 0.052
+turn on 1turn on 1turn on 1turn on 1turn on 1error2 time out  i = 0 , j = 0
+co = 0.016
+gas = 0.018
+smoke = 0.048
+turn on 11 
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.016
+gas = 0.018
+smoke = 0.051
+0 
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.018
+gas = 0.019
+smoke = 0.052
+1 
+0 
+Temp :35.6°C 
+Humi :71.0% 
+co = 0.017
+gas = 0.019
+smoke = 0.052
+1 
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.018
+gas = 0.019
+smoke = 0.053
+0 
+Temp :35.7°C 
+Humi :70.9% 
+1 
+co = 0.017
+gas = 0.018
+smoke = 0.050
+0 
+error2 time out  i = 0 , j = 5
+co = 0.017
+gas = 0.018
+smoke = 0.054
+1 
+error2 time out  i = 0 , j = 3
+co = 0.016
+gas = 0.018
+smoke = 0.050
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.015
+gas = 0.018
+smoke = 0.051
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.018
+gas = 0.017
+smoke = 0.052
+error2 time out  i = 0 , j = 7
+co = 0.016
+gas = 0.018
+smoke = 0.048
+Temp :35.7°C 
+Humi :70.9% 
+co = 0.016
+gas = 0.017
+smoke = 0.049
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.016
+gas = 0.017
+smoke = 0.050
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.016
+gas = 0.017
+smoke = 0.051
+error2 time out  i = 0 , j = 0
+co = 0.016
+gas = 0.018
+smoke = 0.051
+error2 time out  i = 0 , j = 6
+co = 0.016
+gas = 0.019
+smoke = 0.048
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.015
+gas = 0.017
+smoke = 0.048
+Temp :35.7°C 
+Humi :71.0% 
+co = 0.015
+gas = 0.017
+smoke = 0.048
+Temp :35.7°C 
+Humi :71.1% 
+co = 0.016
+gas = 0.017
+smoke = 0.050
+Temp :35.7°C 
+Humi :71.1% 
+co = 0.016
+gas = 0.018
+smoke = 0.049
+Temp :35.7°C 
+Humi :71.1% 
+co = 0.017
+gas = 0.017
+smoke = 0.049
+Temp :35.7°C 
+Humi :71.2% 
+co = 0.016
+gas = 0.018
+smoke = 0.053
+Temp :35.7°C 
+Humi :71.2% 
+co = 0.017
+gas = 0.017
+smoke = 0.052
+Temp :35.7°C 
+Humi :71.2% 
+co = 0.016
+gas = 0.017
+smoke = 0.050
+error2 time out  i = 0 , j = 3
+co = 0.015
+gas = 0.017
+smoke = 0.048
+error2 time out  i = 0 , j = 2
+co = 0.016
+gas = 0.018
+smoke = 0.050
+error2 time out  i = 0 , j = 3
+co = 0.017
+gas = 0.018
+smoke = 0.051
+Temp :35.6°C 
+Humi :71.3% 
+co = 0.015
+gas = 0.017
+smoke = 0.049
+error2 time out  i = 0 , j = 1
+co = 0.014
+gas = 0.016
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.3% 
+co = 0.016
+gas = 0.018
+smoke = 0.048
+error2 time out  i = 0 , j = 0
+co = 0.015
+gas = 0.018
+smoke = 0.048
+error2 time out  i = 0 , j = 5
+co = 0.015
+gas = 0.019
+smoke = 0.050
+Temp :35.7°C 
+Humi :71.3% 
+co = 0.015
+gas = 0.017
+smoke = 0.047
+Temp :35.6°C 
+Humi :71.3% 
+co = 0.017
+gas = 0.018
+smoke = 0.051
+Temp :35.7°C 
+Humi :71.3% 
+co = 0.016
+gas = 0.018
+smoke = 0.051
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.017
+gas = 0.017
+smoke = 0.051
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.015
+gas = 0.016
+smoke = 0.049
+Temp :35.7°C 
+Humi :71.3% 
+co = 0.015
+gas = 0.017
+smoke = 0.049
+Temp :35.7°C 
+Humi :71.3% 
+co = 0.015
+gas = 0.017
+smoke = 0.048
+Temp :35.7°C 
+Humi :71.3% 
+co = 0.015
+gas = 0.017
+smoke = 0.047
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.015
+gas = 0.018
+smoke = 0.048
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.015
+gas = 0.016
+smoke = 0.047
+Temp :35.7°C 
+Humi :71.3% 
+co = 0.016
+gas = 0.018
+smoke = 0.052
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.016
+gas = 0.018
+smoke = 0.050
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.015
+gas = 0.017
+smoke = 0.047
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.015
+gas = 0.018
+smoke = 0.052
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.017
+gas = 0.018
+smoke = 0.049
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.017
+smoke = 0.047
+error2 time out  i = 0 , j = 6
+co = 0.014
+gas = 0.018
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.015
+gas = 0.017
+smoke = 0.050
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.016
+gas = 0.017
+smoke = 0.047
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.017
+smoke = 0.048
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.015
+gas = 0.016
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.016
+gas = 0.017
+smoke = 0.049
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.015
+gas = 0.016
+smoke = 0.047
+error2 time out  i = 0 , j = 3
+co = 0.015
+gas = 0.016
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.016
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.016
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.015
+gas = 0.017
+smoke = 0.047
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.017
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.016
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.014
+gas = 0.016
+smoke = 0.048
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.015
+gas = 0.016
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.015
+gas = 0.017
+smoke = 0.050
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.015
+gas = 0.016
+smoke = 0.045
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.014
+gas = 0.017
+smoke = 0.048
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.015
+gas = 0.017
+smoke = 0.048
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.014
+gas = 0.017
+smoke = 0.050
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.014
+gas = 0.016
+smoke = 0.046
+error2 time out  i = 0 , j = 4
+co = 0.014
+gas = 0.016
+smoke = 0.045
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.016
+smoke = 0.045
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.016
+smoke = 0.044
+error2 time out  i = 0 , j = 4
+co = 0.014
+gas = 0.016
+smoke = 0.045
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.015
+gas = 0.016
+smoke = 0.046
+error2 time out  i = 0 , j = 5
+co = 0.014
+gas = 0.016
+smoke = 0.044
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.016
+smoke = 0.047
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.013
+gas = 0.016
+smoke = 0.044
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.014
+gas = 0.016
+smoke = 0.046
+error2 time out  i = 0 , j = 4
+co = 0.014
+gas = 0.016
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.013
+gas = 0.016
+smoke = 0.045
+Temp :35.7°C 
+Humi :71.4% 
+co = 0.015
+gas = 0.016
+smoke = 0.046
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.013
+gas = 0.014
+smoke = 0.042
+error2 time out  i = 0 , j = 3
+co = 0.014
+gas = 0.016
+smoke = 0.045
+Temp :35.6°C 
+Humi :71.5% 
+co = 0.012
+gas = 0.015
+smoke = 0.044
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.014
+gas = 0.016
+smoke = 0.045
+Temp :35.6°C 
+Humi :71.6% 
+co = 0.011
+gas = 0.010
+smoke = 0.041
+Temp :35.6°C 
+Humi :71.6% 
+co = 0.013
+gas = 0.015
+smoke = 0.041
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.010
+gas = 0.013
+smoke = 0.034
+error2 time out  i = 0 , j = 5
+co = 0.011
+gas = 0.013
+smoke = 0.036
+error2 time out  i = 0 , j = 4
+co = 0.010
+gas = 0.013
+smoke = 0.037
+error2 time out  i = 0 , j = 3
+co = 0.012
+gas = 0.014
+smoke = 0.039
+Temp :35.6°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.015
+smoke = 0.039
+error2 time out  i = 0 , j = 2
+co = 0.012
+gas = 0.014
+smoke = 0.039
+error2 time out  i = 0 , j = 3
+co = 0.011
+gas = 0.014
+smoke = 0.039
+Temp :35.6°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.014
+smoke = 0.039
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.013
+smoke = 0.038
+Temp :35.6°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.013
+smoke = 0.038
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.013
+smoke = 0.039
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.038
+error2 time out  i = 0 , j = 2
+co = 0.010
+gas = 0.014
+smoke = 0.036
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.013
+smoke = 0.038
+Temp :35.6°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.015
+smoke = 0.039
+Temp :35.6°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.014
+smoke = 0.036
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.011
+gas = 0.013
+smoke = 0.039
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.014
+smoke = 0.038
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.013
+smoke = 0.036
+error2 time out  i = 0 , j = 4
+co = 0.011
+gas = 0.014
+smoke = 0.039
+error2 time out  i = 0 , j = 4
+co = 0.011
+gas = 0.014
+smoke = 0.040
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.014
+smoke = 0.040
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+error2 time out  i = 0 , j = 6
+co = 0.011
+gas = 0.013
+smoke = 0.037
+error2 time out  i = 0 , j = 4
+co = 0.011
+gas = 0.013
+smoke = 0.038
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.014
+smoke = 0.040
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.014
+smoke = 0.039
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.014
+smoke = 0.039
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.014
+smoke = 0.039
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.011
+gas = 0.013
+smoke = 0.037
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.014
+smoke = 0.038
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.013
+smoke = 0.036
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.014
+smoke = 0.039
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.012
+gas = 0.013
+smoke = 0.037
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.012
+gas = 0.014
+smoke = 0.040
+error2 time out  i = 0 , j = 2
+co = 0.011
+gas = 0.014
+smoke = 0.038
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+error2 time out  i = 0 , j = 0
+co = 0.010
+gas = 0.013
+smoke = 0.035
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.009
+gas = 0.012
+smoke = 0.033
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.009
+gas = 0.012
+smoke = 0.030
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.012
+smoke = 0.034
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.008
+gas = 0.012
+smoke = 0.033
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.012
+smoke = 0.035
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.009
+gas = 0.012
+smoke = 0.032
+error2 time out  i = 0 , j = 3
+co = 0.009
+gas = 0.012
+smoke = 0.035
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.009
+gas = 0.013
+smoke = 0.034
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.009
+gas = 0.011
+smoke = 0.031
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.009
+gas = 0.013
+smoke = 0.034
+[0;32mI (272477) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.012
+smoke = 0.034
+[0;32mI (273257) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1turn light , 1 
+[0;32mI (273887) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:airconditionor/feature/mqtt:18/state
+DATA=0
+turn fan 0 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.008
+gas = 0.012
+smoke = 0.033
+[0;32mI (274517) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:airconditionor/feature/mqtt:18/state
+DATA=1
+turn on 0turn fan 1 
+error2 time out  i = 0 , j = 2
+co = 0.010
+gas = 0.013
+smoke = 0.033
+[0;32mI (275817) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1turn light , 1 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.008
+gas = 0.011
+smoke = 0.028
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.008
+gas = 0.011
+smoke = 0.029
+[0;32mI (279137) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.008
+gas = 0.012
+smoke = 0.030
+[0;32mI (279907) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1turn light , 1 
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.009
+gas = 0.012
+smoke = 0.032
+Temp :35.7°C 
+Humi :72.0% 
+[0;32mI (281967) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+co = 0.009
+gas = 0.012
+smoke = 0.031
+respond error 
+error2 time out  i = 0 , j = 1
+co = 0.008
+gas = 0.010
+smoke = 0.029
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.007
+gas = 0.010
+smoke = 0.026
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.008
+gas = 0.011
+smoke = 0.029
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.009
+gas = 0.012
+smoke = 0.032
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.009
+gas = 0.013
+smoke = 0.035
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.036
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.010
+gas = 0.012
+smoke = 0.035
+error2 time out  i = 0 , j = 6
+co = 0.010
+gas = 0.013
+smoke = 0.035
+error2 time out  i = 0 , j = 5
+co = 0.010
+gas = 0.012
+smoke = 0.036
+error2 time out  i = 0 , j = 5
+co = 0.010
+gas = 0.013
+smoke = 0.034
+[0;32mI (292917) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1turn light , 1 
+error2 time out  i = 0 , j = 5
+co = 0.009
+gas = 0.013
+smoke = 0.034
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+[0;32mI (297007) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:airconditionor/feature/mqtt:18/state
+DATA=0
+turn fan 0 
+error2 time out  i = 0 , j = 3
+co = 0.011
+gas = 0.014
+smoke = 0.036
+[0;32mI (297827) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1turn light , 1 
+error2 time out  i = 0 , j = 5
+co = 0.011
+gas = 0.014
+smoke = 0.038
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.012
+gas = 0.015
+smoke = 0.040
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.012
+gas = 0.014
+smoke = 0.040
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.012
+gas = 0.015
+smoke = 0.041
+[0;32mI (301547) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:airconditionor/feature/mqtt:18/state
+DATA=1
+turn on 0turn fan 1 
+error2 time out  i = 0 , j = 7
+co = 0.011
+gas = 0.015
+smoke = 0.040
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.011
+gas = 0.014
+smoke = 0.038
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.012
+gas = 0.014
+smoke = 0.038
+[0;32mI (304787) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1turn light , 1 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.038
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.012
+smoke = 0.036
+[0;32mI (307337) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+error2 time out  i = 0 , j = 5
+co = 0.011
+gas = 0.013
+smoke = 0.033
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+[0;32mI (309537) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:airconditionor/feature/mqtt:18/state
+DATA=0
+turn fan 0 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.010
+gas = 0.012
+smoke = 0.034
+[0;32mI (311857) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:airconditionor/feature/mqtt:18/state
+DATA=1
+turn on 0turn fan 1 
+error2 time out  i = 0 , j = 5
+co = 0.009
+gas = 0.012
+smoke = 0.032
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.014
+gas = 0.012
+smoke = 0.031
+[0;32mI (313697) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1turn light , 1 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.015
+gas = 0.017
+smoke = 0.051
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.016
+gas = 0.017
+smoke = 0.050
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.017
+gas = 0.018
+smoke = 0.053
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.018
+gas = 0.018
+smoke = 0.052
+error2 time out  i = 0 , j = 7
+co = 0.015
+gas = 0.017
+smoke = 0.052
+error2 time out  i = 0 , j = 1
+co = 0.018
+gas = 0.019
+smoke = 0.056
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.017
+gas = 0.020
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.017
+gas = 0.020
+smoke = 0.054
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+error2 time out  i = 0 , j = 6
+co = 0.018
+gas = 0.021
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.022
+smoke = 0.060
+error2 time out  i = 0 , j = 4
+co = 0.021
+gas = 0.021
+smoke = 0.064
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 7
+co = 0.019
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+1 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.023
+gas = 0.021
+smoke = 0.062
+0 
+error2 time out  i = 0 , j = 6
+co = 0.020
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.022
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.023
+gas = 0.022
+smoke = 0.061
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+1 
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.018
+gas = 0.019
+smoke = 0.054
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.019
+gas = 0.020
+smoke = 0.056
+0 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.019
+gas = 0.020
+smoke = 0.058
+1 
+error2 time out  i = 0 , j = 2
+co = 0.019
+gas = 0.020
+smoke = 0.060
+0 
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.018
+gas = 0.021
+smoke = 0.056
+1 
+0 
+error2 time out  i = 0 , j = 1
+co = 0.023
+gas = 0.021
+smoke = 0.062
+1 
+error2 time out  i = 0 , j = 3
+co = 0.020
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 0
+co = 0.021
+gas = 0.023
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.023
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.023
+gas = 0.022
+smoke = 0.063
+error2 time out  i = 0 , j = 5
+co = 0.021
+gas = 0.022
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.025
+gas = 0.022
+smoke = 0.067
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.024
+gas = 0.024
+smoke = 0.068
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.023
+gas = 0.023
+smoke = 0.067
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.022
+smoke = 0.065
+error2 time out  i = 0 , j = 2
+co = 0.022
+gas = 0.022
+smoke = 0.063
+error2 time out  i = 0 , j = 2
+co = 0.021
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.023
+gas = 0.022
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.023
+gas = 0.022
+smoke = 0.064
+error2 time out  i = 0 , j = 7
+co = 0.022
+gas = 0.023
+smoke = 0.070
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.023
+smoke = 0.062
+Temp :35.7°C 
+Humi :72.0% 
+co = 0.024
+gas = 0.023
+smoke = 0.066
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.021
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.023
+gas = 0.022
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.023
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.022
+gas = 0.022
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.023
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.024
+gas = 0.024
+smoke = 0.067
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.021
+smoke = 0.064
+Temp :35.7°C 
+Humi :71.9% 
+co = 0.023
+gas = 0.022
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.022
+gas = 0.023
+smoke = 0.068
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.022
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.022
+gas = 0.021
+smoke = 0.064
+error2 time out  i = 0 , j = 3
+co = 0.022
+gas = 0.023
+smoke = 0.068
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.023
+smoke = 0.064
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.022
+gas = 0.023
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.022
+gas = 0.021
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.022
+gas = 0.023
+smoke = 0.068
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.021
+gas = 0.023
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.023
+gas = 0.023
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.023
+gas = 0.023
+smoke = 0.068
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.022
+gas = 0.022
+smoke = 0.067
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.021
+gas = 0.022
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.022
+gas = 0.022
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.022
+gas = 0.022
+smoke = 0.060
+error2 time out  i = 0 , j = 4
+co = 0.022
+gas = 0.022
+smoke = 0.067
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.020
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.023
+gas = 0.023
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 4
+co = 0.021
+gas = 0.021
+smoke = 0.062
+error2 time out  i = 0 , j = 2
+co = 0.022
+gas = 0.022
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.020
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.021
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.022
+smoke = 0.068
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.022
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.022
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.022
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.022
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.023
+gas = 0.022
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.021
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.022
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 2
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 3
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.021
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.065
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.023
+gas = 0.022
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.021
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.021
+gas = 0.023
+smoke = 0.063
+error2 time out  i = 0 , j = 3
+co = 0.022
+gas = 0.022
+smoke = 0.063
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.021
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.021
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.021
+gas = 0.022
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.020
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.021
+gas = 0.023
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.022
+smoke = 0.061
+error2 time out  i = 0 , j = 3
+co = 0.020
+gas = 0.021
+smoke = 0.061
+error2 time out  i = 0 , j = 2
+co = 0.021
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.022
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.022
+gas = 0.023
+smoke = 0.061
+error2 time out  i = 0 , j = 7
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.020
+smoke = 0.060
+error2 time out  i = 0 , j = 4
+co = 0.021
+gas = 0.022
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.062
+error2 time out  i = 0 , j = 7
+co = 0.020
+gas = 0.020
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.059
+error2 time out  i = 0 , j = 3
+co = 0.019
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.019
+gas = 0.020
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.020
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.019
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.021
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.019
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.022
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.021
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.021
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.021
+gas = 0.022
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.019
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.021
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.019
+gas = 0.021
+smoke = 0.059
+error2 time out  i = 0 , j = 5
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.020
+smoke = 0.058
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.021
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 7
+co = 0.021
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.022
+gas = 0.021
+smoke = 0.062
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.020
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.021
+gas = 0.021
+smoke = 0.060
+respond error 
+error2 time out  i = 0 , j = 5
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.021
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 4
+co = 0.020
+gas = 0.021
+smoke = 0.058
+Temp :35.7°C 
+Humi :71.5% 
+co = 0.021
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.020
+smoke = 0.059
+error2 time out  i = 0 , j = 7
+co = 0.020
+gas = 0.020
+smoke = 0.059
+error2 time out  i = 0 , j = 4
+co = 0.019
+gas = 0.021
+smoke = 0.057
+error2 time out  i = 0 , j = 7
+co = 0.018
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.020
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.056
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.021
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+respond error 
+error2 time out  i = 0 , j = 2
+co = 0.018
+gas = 0.021
+smoke = 0.056
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+error2 time out  i = 0 , j = 4
+co = 0.021
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.019
+gas = 0.019
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.019
+smoke = 0.055
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.020
+smoke = 0.058
+Temp :35.7°C 
+Humi :71.6% 
+co = 0.018
+gas = 0.021
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.021
+smoke = 0.056
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.021
+smoke = 0.056
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.020
+smoke = 0.055
+error2 time out  i = 0 , j = 0
+co = 0.019
+gas = 0.020
+smoke = 0.057
+error2 time out  i = 0 , j = 5
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.021
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.021
+smoke = 0.055
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.058
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.021
+smoke = 0.054
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.056
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.019
+smoke = 0.057
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.058
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.019
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+error2 time out  i = 0 , j = 3
+co = 0.020
+gas = 0.021
+smoke = 0.059
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.055
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.058
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.061
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.055
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.056
+error2 time out  i = 0 , j = 3
+co = 0.017
+gas = 0.020
+smoke = 0.056
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.021
+smoke = 0.058
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.022
+gas = 0.021
+smoke = 0.056
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.019
+smoke = 0.056
+error2 time out  i = 0 , j = 3
+co = 0.020
+gas = 0.021
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.054
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.060
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.019
+smoke = 0.058
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.059
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.019
+smoke = 0.056
+error2 time out  i = 0 , j = 1
+co = 0.018
+gas = 0.019
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.017
+gas = 0.019
+smoke = 0.054
+respond error 
+error2 time out  i = 0 , j = 1
+co = 0.020
+gas = 0.021
+smoke = 0.059
+Temp :35.7°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+error2 time out  i = 0 , j = 2
+co = 0.018
+gas = 0.020
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.019
+smoke = 0.057
+error2 time out  i = 0 , j = 7
+co = 0.018
+gas = 0.020
+smoke = 0.056
+error2 time out  i = 0 , j = 5
+co = 0.017
+gas = 0.020
+smoke = 0.057
+error2 time out  i = 0 , j = 6
+co = 0.017
+gas = 0.020
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.020
+gas = 0.020
+smoke = 0.059
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.017
+gas = 0.020
+smoke = 0.054
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.019
+gas = 0.019
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.018
+gas = 0.020
+smoke = 0.057
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.020
+gas = 0.020
+smoke = 0.060
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.018
+gas = 0.019
+smoke = 0.055
+error2 time out  i = 0 , j = 1
+co = 0.019
+gas = 0.019
+smoke = 0.052
+Temp :35.7°C 
+Humi :71.8% 
+co = 0.018
+gas = 0.019
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.020
+gas = 0.020
+smoke = 0.057
+error2 time out  i = 0 , j = 2
+co = 0.021
+gas = 0.021
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.017
+gas = 0.019
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.018
+gas = 0.019
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.020
+gas = 0.020
+smoke = 0.060
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.018
+gas = 0.020
+smoke = 0.053
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.017
+gas = 0.020
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.017
+gas = 0.019
+smoke = 0.056
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.019
+gas = 0.021
+smoke = 0.058
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.053
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.019
+gas = 0.020
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.020
+smoke = 0.056
+error2 time out  i = 0 , j = 3
+co = 0.020
+gas = 0.019
+smoke = 0.057
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.017
+gas = 0.019
+smoke = 0.052
+error2 time out  i = 0 , j = 6
+co = 0.018
+gas = 0.019
+smoke = 0.054
+Temp :35.6°C 
+Humi :71.6% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.017
+gas = 0.019
+smoke = 0.055
+error2 time out  i = 0 , j = 7
+co = 0.019
+gas = 0.019
+smoke = 0.059
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.019
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.017
+gas = 0.019
+smoke = 0.054
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.019
+gas = 0.020
+smoke = 0.056
+error2 time out  i = 0 , j = 7
+co = 0.018
+gas = 0.019
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.018
+gas = 0.019
+smoke = 0.052
+error2 time out  i = 0 , j = 2
+co = 0.018
+gas = 0.018
+smoke = 0.054
+error2 time out  i = 0 , j = 0
+co = 0.018
+gas = 0.020
+smoke = 0.055
+error2 time out  i = 0 , j = 7
+co = 0.017
+gas = 0.019
+smoke = 0.053
+Temp :35.6°C 
+Humi :71.6% 
+co = 0.017
+gas = 0.018
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.016
+gas = 0.018
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.6% 
+co = 0.018
+gas = 0.020
+smoke = 0.053
+error2 time out  i = 0 , j = 5
+co = 0.019
+gas = 0.019
+smoke = 0.055
+Temp :35.6°C 
+Humi :71.6% 
+co = 0.017
+gas = 0.019
+smoke = 0.054
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.015
+gas = 0.018
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.6% 
+co = 0.015
+gas = 0.018
+smoke = 0.051
+error2 time out  i = 0 , j = 0
+co = 0.015
+gas = 0.017
+smoke = 0.050
+error2 time out  i = 0 , j = 7
+co = 0.016
+gas = 0.018
+smoke = 0.048
+Temp :35.5°C 
+Humi :71.7% 
+co = 0.016
+gas = 0.017
+smoke = 0.049
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.015
+gas = 0.018
+smoke = 0.049
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.016
+gas = 0.018
+smoke = 0.053
+error2 time out  i = 0 , j = 4
+co = 0.016
+gas = 0.017
+smoke = 0.048
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.017
+gas = 0.018
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.015
+gas = 0.018
+smoke = 0.048
+Temp :35.5°C 
+Humi :71.7% 
+co = 0.015
+gas = 0.017
+smoke = 0.049
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.016
+gas = 0.017
+smoke = 0.050
+error2 time out  i = 0 , j = 6
+co = 0.015
+gas = 0.018
+smoke = 0.047
+respond error 
+error2 time out  i = 0 , j = 4
+co = 0.015
+gas = 0.017
+smoke = 0.048
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.015
+gas = 0.017
+smoke = 0.047
+Temp :35.6°C 
+Humi :71.7% 
+co = 0.014
+gas = 0.016
+smoke = 0.046
+error2 time out  i = 0 , j = 6
+co = 0.015
+gas = 0.016
+smoke = 0.047
+0 
+1 
+error2 time out  i = 0 , j = 7
+co = 0.017
+gas = 0.019
+smoke = 0.051
+0 
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.018
+gas = 0.018
+smoke = 0.055
+1 
+0 
+error2 time out  i = 0 , j = 0
+co = 0.020
+gas = 0.019
+smoke = 0.059
+1 
+Temp :35.6°C 
+Humi :71.8% 
+co = 0.017
+gas = 0.019
+smoke = 0.053
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.017
+gas = 0.018
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.9% 
+co = 0.017
+gas = 0.018
+smoke = 0.054
+error2 time out  i = 0 , j = 6
+co = 0.018
+gas = 0.019
+smoke = 0.052
+Temp :35.6°C 
+Humi :71.9% 
+co = 0.018
+gas = 0.021
+smoke = 0.057
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.016
+gas = 0.019
+smoke = 0.057
+error2 time out  i = 0 , j = 3
+co = 0.020
+gas = 0.020
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.019
+gas = 0.020
+smoke = 0.054
+Temp :35.6°C 
+Humi :71.9% 
+co = 0.018
+gas = 0.019
+smoke = 0.054
+error2 time out  i = 0 , j = 5
+co = 0.020
+gas = 0.020
+smoke = 0.057
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.019
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.059
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 6
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.022
+smoke = 0.067
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 7
+co = 0.020
+gas = 0.021
+smoke = 0.060
+error2 time out  i = 0 , j = 2
+co = 0.021
+gas = 0.021
+smoke = 0.062
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.020
+smoke = 0.058
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.018
+gas = 0.020
+smoke = 0.059
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.021
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.019
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.019
+gas = 0.021
+smoke = 0.056
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.059
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.019
+gas = 0.019
+smoke = 0.056
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.018
+gas = 0.020
+smoke = 0.056
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.019
+gas = 0.020
+smoke = 0.055
+error2 time out  i = 0 , j = 3
+co = 0.018
+gas = 0.020
+smoke = 0.055
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.018
+gas = 0.020
+smoke = 0.055
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.019
+gas = 0.020
+smoke = 0.055
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.020
+smoke = 0.058
+Temp :35.5°C 
+Humi :71.9% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.019
+gas = 0.020
+smoke = 0.059
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.020
+gas = 0.020
+smoke = 0.059
+error2 time out  i = 0 , j = 6
+co = 0.020
+gas = 0.020
+smoke = 0.057
+error2 time out  i = 0 , j = 4
+co = 0.020
+gas = 0.020
+smoke = 0.057
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.018
+gas = 0.020
+smoke = 0.055
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.057
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.019
+gas = 0.020
+smoke = 0.059
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.020
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.019
+gas = 0.021
+smoke = 0.060
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.018
+gas = 0.020
+smoke = 0.057
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.018
+gas = 0.021
+smoke = 0.056
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.019
+gas = 0.019
+smoke = 0.056
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.018
+gas = 0.020
+smoke = 0.054
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.019
+smoke = 0.054
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.020
+smoke = 0.055
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.020
+smoke = 0.057
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.020
+smoke = 0.059
+error2 time out  i = 0 , j = 0
+co = 0.018
+gas = 0.020
+smoke = 0.055
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.058
+error2 time out  i = 0 , j = 7
+co = 0.017
+gas = 0.021
+smoke = 0.059
+error2 time out  i = 0 , j = 7
+co = 0.018
+gas = 0.020
+smoke = 0.056
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.019
+gas = 0.020
+smoke = 0.056
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.020
+smoke = 0.054
+error2 time out  i = 0 , j = 6
+co = 0.016
+gas = 0.018
+smoke = 0.052
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.055
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.017
+gas = 0.018
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.019
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.018
+smoke = 0.056
+error2 time out  i = 0 , j = 2
+co = 0.018
+gas = 0.020
+smoke = 0.057
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.019
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.018
+smoke = 0.052
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.018
+smoke = 0.056
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.018
+gas = 0.018
+smoke = 0.055
+Temp :35.5°C 
+Humi :72.0% 
+co = 0.017
+gas = 0.018
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.019
+smoke = 0.053
+error2 time out  i = 0 , j = 4
+co = 0.020
+gas = 0.020
+smoke = 0.057
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.2% 
+co = 0.018
+gas = 0.019
+smoke = 0.059
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.052
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.019
+gas = 0.020
+smoke = 0.056
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.019
+smoke = 0.056
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.019
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.019
+gas = 0.020
+smoke = 0.054
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.020
+smoke = 0.057
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.020
+smoke = 0.057
+Temp :35.5°C 
+Humi :72.2% 
+co = 0.017
+gas = 0.019
+smoke = 0.055
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.018
+gas = 0.020
+smoke = 0.055
+Temp :35.5°C 
+Humi :72.2% 
+co = 0.017
+gas = 0.018
+smoke = 0.053
+error2 time out  i = 0 , j = 1
+co = 0.018
+gas = 0.019
+smoke = 0.056
+Temp :35.5°C 
+Humi :72.2% 
+co = 0.017
+gas = 0.019
+smoke = 0.053
+error2 time out  i = 0 , j = 5
+co = 0.019
+gas = 0.018
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.2% 
+co = 0.017
+gas = 0.018
+smoke = 0.052
+error2 time out  i = 0 , j = 3
+co = 0.016
+gas = 0.018
+smoke = 0.052
+Temp :35.5°C 
+Humi :72.2% 
+co = 0.016
+gas = 0.018
+smoke = 0.053
+error2 time out  i = 0 , j = 4
+co = 0.018
+gas = 0.019
+smoke = 0.056
+error2 time out  i = 0 , j = 4
+co = 0.017
+gas = 0.018
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.1% 
+co = 0.017
+gas = 0.018
+smoke = 0.054
+Temp :35.5°C 
+Humi :72.2% 
+co = 0.018
+gas = 0.019
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.2% 
+co = 0.016
+gas = 0.018
+smoke = 0.050
+Temp :35.5°C 
+Humi :72.2% 
+co = 0.017
+gas = 0.019
+smoke = 0.053
+Temp :35.5°C 
+Humi :72.3% 
+co = 0.017
+gas = 0.019
+smoke = 0.049
+Temp :35.5°C 
+Humi :72.3% 
+co = 0.016
+gas = 0.017
+smoke = 0.050
+error2 time out  i = 0 , j = 1
+co = 0.015
+gas = 0.018
+smoke = 0.049
+error2 time out  i = 0 , j = 5
+co = 0.017
+gas = 0.018
+smoke = 0.049
+Temp :35.4°C 
+Humi :72.3% 
+co = 0.015
+gas = 0.018
+smoke = 0.049
+error2 time out  i = 0 , j = 7
+co = 0.015
+gas = 0.017
+smoke = 0.051
+Temp :35.5°C 
+Humi :72.4% 
+co = 0.015
+gas = 0.017
+smoke = 0.047
+error2 time out  i = 0 , j = 0
+co = 0.015
+gas = 0.016
+smoke = 0.047
+Temp :35.4°C 
+Humi :72.3% 
+co = 0.015
+gas = 0.017
+smoke = 0.048
+error2 time out  i = 0 , j = 1
+co = 0.014
+gas = 0.016
+smoke = 0.045
+Temp :35.4°C 
+Humi :72.3% 
+co = 0.016
+gas = 0.017
+smoke = 0.048
+error2 time out  i = 0 , j = 2
+co = 0.014
+gas = 0.017
+smoke = 0.046
+error2 time out  i = 0 , j = 5
+co = 0.014
+gas = 0.017
+smoke = 0.047
+error2 time out  i = 0 , j = 7
+co = 0.016
+gas = 0.018
+smoke = 0.048
+Temp :35.5°C 
+Humi :72.4% 
+co = 0.014
+gas = 0.016
+smoke = 0.045
+Temp :35.5°C 
+Humi :72.4% 
+co = 0.017
+gas = 0.019
+smoke = 0.052
+Temp :35.5°C 
+Humi :72.3% 
+co = 0.017
+gas = 0.018
+smoke = 0.051

@@ -1,0 +1,73 @@
+[1/5] cmd.exe /C "cd /D D:\App\ESP32\smart_door_lock\build\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/App/ESP32/smart_door_lock/build/partition_table/partition-table.bin D:/App/ESP32/smart_door_lock/build/smart_door_lock.bin"
+smart_door_lock.bin binary size 0xe5b00 bytes. Smallest app partition is 0x100000 bytes. 0x1a500 bytes (10%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_door_lock\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_door_lock/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D D:\App\ESP32\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && D:\App\ESP32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=D:/App/ESP32/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/App/ESP32/smart_door_lock/build -P D:/Apesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 smart_door_lock.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: e8:6b:ea:d3:6d:34
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f5fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16363...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16363 compressed) at 0x00001000 in 0.7 seconds (effective 289.2 kbit/s)...
+Hash of data verified.
+Compressed 940800 bytes to 585235...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e19c... (5 %)
+Writing at 0x00027f93... (8 %)
+Writing at 0x0002cdeb... (11 %)
+Writing at 0x00034b97... (13 %)
+Writing at 0x00040268... (16 %)
+Writing at 0x00045ca8... (19 %)
+Writing at 0x0004b841... (22 %)
+Writing at 0x00051a2d... (25 %)
+Writing at 0x00057855... (27 %)
+Writing at 0x0005d472... (30 %)
+Writing at 0x0006325c... (33 %)
+Writing at 0x00069a11... (36 %)
+Writing at 0x0006f5d9... (38 %)
+Writing at 0x000752bf... (41 %)
+Writing at 0x0007a9f7... (44 %)
+Writing at 0x0007fd1c... (47 %)
+Writing at 0x00085311... (50 %)
+Writing at 0x0008a4e3... (52 %)
+Writing at 0x0008fc04... (55 %)
+Writing at 0x000952b0... (58 %)
+Writing at 0x0009af0e... (61 %)
+Writing at 0x000a0b66... (63 %)
+Writing at 0x000a659c... (66 %)
+Writing at 0x000ac18c... (69 %)
+Writing at 0x000b1e6a... (72 %)
+Writing at 0x000b7709... (75 %)
+Writing at 0x000bd3bf... (77 %)
+Writing at 0x000c2ea7... (80 %)
+Writing at 0x000c883e... (83 %)
+Writing at 0x000d2927... (86 %)
+Writing at 0x000da79c... (88 %)
+Writing at 0x000e04a9... (91 %)
+Writing at 0x000e5e2c... (94 %)
+Writing at 0x000ec191... (97 %)
+Writing at 0x000f1a5a... (100 %)
+Wrote 940800 bytes (585235 compressed) at 0x00010000 in 13.6 seconds (effective 555.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 481.7 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+p/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"

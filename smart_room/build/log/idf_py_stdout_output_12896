@@ -1,0 +1,1623 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29c04h (171012) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=00039c2c vaddr=3ffb0000 size=03c8ch ( 15500) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003d8c0 vaddr=40080000 size=02758h ( 10072) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9fce0h (654560) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000dfd08 vaddr=40082758 size=15570h ( 87408) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) cpu_start: Application information:[0m
+[0;32mI (472) cpu_start: Project name:     smart_room[0m
+[0;32mI (477) cpu_start: App version:      1[0m
+[0;32mI (481) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (487) cpu_start: ELF file SHA256:  c55abb0e2...[0m
+[0;32mI (493) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (498) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (503) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (508) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (513) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (520) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (526) heap_init: At 3FFB83E0 len 00027C20 (159 KiB): DRAM[0m
+[0;32mI (532) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (538) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (545) heap_init: At 40097CC8 len 00008338 (32 KiB): IRAM[0m
+[0;32mI (552) spi_flash: detected chip: generic[0m
+[0;32mI (556) spi_flash: flash io: dio[0m
+[0;33mW (559) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (573) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (583) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (592) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (601) main_task: Started on CPU0[0m
+[0;32mI (611) main_task: Calling app_main()[0m
+I (671) wifi:wifi driver task: 3ffc04c8, prio:23, stack:6656, core=0
+I (691) wifi:wifi firmware version: a9f5b59
+I (691) wifi:wifi certification version: v7.0
+I (691) wifi:config NVS flash: enabled
+I (691) wifi:config nano formating: disabled
+I (701) wifi:Init data frame dynamic rx buffer num: 32
+I (701) wifi:Init static rx mgmt buffer num: 5
+I (711) wifi:Init management short buffer num: 32
+I (711) wifi:Init dynamic tx buffer num: 32
+I (721) wifi:Init static rx buffer size: 1600
+I (721) wifi:Init static rx buffer num: 10
+I (721) wifi:Init dynamic rx buffer num: 32
+[0;32mI (731) wifi_init: rx ba win: 6[0m
+[0;32mI (731) wifi_init: tcpip mbox: 32[0m
+[0;32mI (741) wifi_init: udp mbox: 6[0m
+[0;32mI (741) wifi_init: tcp mbox: 6[0m
+[0;32mI (741) wifi_init: tcp tx win: 5760[0m
+[0;32mI (751) wifi_init: tcp rx win: 5760[0m
+[0;32mI (751) wifi_init: tcp mss: 1440[0m
+[0;32mI (751) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (761) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (771) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (861) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (861) wifi:enable tsf
+handlehandlewifi connectI (871) wifi:new:<10,2>, old:<1,0>, ap:<255,255>, sta:<10,2>, prof:1
+I (881) wifi:state: init -> auth (b0)
+handleI (881) wifi:state: auth -> assoc (0)
+I (891) wifi:state: assoc -> run (10)
+W (991) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (991) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (1001) wifi:connected with be Moon, aid = 6, channel 10, 40D, bssid = b0:4e:26:bf:7b:86
+I (1001) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (1011) wifi:pm start, type: 1
+
+I (1011) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (1031) wifi:<ba-add>idx:0 (ifx:0, b0:4e:26:bf:7b:86), tid:0, ssn:2, winSize:64
+I (1071) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (2521) esp_netif_handlers: sta ip: 192.168.0.109, mask: 255.255.255.0, gw: 192.168.0.1[0m
+handle[0;32mI (2521) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (2521) wifi station: got ip:192.168.0.109[0m
+[0;32mI (2521) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (2531) wifi station: connected to ap SSID:be Moon password:yeubemoon[0m
+[0;32mI (2641) uart: queue free spaces: 20[0m
+uart task 
+mqtt task 
+[0;31mE (2821) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (2821) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (2821) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (2831) mqtt_client: MQTT connect failed[0m
+[0;32mI (2841) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1521 
+adc2 value 0 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1529 
+adc2 value 0 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1520 
+adc2 value 0 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1504 
+adc2 value 0 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1509 
+adc2 value 342 
+[0;32mI (17841) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (18111) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (18111) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (18111) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (18121) mqtt_client: MQTT connect failed[0m
+[0;32mI (18121) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1506 
+adc2 value 33 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1514 
+adc2 value 0 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1494 
+adc2 value 0 
+[0;32mI (28131) MQTT_EXAMPLE: Other event id:7[0m
+respond timeout 
+[0;31mE (28471) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (28471) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (28471) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (28481) mqtt_client: MQTT connect failed[0m
+[0;32mI (28491) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+error2 time out  i = 0 , j = 0
+adc2 value 1467 
+adc2 value 0 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1467 
+adc2 value 2839 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1471 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1459 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1459 
+adc2 value 0 
+[0;32mI (43491) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (43831) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (43831) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (43831) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (43841) mqtt_client: MQTT connect failed[0m
+[0;32mI (43851) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1489 
+adc2 value 1356 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1499 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1504 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1510 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1493 
+adc2 value 4095 
+[0;32mI (58851) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (59191) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (59191) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (59191) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (59201) mqtt_client: MQTT connect failed[0m
+[0;32mI (59211) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1502 
+adc2 value 2769 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1488 
+adc2 value 1859 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1492 
+adc2 value 2545 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1488 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1488 
+adc2 value 4095 
+[0;32mI (74211) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (74831) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (74831) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (74831) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (74841) mqtt_client: MQTT connect failed[0m
+[0;32mI (74851) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1484 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1488 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1490 
+adc2 value 3927 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1485 
+adc2 value 3621 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1499 
+adc2 value 3168 
+[0;32mI (89851) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (90171) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (90171) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (90171) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (90181) mqtt_client: MQTT connect failed[0m
+[0;32mI (90191) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1474 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 336 
+adc2 value 1823 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 105 
+adc2 value 1431 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1424 
+adc2 value 4095 
+[0;32mI (105191) MQTT_EXAMPLE: Other event id:7[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1438 
+adc2 value 4095 
+[0;31mE (105451) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (105451) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (105451) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (105461) mqtt_client: MQTT connect failed[0m
+[0;32mI (105471) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1324 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1439 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1451 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1433 
+adc2 value 4095 
+[0;32mI (120471) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (120831) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (120831) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (120831) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (120841) mqtt_client: MQTT connect failed[0m
+[0;32mI (120851) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1445 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1454 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1461 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1457 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1456 
+adc2 value 4095 
+[0;32mI (135851) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (136251) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (136251) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (136251) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (136261) mqtt_client: MQTT connect failed[0m
+[0;32mI (136271) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1479 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1459 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1456 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1456 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1453 
+adc2 value 4095 
+[0;32mI (151271) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (151551) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (151551) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (151551) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (151561) mqtt_client: MQTT connect failed[0m
+[0;32mI (151561) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1447 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1439 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1444 
+adc2 value 4095 
+[0;32mI (161571) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (161891) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (161891) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (161901) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (161901) mqtt_client: MQTT connect failed[0m
+[0;32mI (161911) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1447 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1442 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1533 
+adc2 value 4095 
+[0;32mI (171921) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (172221) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (172221) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (172221) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (172231) mqtt_client: MQTT connect failed[0m
+[0;32mI (172241) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2069 
+adc2 value 3179 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2384 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2387 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2559 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2432 
+adc2 value 4095 
+[0;32mI (187241) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (187551) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (187551) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (187551) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (187561) mqtt_client: MQTT connect failed[0m
+[0;32mI (187571) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2608 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2666 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2698 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2368 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2161 
+adc2 value 3157 
+[0;32mI (202571) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (202911) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (202911) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (202921) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (202921) mqtt_client: MQTT connect failed[0m
+[0;32mI (202931) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 2062 
+adc2 value 3215 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1997 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1916 
+adc2 value 3106 
+[0;32mI (212941) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (213251) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (213251) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (213261) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (213261) mqtt_client: MQTT connect failed[0m
+[0;32mI (213271) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1852 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1828 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1808 
+adc2 value 3511 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1776 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1755 
+adc2 value 4095 
+[0;32mI (228271) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (228531) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (228531) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (228531) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (228541) mqtt_client: MQTT connect failed[0m
+[0;32mI (228551) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1779 
+adc2 value 2194 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1777 
+adc2 value 3582 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1746 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1759 
+adc2 value 1554 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1744 
+adc2 value 3831 
+[0;32mI (243551) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (243871) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (243871) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (243871) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (243881) mqtt_client: MQTT connect failed[0m
+[0;32mI (243891) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1741 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1727 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1714 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1684 
+adc2 value 4095 
+respond timeout 
+[0;32mI (258891) MQTT_EXAMPLE: Other event id:7[0m
+error2 time out  i = 0 , j = 0
+adc2 value 1678 
+adc2 value 4095 
+[0;31mE (259151) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (259151) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (259151) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (259161) mqtt_client: MQTT connect failed[0m
+[0;32mI (259171) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1680 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1668 
+adc2 value 889 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1648 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1653 
+adc2 value 111 
+[0;32mI (274171) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (274691) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (274691) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (274701) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (274701) mqtt_client: MQTT connect failed[0m
+[0;32mI (274711) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1639 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1637 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1626 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1614 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1596 
+adc2 value 823 
+[0;32mI (289711) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (290081) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (290081) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (290091) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (290091) mqtt_client: MQTT connect failed[0m
+[0;32mI (290101) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1592 
+adc2 value 1622 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1578 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1570 
+adc2 value 1597 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1582 
+adc2 value 2777 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1566 
+adc2 value 3365 
+[0;32mI (305101) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (305441) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (305441) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (305441) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (305451) mqtt_client: MQTT connect failed[0m
+[0;32mI (305461) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1570 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1562 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1534 
+adc2 value 3598 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1535 
+adc2 value 2309 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1523 
+adc2 value 3126 
+[0;32mI (320461) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (320691) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (320701) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (320701) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (320711) mqtt_client: MQTT connect failed[0m
+[0;32mI (320711) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1520 
+adc2 value 1469 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1522 
+adc2 value 481 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1523 
+adc2 value 4095 
+[0;32mI (330721) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (331011) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (331011) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (331021) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (331021) mqtt_client: MQTT connect failed[0m
+[0;32mI (331031) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1494 
+adc2 value 2918 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1495 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1488 
+adc2 value 4095 
+[0;32mI (341041) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (341461) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (341461) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (341471) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (341471) mqtt_client: MQTT connect failed[0m
+[0;32mI (341481) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1490 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1487 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1488 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1479 
+adc2 value 3451 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1505 
+adc2 value 1687 
+[0;32mI (356481) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (356781) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (356781) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (356781) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (356791) mqtt_client: MQTT connect failed[0m
+[0;32mI (356801) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1506 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1504 
+adc2 value 3056 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1498 
+adc2 value 3248 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1504 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1488 
+adc2 value 2863 
+[0;32mI (371801) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (372181) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (372181) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (372191) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (372191) mqtt_client: MQTT connect failed[0m
+[0;32mI (372201) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1498 
+adc2 value 3366 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1475 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1485 
+adc2 value 2550 
+[0;32mI (382211) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (382441) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (382441) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (382451) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (382451) mqtt_client: MQTT connect failed[0m
+[0;32mI (382461) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1478 
+adc2 value 3968 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1472 
+adc2 value 3876 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1477 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1462 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1459 
+adc2 value 4095 
+[0;32mI (397461) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (397781) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (397781) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (397781) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (397791) mqtt_client: MQTT connect failed[0m
+[0;32mI (397801) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1335 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1376 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1335 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1319 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1301 
+adc2 value 4095 
+[0;32mI (412801) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (413141) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (413141) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (413141) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (413151) mqtt_client: MQTT connect failed[0m
+[0;32mI (413161) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1308 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1315 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1319 
+adc2 value 2490 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1309 
+adc2 value 4095 
+[0;32mI (428161) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (428441) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (428441) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (428441) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (428451) mqtt_client: MQTT connect failed[0m
+[0;32mI (428461) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1319 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1333 
+adc2 value 2387 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1302 
+adc2 value 3892 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1280 
+adc2 value 2369 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1263 
+adc2 value 4095 
+[0;32mI (443461) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (443781) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (443781) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (443781) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (443791) mqtt_client: MQTT connect failed[0m
+[0;32mI (443801) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1267 
+adc2 value 2705 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1265 
+adc2 value 3805 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1274 
+adc2 value 3199 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1320 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1324 
+adc2 value 4095 
+[0;32mI (458801) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (459121) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (459121) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (459121) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (459131) mqtt_client: MQTT connect failed[0m
+[0;32mI (459141) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1341 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1339 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1361 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1350 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1362 
+adc2 value 4095 
+[0;32mI (474141) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (474481) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (474481) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (474481) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (474491) mqtt_client: MQTT connect failed[0m
+[0;32mI (474491) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1366 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1392 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1378 
+adc2 value 4095 
+[0;32mI (484501) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (484821) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (484821) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (484821) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (484831) mqtt_client: MQTT connect failed[0m
+[0;32mI (484841) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1392 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1378 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1387 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1373 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1371 
+adc2 value 4095 
+[0;32mI (499841) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (500481) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (500491) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (500491) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (500501) mqtt_client: MQTT connect failed[0m
+[0;32mI (500501) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1375 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1367 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1360 
+adc2 value 4095 
+[0;32mI (510511) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (510831) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (510831) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (510831) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (510841) mqtt_client: MQTT connect failed[0m
+[0;32mI (510851) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1368 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1360 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1362 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1353 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1360 
+adc2 value 4095 
+[0;32mI (525851) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (526111) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (526111) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (526111) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (526121) mqtt_client: MQTT connect failed[0m
+[0;32mI (526131) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1360 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1356 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1359 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1341 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1349 
+adc2 value 4095 
+[0;32mI (541131) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (541751) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (541751) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (541751) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (541761) mqtt_client: MQTT connect failed[0m
+[0;32mI (541771) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1325 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1327 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1328 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1360 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1327 
+adc2 value 4095 
+[0;32mI (556771) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (557041) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (557041) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (557041) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (557051) mqtt_client: MQTT connect failed[0m
+[0;32mI (557061) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1328 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1328 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1317 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1314 
+adc2 value 4095 
+[0;32mI (572061) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (572471) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (572471) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (572481) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (572481) mqtt_client: MQTT connect failed[0m
+[0;32mI (572491) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1261 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1206 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1198 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1174 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1171 
+adc2 value 4095 
+[0;32mI (587491) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (587851) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (587851) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (587851) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (587861) mqtt_client: MQTT connect failed[0m
+[0;32mI (587871) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1168 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1157 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1162 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1154 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1163 
+adc2 value 4095 
+[0;32mI (602871) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (603121) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (603121) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (603121) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (603131) mqtt_client: MQTT connect failed[0m
+[0;32mI (603141) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1154 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1163 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1156 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1155 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1197 
+adc2 value 4095 
+[0;32mI (618141) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (618451) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (618451) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (618451) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (618461) mqtt_client: MQTT connect failed[0m
+[0;32mI (618471) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1210 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1205 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1216 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1212 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1219 
+adc2 value 4095 
+[0;32mI (633471) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (633731) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (633731) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (633741) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (633741) mqtt_client: MQTT connect failed[0m
+[0;32mI (633751) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1216 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1232 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1259 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1211 
+adc2 value 4095 
+[0;32mI (648751) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (649071) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (649071) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (649071) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (649081) mqtt_client: MQTT connect failed[0m
+[0;32mI (649091) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1200 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1209 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1143 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1182 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1175 
+adc2 value 4095 
+[0;32mI (664091) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (664351) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (664351) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (664351) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (664361) mqtt_client: MQTT connect failed[0m
+[0;32mI (664371) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1173 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1170 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1181 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1183 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1216 
+adc2 value 4095 
+[0;32mI (679371) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (679691) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (679691) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (679691) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (679701) mqtt_client: MQTT connect failed[0m
+[0;32mI (679701) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1250 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1261 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1280 
+adc2 value 4095 
+[0;32mI (689711) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (690031) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (690031) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (690031) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (690041) mqtt_client: MQTT connect failed[0m
+[0;32mI (690051) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1270 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1281 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1267 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1266 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1266 
+adc2 value 4095 
+[0;32mI (705051) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (705311) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (705311) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (705321) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (705321) mqtt_client: MQTT connect failed[0m
+[0;32mI (705331) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1264 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1269 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1268 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1264 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1264 
+adc2 value 4095 
+[0;32mI (720331) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (720651) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (720651) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (720651) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (720661) mqtt_client: MQTT connect failed[0m
+[0;32mI (720671) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1264 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1262 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1256 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1259 
+adc2 value 4095 
+[0;32mI (735671) MQTT_EXAMPLE: Other event id:7[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1253 
+adc2 value 4095 
+[0;31mE (735951) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (735951) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (735951) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (735961) mqtt_client: MQTT connect failed[0m
+[0;32mI (735961) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1251 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1259 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1246 
+adc2 value 4095 
+[0;32mI (745971) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (746351) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (746351) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (746351) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (746361) mqtt_client: MQTT connect failed[0m
+[0;32mI (746371) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1245 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1250 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1243 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1240 
+adc2 value 4095 
+respond timeout 
+[0;32mI (761371) MQTT_EXAMPLE: Other event id:7[0m
+error2 time out  i = 0 , j = 0
+adc2 value 1231 
+adc2 value 4095 
+[0;31mE (761651) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (761651) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (761651) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (761661) mqtt_client: MQTT connect failed[0m
+[0;32mI (761661) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1213 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1200 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1233 
+adc2 value 4095 
+[0;32mI (771671) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (772151) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (772151) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (772161) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (772161) mqtt_client: MQTT connect failed[0m
+[0;32mI (772171) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1216 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1216 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1222 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1217 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1229 
+adc2 value 4095 
+[0;32mI (787171) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (787451) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (787451) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (787451) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (787461) mqtt_client: MQTT connect failed[0m
+[0;32mI (787471) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1232 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1227 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1221 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1229 
+adc2 value 4095 
+[0;32mI (802471) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (802771) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (802771) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (802781) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (802781) mqtt_client: MQTT connect failed[0m
+[0;32mI (802791) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1235 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1231 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1227 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1231 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1211 
+adc2 value 4095 
+[0;32mI (817791) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (818071) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (818081) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (818081) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (818091) mqtt_client: MQTT connect failed[0m
+[0;32mI (818091) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1215 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1215 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1224 
+adc2 value 4095 
+[0;32mI (828101) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (828391) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (828391) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (828401) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (828401) mqtt_client: MQTT connect failed[0m
+[0;32mI (828411) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1202 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1208 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1209 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1218 
+adc2 value 4095 
+[0;32mI (838421) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (839711) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (839711) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (839711) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (839721) mqtt_client: MQTT connect failed[0m
+[0;32mI (839731) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1208 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1205 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1214 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1209 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1201 
+adc2 value 4095 
+[0;32mI (854731) MQTT_EXAMPLE: Other event id:7[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1200 
+adc2 value 4095 
+[0;31mE (859511) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (859511) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (859511) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (859521) mqtt_client: MQTT connect failed[0m
+[0;32mI (859531) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1198 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1200 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1191 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1182 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1175 
+adc2 value 4095 
+[0;32mI (874531) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (875311) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (875311) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (875311) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (875321) mqtt_client: MQTT connect failed[0m
+[0;32mI (875321) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1191 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1190 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1196 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1182 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1179 
+adc2 value 4095 
+[0;32mI (890331) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (890671) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (890671) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (890671) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (890681) mqtt_client: MQTT connect failed[0m
+[0;32mI (890681) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1183 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1177 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1175 
+adc2 value 4095 
+[0;32mI (900691) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (900991) mqtt_client: mqtt_message_receive: received a message with an invalid header=0x53[0m
+[0;32mI (900991) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (900991) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (901001) mqtt_client: MQTT connect failed[0m
+[0;32mI (901001) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1183 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1168 
+adc2 value 4095 
+respond timeout 
+error2 time out  i = 0 , j = 0
+adc2 value 1167 
+adc2 value 4095 

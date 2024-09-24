@@ -1,0 +1,91 @@
+[1/14] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_door_lock\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_door_lock/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/12] Building C object esp-idf/lcd/CMakeFiles/__idf_lcd.dir/lcd.c.obj
+D:/App/ESP32/smart_door_lock/user/device/lcd/lcd.c: In function 'LCD_task':
+D:/App/ESP32/smart_door_lock/user/device/lcd/lcd.c:95:21: warning: variable 'waitEndEvent' set but not used [-Wunused-but-set-variable]
+   95 |         EventBits_t waitEndEvent;
+      |                     ^~~~~~~~~~~~
+[3/12] Building C object esp-idf/password/CMakeFiles/__idf_password.dir/password.c.obj
+[4/12] Linking C static library esp-idf\lcd\liblcd.a
+[5/12] Linking C static library esp-idf\password\libpassword.a
+[6/12] Building C object esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi.c.obj
+[7/12] Linking C static library esp-idf\wifi\libwifi.a
+[8/12] Generating ld/sections.ld
+[9/12] Linking CXX executable smart_door_lock.elf
+[10/12] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/App/ESP32/smart_door_lock/build/smart_door_lock.bin
+[11/12] cmd.exe /C "cd /D D:\App\ESP32\smart_door_lock\build\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/App/ESP32/smart_door_lock/build/partition_table/partition-table.bin D:/App/ESP32/smart_door_lock/build/smart_door_lock.bin"
+smart_door_lock.bin binary size 0xe6010 bytes. Smallest app partition is 0x100000 bytes. 0x19ff0 bytes (10%) free.
+[11/12] cmd.exe /C "cd /D D:\App\ESP32\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && D:\App\ESP32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=D:/App/ESP32/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reseesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 smart_door_lock.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 30:c9:22:f2:62:f8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16363...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16363 compressed) at 0x00001000 in 0.8 seconds (effective 283.9 kbit/s)...
+Hash of data verified.
+Compressed 942096 bytes to 586047...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e217... (5 %)
+Writing at 0x000280be... (8 %)
+Writing at 0x0002cf19... (11 %)
+Writing at 0x00034b79... (13 %)
+Writing at 0x00040330... (16 %)
+Writing at 0x00045d61... (19 %)
+Writing at 0x0004b94f... (22 %)
+Writing at 0x00051af8... (25 %)
+Writing at 0x000578ce... (27 %)
+Writing at 0x0005d534... (30 %)
+Writing at 0x00063274... (33 %)
+Writing at 0x00069a96... (36 %)
+Writing at 0x0006f61d... (38 %)
+Writing at 0x0007536c... (41 %)
+Writing at 0x0007aab9... (44 %)
+Writing at 0x0007fde7... (47 %)
+Writing at 0x00085396... (50 %)
+Writing at 0x0008a5c2... (52 %)
+Writing at 0x0008fc9b... (55 %)
+Writing at 0x0009538e... (58 %)
+Writing at 0x0009af3c... (61 %)
+Writing at 0x000a0b63... (63 %)
+Writing at 0x000a6625... (66 %)
+Writing at 0x000ac1f2... (69 %)
+Writing at 0x000b1ed3... (72 %)
+Writing at 0x000b7703... (75 %)
+Writing at 0x000bd3b0... (77 %)
+Writing at 0x000c2ee7... (80 %)
+Writing at 0x000c88ee... (83 %)
+Writing at 0x000d297b... (86 %)
+Writing at 0x000da895... (88 %)
+Writing at 0x000e051d... (91 %)
+Writing at 0x000e5ee3... (94 %)
+Writing at 0x000ec11a... (97 %)
+Writing at 0x000f1b22... (100 %)
+Wrote 942096 bytes (586047 compressed) at 0x00010000 in 13.8 seconds (effective 547.1 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 460.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+t;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/App/ESP32/smart_door_lock/build -P D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"

@@ -1,0 +1,355 @@
+[0;32mI (13) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a7fch ( 43004) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001a824 vaddr=3ffb0000 size=02264h (  8804) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001ca90 vaddr=40080000 size=03588h ( 13704) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15cd4h ( 89300) map[0m
+[0;32mI (146) esp_image: segment 4: paddr=00035cfc vaddr=40083588 size=09194h ( 37268) load[0m
+[0;32mI (167) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (167) boot: Disabling RNG early entropy source...[0m
+[0;32mI (178) cpu_start: Multicore app[0m
+[0;32mI (187) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) cpu_start: Application information:[0m
+[0;32mI (190) cpu_start: Project name:     smart_room[0m
+[0;32mI (195) cpu_start: App version:      1[0m
+[0;32mI (200) cpu_start: Compile time:     May  8 2024 10:36:30[0m
+[0;32mI (206) cpu_start: ELF file SHA256:  547a4e7c4...[0m
+[0;32mI (211) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (217) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (221) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (226) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (231) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (238) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (244) heap_init: At 3FFB2B58 len 0002D4A8 (181 KiB): DRAM[0m
+[0;32mI (250) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (257) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (263) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (271) spi_flash: detected chip: generic[0m
+[0;32mI (274) spi_flash: flash io: dio[0m
+[0;33mW (278) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (291) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (300) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (309) main_task: Started on CPU0[0m
+[0;32mI (319) main_task: Calling app_main()[0m
+[0;32mI (319) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 88 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 89 
+DHT22_value temp = 30 
+DHT22_value humi = 90 
+DHT22_value temp = 30 
+DHT22_value humi = 91 
+DHT22_value temp = 30 
+DHT22_value humi = 92 
+DHT22_value temp = 31 
+DHT22_value humi = 92 
+DHT22_value temp = 31 
+DHT22_value humi = 93 
+DHT22_value temp = 31 
+DHT22_value humi = 93 
+DHT22_value temp = 31 
+DHT22_value humi = 93 
+DHT22_value temp = 31 
+DHT22_value humi = 93 
+DHT22_value temp = 31 
+DHT22_value humi = 94 
+DHT22_value temp = 31 
+DHT22_value humi = 94 
+DHT22_value temp = 31 
+DHT22_value humi = 94 
+DHT22_value temp = 31 
+DHT22_value humi = 94 
+DHT22_value temp = 32 
+DHT22_value humi = 94 
+DHT22_value temp = 32 
+DHT22_value humi = 94 
+DHT22_value temp = 32 
+DHT22_value humi = 94 
+DHT22_value temp = 32 
+DHT22_value humi = 93 
+DHT22_value temp = 32 
+DHT22_value humi = 93 
+DHT22_value temp = 32 
+DHT22_value humi = 92 
+DHT22_value temp = 32 
+DHT22_value humi = 92 

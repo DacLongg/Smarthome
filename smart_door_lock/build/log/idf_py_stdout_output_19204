@@ -1,0 +1,332 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Apr 30 2024 09:37:04[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=29994h (170388) map[0m
+[0;32mI (163) esp_image: segment 1: paddr=000399bc vaddr=3ffb0000 size=03d3ch ( 15676) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003d700 vaddr=40080000 size=02918h ( 10520) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9ffc4h (655300) map[0m
+[0;32mI (402) esp_image: segment 4: paddr=000dffec vaddr=40082918 size=15570h ( 87408) load[0m
+[0;32mI (448) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (448) boot: Disabling RNG early entropy source...[0m
+[0;32mI (460) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu start user code[0m
+[0;32mI (469) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (469) cpu_start: Application information:[0m
+[0;32mI (472) cpu_start: Project name:     smart_door_lock[0m
+[0;32mI (477) cpu_start: App version:      1[0m
+[0;32mI (482) cpu_start: Compile time:     Apr 30 2024 09:36:52[0m
+[0;32mI (488) cpu_start: ELF file SHA256:  08c987809d599060...[0m
+[0;32mI (494) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (499) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (504) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (509) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (514) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (521) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (527) heap_init: At 3FFB8610 len 000279F0 (158 KiB): DRAM[0m
+[0;32mI (533) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (539) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (546) heap_init: At 40097E88 len 00008178 (32 KiB): IRAM[0m
+[0;32mI (554) spi_flash: detected chip: generic[0m
+[0;32mI (557) spi_flash: flash io: dio[0m
+[0;33mW (561) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (572) main_task: Started on CPU0[0m
+[0;32mI (582) main_task: Calling app_main()[0m
+Start
+I (642) wifi:wifi driver task: 3ffc06b8, prio:23, stack:6656, core=0
+I (662) wifi:wifi firmware version: a9f5b59
+I (662) wifi:wifi certification version: v7.0
+I (662) wifi:config NVS flash: enabled
+I (662) wifi:config nano formating: disabled
+I (672) wifi:Init data frame dynamic rx buffer num: 32
+I (672) wifi:Init static rx mgmt buffer num: 5
+I (682) wifi:Init management short buffer num: 32
+I (682) wifi:Init dynamic tx buffer num: 32
+I (692) wifi:Init static rx buffer size: 1600
+I (692) wifi:Init static rx buffer num: 10
+I (692) wifi:Init dynamic rx buffer num: 32
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (702) wifi_init: tcpip mbox: 32[0m
+[0;32mI (712) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (722) wifi_init: tcp mss: 1440[0m
+[0;32mI (722) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (742) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (832) wifi:mode : sta (e8:6b:ea:d3:6d:34)
+I (832) wifi:enable tsf
+handlehandlewifi connectI (852) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1
+I (852) wifi:state: init -> auth (b0)
+handleI (852) wifi:state: auth -> assoc (0)
+I (862) wifi:state: assoc -> run (10)
+W (912) wifi:[ADDBA]rx delba, code:39, delete tid:0
+W (912) wifi:[ADDBA]rx delba, code:39, delete tid:0
+I (982) wifi:connected with be Moon, aid = 2, channel 2, 40U, bssid = b0:4e:26:bf:7b:86
+I (982) wifi:security: WPA2-PSK, phy: bgn, rssi: -54
+I (992) wifi:pm start, type: 1
+
+I (992) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (1012) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1012) wifi:<ba-add>idx:0 (ifx:0, b0:4e:26:bf:7b:86), tid:0, ssn:3, winSize:64
+[0;32mI (2502) esp_netif_handlers: sta ip: 192.168.0.116, mask: 255.255.255.0, gw: 192.168.0.1[0m
+handle[0;32mI (2502) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (2502) wifi station: got ip:192.168.0.116[0m
+[0;32mI (2502) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (2512) wifi station: connected to ap SSID:be Moon password:yeubemoon[0m
+Start
+[0;32mI (2522) gpio: GPIO[13]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2532) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2542) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2552) gpio: GPIO[27]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (2562) gpio: GPIO[26]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2562) gpio: GPIO[25]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2572) gpio: GPIO[18]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2582) gpio: GPIO[19]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2592) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2602) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (2612) uart: queue free spaces: 20[0m
+[0;31mE (4002) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (4012) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (4012) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (4022) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (4022) mqtt_client: MQTT connect failed[0m
+[0;32mI (4032) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+buton *
+Event enter pass 
+buton * long
+Event change pass 
+Event Current pass 
+buton 1
+buton 2
+buton 3
+buton 4
+buton 5
+buton 5
+[0;32mI (19032) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (19242) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (19242) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (19252) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (19252) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (19262) mqtt_client: MQTT connect failed[0m
+[0;32mI (19272) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+buton #, PassStt: 1 
+ pass correct ! 
+ continue enter new pass ! 
+buton 1
+buton 2
+buton 3
+buton 4
+buton 5
+buton 6
+buton #, PassStt: 2 
+ continue enter new pass again ! 
+buton 1
+[0;32mI (34272) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (34422) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (34422) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (34432) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (34432) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (34442) mqtt_client: MQTT connect failed[0m
+[0;32mI (34452) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+buton 2
+buton 3
+buton 4
+buton 5
+buton 6
+buton #, PassStt: 3 
+ change pass success ! 
+Event change pass 
+lcd display 
+publish 
+[0;32mI (49452) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (49592) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (49592) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (49602) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (49602) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (49612) mqtt_client: MQTT connect failed[0m
+[0;32mI (49622) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+buton *
+Event enter pass 
+buton 1
+buton 2
+buton 3
+buton 4
+buton 5
+buton 6
+buton #, PassStt: 1 
+ unlock success ! 
+lcd display 
+publish 
+[0;32mI (64622) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (64932) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (64932) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (64932) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (64942) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (64942) mqtt_client: MQTT connect failed[0m
+[0;32mI (64952) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+buton #, PassStt: 5 
+Event enter pass 
+buton 1
+buton 2
+[0;32mI (79952) MQTT_EXAMPLE: Other event id:7[0m
+buton 3
+[0;31mE (80272) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (80272) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (80282) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (80282) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (80292) mqtt_client: MQTT connect failed[0m
+[0;32mI (80302) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+buton 4
+buton 5
+buton 6
+buton #, PassStt: 1 
+ unlock success ! 
+lcd display 
+publish 
+count : 0
+[0;32mI (95302) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (95662) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (95662) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (95672) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (95672) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (95682) mqtt_client: MQTT connect failed[0m
+[0;32mI (95682) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (105692) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (106002) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (106002) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (106012) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (106012) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (106022) mqtt_client: MQTT connect failed[0m
+[0;32mI (106032) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (121032) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (121542) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (121542) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (121542) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (121552) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (121562) mqtt_client: MQTT connect failed[0m
+[0;32mI (121562) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (136572) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (136902) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (136902) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (136902) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (136912) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (136922) mqtt_client: MQTT connect failed[0m
+[0;32mI (136922) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (146932) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (147142) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (147142) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (147142) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (147152) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (147152) mqtt_client: MQTT connect failed[0m
+[0;32mI (147162) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (162162) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (162502) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (162502) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (162502) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (162512) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (162522) mqtt_client: MQTT connect failed[0m
+[0;32mI (162522) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (172532) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (172842) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (172842) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (172852) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (172852) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (172862) mqtt_client: MQTT connect failed[0m
+[0;32mI (172862) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (187872) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (188012) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (188012) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (188022) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (188022) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (188032) mqtt_client: MQTT connect failed[0m
+[0;32mI (188042) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+unlock: ID_ 0 - score = 85 
+publish 
+lcd display 
+[0;32mI (203042) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (203352) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (203352) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (203362) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (203362) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (203372) mqtt_client: MQTT connect failed[0m
+[0;32mI (203382) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (218382) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (218532) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (218532) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (218542) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (218542) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (218552) mqtt_client: MQTT connect failed[0m
+[0;32mI (218552) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (233562) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (234082) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (234082) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (234092) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (234092) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (234102) mqtt_client: MQTT connect failed[0m
+[0;32mI (234112) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (249112) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (249252) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (249252) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (249262) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (249262) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (249272) mqtt_client: MQTT connect failed[0m
+[0;32mI (249282) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (264282) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (264722) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (264722) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (264722) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (264732) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (264742) mqtt_client: MQTT connect failed[0m
+[0;32mI (264742) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (274752) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (275142) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (275142) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (275142) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (275152) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (275162) mqtt_client: MQTT connect failed[0m
+[0;32mI (275162) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (285172) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (285482) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (285482) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (285492) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (285492) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (285502) mqtt_client: MQTT connect failed[0m
+[0;32mI (285502) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (300512) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (300832) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (300832) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (300842) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (300842) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (300852) mqtt_client: MQTT connect failed[0m
+[0;32mI (300862) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (315862) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (316122) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (316132) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (316132) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (316142) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned -1[0m
+[0;31mE (316142) mqtt_client: MQTT connect failed[0m
+[0;32mI (316152) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m

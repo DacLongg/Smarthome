@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/App/ESP32/smart_door_lock/build/CMakeFiles/bootloader
+D:/App/ESP32/smart_door_lock/build/CMakeFiles/bootloader.rule
+D:/App/ESP32/smart_door_lock/build/CMakeFiles/bootloader-complete.rule
+D:/App/ESP32/smart_door_lock/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/App/ESP32/smart_door_lock/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/App/ESP32/smart_door_lock/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/App/ESP32/smart_door_lock/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/App/ESP32/smart_door_lock/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/App/ESP32/smart_door_lock/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/App/ESP32/smart_door_lock/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

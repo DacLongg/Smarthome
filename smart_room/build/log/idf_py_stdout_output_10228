@@ -1,0 +1,1253 @@
+[0;32mI (13) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a31ch (172828) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0003a344 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0003e008 vaddr=40080000 size=02010h (  8208) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a284ch (665676) map[0m
+[0;32mI (388) esp_image: segment 4: paddr=000e2874 vaddr=40082010 size=15cd8h ( 89304) load[0m
+[0;32mI (435) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (435) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (455) cpu_start: Application information:[0m
+[0;32mI (458) cpu_start: Project name:     smart_room[0m
+[0;32mI (463) cpu_start: App version:      1[0m
+[0;32mI (468) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (474) cpu_start: ELF file SHA256:  62a2b2748...[0m
+[0;32mI (479) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (485) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (489) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (494) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (546) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (559) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (570) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (578) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (587) main_task: Started on CPU0[0m
+[0;32mI (597) main_task: Calling app_main()[0m
+[0;32mI (597) uart: queue free spaces: 20[0m
+I (657) wifi:wifi driver task: 3ffc14ac, prio:23, stack:6656, core=0
+I (677) wifi:wifi firmware version: a9f5b59
+I (677) wifi:wifi certification version: v7.0
+I (687) wifi:config NVS flash: enabled
+I (687) wifi:config nano formating: disabled
+I (687) wifi:Init data frame dynamic rx buffer num: 32
+I (687) wifi:Init static rx mgmt buffer num: 5
+I (697) wifi:Init management short buffer num: 32
+I (697) wifi:Init dynamic tx buffer num: 32
+I (707) wifi:Init static rx buffer size: 1600
+I (707) wifi:Init static rx buffer num: 10
+I (707) wifi:Init dynamic rx buffer num: 32
+[0;32mI (717) wifi_init: rx ba win: 6[0m
+[0;32mI (717) wifi_init: tcpip mbox: 32[0m
+[0;32mI (727) wifi_init: udp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp tx win: 5760[0m
+[0;32mI (737) wifi_init: tcp rx win: 5760[0m
+[0;32mI (737) wifi_init: tcp mss: 1440[0m
+[0;32mI (747) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (747) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (757) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (847) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (847) wifi:enable tsf
+handlehandlewifi connectI (867) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (867) wifi:state: init -> auth (b0)
+handleI (897) wifi:state: auth -> init (8a0)
+I (897) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+handle[0;32mI (907) wifi station: retry to connect to the AP[0m
+[0;32mI (907) wifi station: connect to the AP fail[0m
+handle[0;32mI (3317) wifi station: retry to connect to the AP[0m
+[0;32mI (3317) wifi station: connect to the AP fail[0m
+I (3347) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (3347) wifi:state: init -> auth (b0)
+I (3407) wifi:state: auth -> assoc (0)
+I (3437) wifi:state: assoc -> run (10)
+I (3577) wifi:connected with Long Bien, aid = 1, channel 3, BW20, bssid = 3c:55:76:82:b6:50
+I (3577) wifi:security: WPA2-PSK, phy: bgn, rssi: -60
+I (3587) wifi:pm start, type: 1
+
+I (3587) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (3667) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4597) esp_netif_handlers: sta ip: 192.168.1.21, mask: 255.255.255.0, gw: 192.168.1.1[0m
+handle[0;32mI (4597) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (4597) wifi station: got ip:192.168.1.21[0m
+[0;32mI (4597) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (4597) wifi station: connected to ap SSID:Long Bien password:phuongphuong[0m
+[0;32mI (4617) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4627) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4637) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4637) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4647) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (4657) wifi:<ba-add>idx:0 (ifx:0, 3c:55:76:82:b6:50), tid:0, ssn:4, winSize:64
+[0;32mI (4667) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4677) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+uart task 
+respond = 
++CME ERROR: 58
+, 18 
+time out 
+time out 
+[0;32mI (5827) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5837) MQTT_EXAMPLE: sent subscribe successful, msg_id=7416[0m
+[0;32mI (5837) MQTT_EXAMPLE: sent subscribe successful, msg_id=45044[0m
+[0;32mI (5837) MQTT_EXAMPLE: sent subscribe successful, msg_id=55095[0m
+time out 
+[0;32mI (6527) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=7416[0m
+[0;32mI (6857) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=45044[0m
+[0;32mI (6867) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=55095[0m
+ 0, 0, 0.000 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 16, 80, 0.023 
+Temp :30.1°C 
+Humi :79.9% 
+co = 0.001
+gas = 0.008
+smoke = 0.020
+ 14, 82, 0.020 
+Temp :30.2°C 
+Humi :80.0% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+ 16, 81, 0.020 
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 16, 78, 0.022 
+Temp :30.2°C 
+Humi :80.0% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+ 16, 80, 0.020 
+Temp :30.2°C 
+Humi :80.0% 
+co = 0.002
+gas = 0.009
+smoke = 0.021
+ 16, 88, 0.021 
+Temp :30.2°C 
+Humi :80.0% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 15, 77, 0.022 
+Temp :30.2°C 
+Humi :80.0% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+[0;32mI (15547) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+ enanble people ss 
+ no detect people 
+turn on 1 16, 81, 0.021 
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1Temp :30.2°C 
+ enanble people ss 
+ no detect people 
+turn on 1Humi :80.0% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 16, 82, 0.021 
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1Temp :30.2°C 
+Humi :79.9% 
+co = 0.002
+gas = 0.008
+smoke = 0.025
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1[0;32mI (17687) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1 17, 83, 0.025 
+turn light , 1 
+error2 time out  i = 0 , j = 5
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 15, 78, 0.022 
+Temp :30.2°C 
+Humi :79.9% 
+co = 0.002
+gas = 0.009
+smoke = 0.023
+ 18, 85, 0.023 
+error2 time out  i = 0 , j = 1
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 20, 83, 0.023 
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.009
+smoke = 0.023
+ 19, 92, 0.023 
+Temp :30.2°C 
+Humi :79.9% 
+co = 0.002
+gas = 0.009
+smoke = 0.024
+ 17, 85, 0.024 
+Temp :30.3°C 
+Humi :79.9% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 15, 80, 0.021 
+Temp :30.3°C 
+Humi :79.9% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 15, 79, 0.022 
+Temp :30.3°C 
+Humi :79.9% 
+co = 0.001
+gas = 0.008
+smoke = 0.021
+ 14, 82, 0.021 
+error2 time out  i = 0 , j = 2
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 17, 76, 0.021 
+Temp :30.3°C 
+Humi :79.9% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 17, 78, 0.022 
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.009
+smoke = 0.021
+ 19, 85, 0.021 
+error2 time out  i = 0 , j = 1
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 19, 80, 0.022 
+Temp :30.3°C 
+Humi :79.9% 
+co = 0.001
+gas = 0.009
+smoke = 0.022
+ 14, 88, 0.022 
+error2 time out  i = 0 , j = 3
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :30.3°C 
+ 17, 82, 0.021 
+Humi :79.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.024
+Temp :30.3°C 
+ 17, 81, 0.024 
+Humi :79.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 15, 83, 0.021 
+Temp :30.3°C 
+Humi :79.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.025
+ 16, 84, 0.025 
+Temp :30.3°C 
+Humi :79.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 16, 81, 0.022 
+Temp :30.3°C 
+Humi :79.8% 
+co = 0.002
+gas = 0.009
+smoke = 0.023
+ 16, 89, 0.023 
+Temp :30.3°C 
+Humi :79.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+[0;32mI (39097) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 17, 80, 0.023 
+Temp :30.3°C 
+Humi :79.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 15, 81, 0.021 
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1Temp :30.3°C 
+ enanble people ss 
+ no detect people 
+turn on 1 16, 77, 0.022 
+Humi :79.8% 
+co = 0.002
+gas = 0.009
+smoke = 0.022
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+ 18, 85, 0.022 
+Humi :79.8% 
+ enanble people ss 
+ no detect people 
+turn on 1co = 0.002
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 16, 81, 0.022 
+Temp :30.3°C 
+Humi :79.8% 
+co = 0.001
+gas = 0.008
+smoke = 0.020
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1[0;32mI (45237) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1 14, 78, 0.020 
+Temp :30.3°C 
+turn light , 1 
+Humi :79.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :30.3°C 
+ 15, 84, 0.021 
+Humi :79.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+Temp :30.3°C 
+ 15, 77, 0.021 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+Temp :30.3°C 
+ 17, 78, 0.023 
+Humi :79.8% 
+co = 0.002
+gas = 0.008
+smoke = 0.019
+ 15, 77, 0.019 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.007
+smoke = 0.021
+ 15, 71, 0.021 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 16, 79, 0.022 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+[0;32mI (53127) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+ enanble people ss 
+turn on 1 15, 84, 0.021 
+Temp :30.3°C 
+Humi :79.7% 
+ enanble people ss 
+turn on 1co = 0.002
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 15, 77, 0.022 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 16, 79, 0.020 
+Temp :30.3°C 
+ enanble people ss 
+turn on 1Humi :79.7% 
+co = 0.002
+gas = 0.007
+smoke = 0.021
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 17, 74, 0.021 
+error2 time out  i = 0 , j = 3
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+ 15, 79, 0.021 
+Humi :79.7% 
+ enanble people ss 
+ no detect people 
+turn on 1co = 0.002
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 15, 77, 0.022 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1[0;32mI (59467) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1turn light , 1 
+ 16, 82, 0.021 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 18, 84, 0.021 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 18, 82, 0.023 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 16, 77, 0.022 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.009
+smoke = 0.021
+ 16, 85, 0.021 
+error2 time out  i = 0 , j = 7
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :30.3°C 
+ 16, 80, 0.022 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.024
+ 19, 84, 0.024 
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.008
+smoke = 0.023
+Temp :30.3°C 
+Humi :79.7% 
+ 19, 82, 0.023 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 15, 81, 0.021 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.001
+gas = 0.008
+smoke = 0.021
+ 14, 77, 0.021 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+ 16, 80, 0.020 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 16, 77, 0.023 
+error2 time out  i = 0 , j = 5
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 16, 79, 0.023 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 15, 82, 0.022 
+Temp :30.3°C 
+Humi :79.7% 
+co = 0.001
+gas = 0.007
+smoke = 0.023
+ 14, 74, 0.023 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.022
+ 19, 85, 0.022 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+ 17, 81, 0.020 
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.008
+smoke = 0.020
+ 17, 81, 0.020 
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.008
+smoke = 0.024
+ 16, 82, 0.024 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 16, 84, 0.021 
+error2 time out  i = 0 , j = 7
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 16, 79, 0.023 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 17, 84, 0.021 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 16, 79, 0.022 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 19, 84, 0.023 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 18, 81, 0.022 
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.008
+smoke = 0.024
+ 16, 84, 0.024 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 15, 79, 0.023 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 16, 84, 0.023 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 16, 81, 0.021 
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 17, 79, 0.022 
+[0;32mI (91937) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.020
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 17, 76, 0.020 
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1Temp :30.3°C 
+ enanble people ss 
+turn on 1Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.021
+ enanble people ss 
+turn on 1 19, 89, 0.021 
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.001
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 14, 78, 0.021 
+ enanble people ss 
+ no detect people 
+turn on 1[0;32mI (95207) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+ enanble people ss 
+ no detect people 
+turn on 1Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+ no detect people 
+turn on 1 15, 83, 0.022 
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.024
+ enanble people ss 
+ no detect people 
+turn on 1[0;32mI (97047) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1 16, 81, 0.024 
+turn light , 1 
+error2 time out  i = 0 , j = 7
+co = 0.002
+gas = 0.008
+smoke = 0.020
+ 16, 84, 0.020 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.001
+gas = 0.008
+smoke = 0.021
+ 14, 84, 0.021 
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 17, 77, 0.021 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 16, 84, 0.023 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ 16, 81, 0.022 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.024
+ 15, 88, 0.024 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 17, 81, 0.023 
+0 
+ bat sensor ss 
+error2 time out  i = 0 , j = 5
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 16, 84, 0.022 
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.023
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 16, 85, 0.023 
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+ enanble people ss 
+ no detect people 
+turn on 1Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.024
+1 
+ 19, 82, 0.024 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+0 
+ bat sensor ss 
+ enanble people ss 
+ no detect people 
+turn on 1 16, 84, 0.021 
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.009
+smoke = 0.023
+1 
+ 20, 89, 0.023 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+0 
+ bat sensor ss 
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 16, 84, 0.021 
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.025
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 19, 84, 0.025 
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+ enanble people ss 
+turn on 1co = 0.002
+gas = 0.009
+smoke = 0.023
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 11 
+ 18, 89, 0.023 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ 19, 84, 0.023 
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.008
+smoke = 0.023
+0 
+ bat sensor ss 
+ 19, 84, 0.023 
+ enanble people ss 
+ no detect people 
+turn on 1error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.009
+smoke = 0.023
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 20, 87, 0.023 
+ enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+ enanble people ss 
+ no detect people 
+turn on 1Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.025
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 20, 92, 0.025 
+ enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.023
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 17, 87, 0.023 
+ enanble people ss 
+turn on 1Temp :30.3°C 
+ enanble people ss 
+turn on 1Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 18, 79, 0.022 
+ enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+ enanble people ss 
+turn on 1co = 0.002
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 19, 79, 0.021 
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+turn on 11 
+ 15, 84, 0.021 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+0 
+ bat sensor ss 
+ 17, 79, 0.021 
+ enanble people ss 
+ no detect people 
+turn on 1error2 time out  i = 0 , j = 1
+co = 0.002
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+turn on 1 17, 81, 0.022 
+ enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.023
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 16, 81, 0.023 
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.009
+smoke = 0.025
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 18, 85, 0.025 
+ enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 15, 82, 0.021 
+ enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+ enanble people ss 
+turn on 1co = 0.002
+gas = 0.008
+smoke = 0.025
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 17, 81, 0.025 
+ enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.024
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 17, 82, 0.024 
+ enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+ enanble people ss 
+ no detect people 
+turn on 1co = 0.002
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 17, 79, 0.022 
+ enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.025
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 17, 85, 0.025 
+ enanble people ss 
+turn on 1Temp :30.3°C 
+ enanble people ss 
+turn on 1Humi :79.5% 
+co = 0.002
+gas = 0.009
+smoke = 0.023
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 17, 92, 0.023 
+ enanble people ss 
+turn on 1Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.025
+ enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 enanble people ss 
+turn on 1 17, 84, 0.025 
+1 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.022
+ 16, 89, 0.022 
+Temp :30.3°C 
+0 
+ bat sensor ss 
+Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.023
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 18, 87, 0.023 
+ enanble people ss 
+ no detect people 
+turn on 1error2 time out  i = 0 , j = 7
+co = 0.002
+gas = 0.009
+smoke = 0.024
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 1 17, 87, 0.024 
+ enanble people ss 
+ no detect people 
+turn on 1Temp :30.3°C 
+Humi :79.5% 
+ enanble people ss 
+ no detect people 
+turn on 1co = 0.002
+gas = 0.009
+smoke = 0.022
+ enanble people ss 
+ no detect people 
+turn on 1 enanble people ss 
+ no detect people 
+turn on 11 
+ 17, 89, 0.022 
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.008
+smoke = 0.024
+ 19, 81, 0.024 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.009
+smoke = 0.022
+ 19, 92, 0.022 
+Temp :30.3°C 
+Humi :79.6% 
+co = 0.002
+gas = 0.008
+smoke = 0.024
+ 19, 81, 0.024 
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.009
+smoke = 0.022
+ 18, 92, 0.022 
+error2 time out  i = 0 , j = 3
+co = 0.002
+gas = 0.009
+smoke = 0.022
+ 16, 87, 0.022 
+Temp :30.3°C 
+Humi :79.5% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+ 16, 84, 0.021 
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.008
+smoke = 0.024
+Temp :30.3°C 
+ 19, 82, 0.024 
+Humi :79.5% 
+co = 0.002
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 2
+ 16, 84, 0.021 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :30.3°C 
+Humi :79.6% 
+ 17, 78, 0.022 
+co = 0.002
+gas = 0.008
+smoke = 0.022
+Temp :30.3°C 
+Humi :79.6% 
+ 17, 78, 0.022 
+co = 0.002
+gas = 0.008
+smoke = 0.021

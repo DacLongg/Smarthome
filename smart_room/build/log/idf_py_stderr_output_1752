@@ -1,0 +1,31 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM4 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM4 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d88fb: task_wdt_timeout_handling at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8cc0: task_wdt_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f55: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d6b00: gpio_ll_get_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/gpio_ll.h:513
+ (inlined by) gpio_get_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:245
+0x400d5787: DHT22_Check_Response at D:/App/ESP32/smart_room/user/dht22/dht22.c:79 (discriminator 1)
+0x400d57b3: dht22_readData at D:/App/ESP32/smart_room/user/dht22/dht22.c:89
+0x400d5582: mainApp at D:/App/ESP32/smart_room/user/App/mainApp.c:27
+0x400d5573: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e4b1c: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400d88fb: task_wdt_timeout_handling at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:441
+0x400d8cc0: task_wdt_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/task_wdt/task_wdt.c:515
+0x40082f55: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d6b00: gpio_ll_get_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include/hal/gpio_ll.h:513
+ (inlined by) gpio_get_level at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/gpio.c:245
+0x400d5787: DHT22_Check_Response at D:/App/ESP32/smart_room/user/dht22/dht22.c:79 (discriminator 1)
+0x400d57b3: dht22_readData at D:/App/ESP32/smart_room/user/dht22/dht22.c:89
+0x400d5582: mainApp at D:/App/ESP32/smart_room/user/App/mainApp.c:27
+0x400d5573: app_main at D:/App/ESP32/smart_room/main/main.c:8 (discriminator 1)
+0x400e4b1c: main_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/app_startup.c:208
+0x400861c1: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

@@ -1,0 +1,3696 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a2fch (172796) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=0003a324 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003dfe8 vaddr=40080000 size=02030h (  8240) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a27bch (665532) map[0m
+[0;32mI (406) esp_image: segment 4: paddr=000e27e4 vaddr=40082030 size=15cb8h ( 89272) load[0m
+[0;32mI (453) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (453) boot: Disabling RNG early entropy source...[0m
+[0;32mI (465) cpu_start: Multicore app[0m
+[0;32mI (474) cpu_start: Pro cpu start user code[0m
+[0;32mI (474) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (474) cpu_start: Application information:[0m
+[0;32mI (477) cpu_start: Project name:     smart_room[0m
+[0;32mI (482) cpu_start: App version:      1[0m
+[0;32mI (486) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (493) cpu_start: ELF file SHA256:  03b4d8f83...[0m
+[0;32mI (498) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (503) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (508) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (513) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (518) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (525) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (537) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (550) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (558) spi_flash: detected chip: generic[0m
+[0;32mI (561) spi_flash: flash io: dio[0m
+[0;33mW (565) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (578) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (588) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (597) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) uart: queue free spaces: 20[0m
+I (676) wifi:wifi driver task: 3ffc14ac, prio:23, stack:6656, core=0
+I (696) wifi:wifi firmware version: a9f5b59
+I (696) wifi:wifi certification version: v7.0
+I (696) wifi:config NVS flash: enabled
+I (696) wifi:config nano formating: disabled
+I (706) wifi:Init data frame dynamic rx buffer num: 32
+I (706) wifi:Init static rx mgmt buffer num: 5
+I (716) wifi:Init management short buffer num: 32
+I (716) wifi:Init dynamic tx buffer num: 32
+I (726) wifi:Init static rx buffer size: 1600
+I (726) wifi:Init static rx buffer num: 10
+I (726) wifi:Init dynamic rx buffer num: 32
+[0;32mI (736) wifi_init: rx ba win: 6[0m
+[0;32mI (736) wifi_init: tcpip mbox: 32[0m
+[0;32mI (746) wifi_init: udp mbox: 6[0m
+[0;32mI (746) wifi_init: tcp mbox: 6[0m
+[0;32mI (746) wifi_init: tcp tx win: 5760[0m
+[0;32mI (756) wifi_init: tcp rx win: 5760[0m
+[0;32mI (756) wifi_init: tcp mss: 1440[0m
+[0;32mI (766) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (766) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (776) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (866) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (866) wifi:enable tsf
+handlehandlewifi connectI (886) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (886) wifi:state: init -> auth (b0)
+handleI (886) wifi:state: auth -> init (8a0)
+I (896) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+handle[0;32mI (896) wifi station: retry to connect to the AP[0m
+[0;32mI (896) wifi station: connect to the AP fail[0m
+handle[0;32mI (3316) wifi station: retry to connect to the AP[0m
+[0;32mI (3316) wifi station: connect to the AP fail[0m
+I (3316) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (3326) wifi:state: init -> auth (b0)
+I (3326) wifi:state: auth -> assoc (0)
+I (3346) wifi:state: assoc -> run (10)
+I (3456) wifi:connected with Long Bien, aid = 12, channel 10, BW20, bssid = 3c:55:76:82:b6:50
+I (3456) wifi:security: WPA2-PSK, phy: bgn, rssi: -65
+I (3456) wifi:pm start, type: 1
+
+I (3456) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (3516) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4466) esp_netif_handlers: sta ip: 192.168.1.28, mask: 255.255.255.0, gw: 192.168.1.1[0m
+handle[0;32mI (4466) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (4466) wifi station: got ip:192.168.1.28[0m
+[0;32mI (4466) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (4476) wifi station: connected to ap SSID:Long Bien password:phuongphuong[0m
+[0;32mI (4486) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (4496) wifi:<ba-add>idx:0 (ifx:0, 3c:55:76:82:b6:50), tid:0, ssn:6, winSize:64
+[0;32mI (4506) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4506) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4516) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4526) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4536) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4546) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+uart task 
+respond = 
++CME ERROR: 58
+, 18 
+time out 
+time out 
+time out 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.005
+gas = 0.007
+smoke = 0.022
+error2 time out  i = 0 , j = 3
+co = 0.005
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 5
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :34.8°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+[0;32mI (10796) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (10796) MQTT_EXAMPLE: sent subscribe successful, msg_id=27253[0m
+[0;32mI (10806) MQTT_EXAMPLE: sent subscribe successful, msg_id=9709[0m
+[0;32mI (10806) MQTT_EXAMPLE: sent subscribe successful, msg_id=31031[0m
+[0;32mI (11006) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=27253[0m
+Temp :34.8°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+[0;32mI (12026) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=9709[0m
+[0;32mI (12026) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=31031[0m
+error2 time out  i = 0 , j = 6
+co = 0.005
+gas = 0.007
+smoke = 0.021
+Temp :34.8°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :34.8°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.007
+smoke = 0.021
+Temp :34.9°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+error2 time out  i = 0 , j = 4
+co = 0.004
+gas = 0.007
+smoke = 0.018
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.8°C 
+Humi :74.7% 
+ enanble people ss 
+co = 0.005
+gas = 0.007
+smoke = 0.018
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 6
+co = 0.004
+gas = 0.007
+smoke = 0.020
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.019
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+Temp :34.9°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.019
+Temp :34.9°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+1 
+ bat sensor ss 
+ enanble people ss 
+Temp :34.9°C 
+ enanble people ss 
+Humi :74.8% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :74.8% 
+ enanble people ss 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :74.7% 
+ enanble people ss 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 5
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 1
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :74.6% 
+ enanble people ss 
+co = 0.005
+gas = 0.008
+smoke = 0.019
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 6
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+ enanble people ss 
+Humi :74.7% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+ enanble people ss 
+Humi :74.6% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.004
+gas = 0.008
+smoke = 0.020
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+respond error 
+error2 time out  i = 0 , j = 3
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+error2 time out  i = 0 , j = 6
+co = 0.004
+gas = 0.007
+smoke = 0.019
+error2 time out  i = 0 , j = 6
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.006
+gas = 0.008
+smoke = 0.021
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+Temp :34.9°C 
+Humi :74.6% 
+[0;33mW (60666) transport_base: Poll timeout or error, errno=Success, fd=54, timeout_ms=10000[0m
+[0;31mE (60666) mqtt_client: Writing didn't complete in specified timeout: errno=0[0m
+[0;32mI (60666) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (60676) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+
+***ERROR*** A stack overflow in task handle_Task has been detected.
+
+
+Backtrace: 0x40081916:0x3ffcd960 0x4008a52d:0x3ffcd980 0x4008b4e2:0x3ffcd9a0 0x4008c7cb:0x3ffcda20 0x4008b5ec:0x3ffcda40 0x4008b59e:0x3ffcdaa0 0x00060420:0x3ffcdaa0 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 03b4d8f83
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a2fch (172796) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=0003a324 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003dfe8 vaddr=40080000 size=02030h (  8240) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a27bch (665532) map[0m
+[0;32mI (406) esp_image: segment 4: paddr=000e27e4 vaddr=40082030 size=15cb8h ( 89272) load[0m
+[0;32mI (453) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (453) boot: Disabling RNG early entropy source...[0m
+[0;32mI (465) cpu_start: Multicore app[0m
+[0;32mI (474) cpu_start: Pro cpu start user code[0m
+[0;32mI (474) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (474) cpu_start: Application information:[0m
+[0;32mI (477) cpu_start: Project name:     smart_room[0m
+[0;32mI (482) cpu_start: App version:      1[0m
+[0;32mI (486) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (492) cpu_start: ELF file SHA256:  03b4d8f83...[0m
+[0;32mI (498) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (503) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (508) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (513) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (518) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (525) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (537) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (550) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (561) spi_flash: flash io: dio[0m
+[0;33mW (564) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (578) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (588) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (597) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) uart: queue free spaces: 20[0m
+I (676) wifi:wifi driver task: 3ffc14ac, prio:23, stack:6656, core=0
+I (696) wifi:wifi firmware version: a9f5b59
+I (696) wifi:wifi certification version: v7.0
+I (696) wifi:config NVS flash: enabled
+I (696) wifi:config nano formating: disabled
+I (706) wifi:Init data frame dynamic rx buffer num: 32
+I (706) wifi:Init static rx mgmt buffer num: 5
+I (716) wifi:Init management short buffer num: 32
+I (716) wifi:Init dynamic tx buffer num: 32
+I (726) wifi:Init static rx buffer size: 1600
+I (726) wifi:Init static rx buffer num: 10
+I (726) wifi:Init dynamic rx buffer num: 32
+[0;32mI (736) wifi_init: rx ba win: 6[0m
+[0;32mI (736) wifi_init: tcpip mbox: 32[0m
+[0;32mI (746) wifi_init: udp mbox: 6[0m
+[0;32mI (746) wifi_init: tcp mbox: 6[0m
+[0;32mI (746) wifi_init: tcp tx win: 5760[0m
+[0;32mI (756) wifi_init: tcp rx win: 5760[0m
+[0;32mI (756) wifi_init: tcp mss: 1440[0m
+[0;32mI (766) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (766) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (776) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (866) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (866) wifi:enable tsf
+handlehandlewifi connectI (886) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (886) wifi:state: init -> auth (b0)
+handleI (896) wifi:state: auth -> init (8a0)
+I (896) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+handle[0;32mI (896) wifi station: retry to connect to the AP[0m
+[0;32mI (896) wifi station: connect to the AP fail[0m
+handle[0;32mI (3316) wifi station: retry to connect to the AP[0m
+[0;32mI (3316) wifi station: connect to the AP fail[0m
+I (3326) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (3326) wifi:state: init -> auth (b0)
+I (3326) wifi:state: auth -> assoc (0)
+I (3346) wifi:state: assoc -> run (10)
+I (3456) wifi:connected with Long Bien, aid = 12, channel 10, BW20, bssid = 3c:55:76:82:b6:50
+I (3456) wifi:security: WPA2-PSK, phy: bgn, rssi: -63
+I (3466) wifi:pm start, type: 1
+
+I (3466) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (3516) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4466) esp_netif_handlers: sta ip: 192.168.1.28, mask: 255.255.255.0, gw: 192.168.1.1[0m
+handle[0;32mI (4466) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (4466) wifi station: got ip:192.168.1.28[0m
+[0;32mI (4466) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (4476) wifi station: connected to ap SSID:Long Bien password:phuongphuong[0m
+[0;32mI (4486) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4496) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (4496) wifi:<ba-add>idx:0 (ifx:0, 3c:55:76:82:b6:50), tid:0, ssn:6, winSize:64
+[0;32mI (4506) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4516) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4526) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4536) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4546) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+uart task 
+respond = 
++CME ERROR: 58
+, 18 
+[0;32mI (4956) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (4966) MQTT_EXAMPLE: sent subscribe successful, msg_id=47291[0m
+[0;32mI (4966) MQTT_EXAMPLE: sent subscribe successful, msg_id=49495[0m
+[0;32mI (4966) MQTT_EXAMPLE: sent subscribe successful, msg_id=24438[0m
+[0;32mI (5106) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=47291[0m
+time out 
+[0;32mI (5376) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=49495[0m
+[0;32mI (5376) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=24438[0m
+time out 
+time out 
+Temp :34.9°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :34.8°C 
+Humi :75.0% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :34.8°C 
+Humi :75.0% 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+error2 time out  i = 0 , j = 6
+co = 0.004
+gas = 0.007
+smoke = 0.017
+Temp :34.9°C 
+Humi :75.1% 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+Temp :34.9°C 
+Humi :75.1% 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+Temp :34.8°C 
+Humi :75.2% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+Temp :34.9°C 
+Humi :75.2% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+Temp :34.9°C 
+Humi :75.2% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+Temp :34.9°C 
+Humi :75.2% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+[0;32mI (17866) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=1
+turn on 1turn light , 1 
+Temp :34.9°C 
+Humi :75.2% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+error2 time out  i = 0 , j = 4
+co = 0.004
+gas = 0.006
+smoke = 0.017
+Temp :34.9°C 
+Humi :75.3% 
+co = 0.005
+gas = 0.007
+smoke = 0.017
+Temp :34.9°C 
+Humi :75.3% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :34.9°C 
+Humi :75.3% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+Temp :34.9°C 
+Humi :75.3% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+error2 time out  i = 0 , j = 6
+co = 0.004
+gas = 0.006
+smoke = 0.017
+[0;32mI (25086) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=gladys/device/mqtt:kitchen:device:lamp/feature/mqtt:16/state
+DATA=0
+turn light , 0 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :75.2% 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+ enanble people ss 
+Temp :34.9°C 
+Humi :75.2% 
+[0;33mW (36066) transport_base: Poll timeout or error, errno=Success, fd=54, timeout_ms=10000[0m
+[0;31mE (36066) mqtt_client: Writing didn't complete in specified timeout: errno=0[0m
+[0;32mI (36076) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0
+***ERROR*** A stack overflow in task handle_Task has been detected.
+
+
+Backtrace: 0x40081916:0x3ffcd4b0 0x4008a52d:0x3ffcd4d0 0x4008b4e2:0x3ffcd4f0 0x4008c7cb:0x3ffcd570 0x4008b5ec:0x3ffcd590 0x4008b59e:0xa5a5a5a5 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 03b4d8f83
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a2fch (172796) map[0m
+[0;32mI (164) esp_image: segment 1: paddr=0003a324 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (170) esp_image: segment 2: paddr=0003dfe8 vaddr=40080000 size=02030h (  8240) load[0m
+[0;32mI (173) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a27bch (665532) map[0m
+[0;32mI (406) esp_image: segment 4: paddr=000e27e4 vaddr=40082030 size=15cb8h ( 89272) load[0m
+[0;32mI (453) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (453) boot: Disabling RNG early entropy source...[0m
+[0;32mI (465) cpu_start: Multicore app[0m
+[0;32mI (474) cpu_start: Pro cpu start user code[0m
+[0;32mI (474) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (474) cpu_start: Application information:[0m
+[0;32mI (477) cpu_start: Project name:     smart_room[0m
+[0;32mI (482) cpu_start: App version:      1[0m
+[0;32mI (486) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (492) cpu_start: ELF file SHA256:  03b4d8f83...[0m
+[0;32mI (498) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (503) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (508) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (513) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (518) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (525) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (531) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (537) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (543) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (550) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (557) spi_flash: detected chip: generic[0m
+[0;32mI (561) spi_flash: flash io: dio[0m
+[0;33mW (564) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (578) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (588) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (597) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (606) main_task: Started on CPU0[0m
+[0;32mI (616) main_task: Calling app_main()[0m
+[0;32mI (616) uart: queue free spaces: 20[0m
+I (676) wifi:wifi driver task: 3ffc14ac, prio:23, stack:6656, core=0
+I (696) wifi:wifi firmware version: a9f5b59
+I (696) wifi:wifi certification version: v7.0
+I (696) wifi:config NVS flash: enabled
+I (696) wifi:config nano formating: disabled
+I (706) wifi:Init data frame dynamic rx buffer num: 32
+I (706) wifi:Init static rx mgmt buffer num: 5
+I (716) wifi:Init management short buffer num: 32
+I (716) wifi:Init dynamic tx buffer num: 32
+I (726) wifi:Init static rx buffer size: 1600
+I (726) wifi:Init static rx buffer num: 10
+I (726) wifi:Init dynamic rx buffer num: 32
+[0;32mI (736) wifi_init: rx ba win: 6[0m
+[0;32mI (736) wifi_init: tcpip mbox: 32[0m
+[0;32mI (746) wifi_init: udp mbox: 6[0m
+[0;32mI (746) wifi_init: tcp mbox: 6[0m
+[0;32mI (746) wifi_init: tcp tx win: 5760[0m
+[0;32mI (756) wifi_init: tcp rx win: 5760[0m
+[0;32mI (756) wifi_init: tcp mss: 1440[0m
+[0;32mI (766) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (766) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (776) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (866) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (866) wifi:enable tsf
+handlehandlewifi connectI (896) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (896) wifi:state: init -> auth (b0)
+handleI (906) wifi:state: auth -> init (8a0)
+I (906) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+handle[0;32mI (906) wifi station: retry to connect to the AP[0m
+[0;32mI (916) wifi station: connect to the AP fail[0m
+handle[0;32mI (3326) wifi station: retry to connect to the AP[0m
+[0;32mI (3326) wifi station: connect to the AP fail[0m
+I (3356) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (3356) wifi:state: init -> auth (b0)
+I (3356) wifi:state: auth -> assoc (0)
+I (3376) wifi:state: assoc -> run (10)
+I (3496) wifi:connected with Long Bien, aid = 12, channel 10, BW20, bssid = 3c:55:76:82:b6:50
+I (3496) wifi:security: WPA2-PSK, phy: bgn, rssi: -66
+I (3496) wifi:pm start, type: 1
+
+I (3496) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (3556) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4506) esp_netif_handlers: sta ip: 192.168.1.28, mask: 255.255.255.0, gw: 192.168.1.1[0m
+handle[0;32mI (4506) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (4506) wifi station: got ip:192.168.1.28[0m
+[0;32mI (4506) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (4516) wifi station: connected to ap SSID:Long Bien password:phuongphuong[0m
+[0;32mI (4526) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (4526) wifi:<ba-add>idx:0 (ifx:0, 3c:55:76:82:b6:50), tid:0, ssn:5, winSize:64
+[0;32mI (4546) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4546) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4556) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4566) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4576) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4586) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+uart task 
+respond = 
++CME ERROR: 58
+, 18 
+[0;32mI (5006) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5006) MQTT_EXAMPLE: sent subscribe successful, msg_id=51125[0m
+[0;32mI (5006) MQTT_EXAMPLE: sent subscribe successful, msg_id=31715[0m
+[0;32mI (5016) MQTT_EXAMPLE: sent subscribe successful, msg_id=42000[0m
+time out 
+[0;32mI (5196) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=51125[0m
+[0;32mI (5436) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=31715[0m
+[0;32mI (5436) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=42000[0m
+time out 
+time out 
+Temp :34.9°C 
+Humi :75.2% 
+co = 0.004
+gas = 0.007
+smoke = 0.020
+error2 time out  i = 0 , j = 3
+co = 0.004
+gas = 0.008
+smoke = 0.020
+Temp :34.9°C 
+Humi :75.1% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 7
+co = 0.006
+gas = 0.009
+smoke = 0.023
+error2 time out  i = 0 , j = 5
+co = 0.005
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 5
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :34.9°C 
+Humi :75.0% 
+co = 0.006
+gas = 0.009
+smoke = 0.024
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 1
+co = 0.007
+gas = 0.009
+smoke = 0.026
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :75.1% 
+ enanble people ss 
+co = 0.007
+gas = 0.010
+smoke = 0.026
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :75.0% 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+Temp :34.9°C 
+Humi :75.0% 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+error2 time out  i = 0 , j = 7
+co = 0.006
+gas = 0.009
+smoke = 0.022
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :34.9°C 
+Humi :75.0% 
+ enanble people ss 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+Temp :34.9°C 
+Humi :75.0% 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+Temp :34.9°C 
+Humi :75.0% 
+1 
+ bat sensor ss 
+ enanble people ss 
+co = 0.005
+gas = 0.009
+smoke = 0.023
+Temp :34.9°C 
+Humi :75.0% 
+ enanble people ss 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+error2 time out  i = 0 , j = 1
+co = 0.005
+gas = 0.008
+smoke = 0.023
+Temp :34.9°C 
+Humi :74.9% 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+Temp :35.0°C 
+1 
+Humi :74.9% 
+co = 0.007
+gas = 0.009
+smoke = 0.024
+Temp :34.9°C 
+Humi :74.9% 
+co = 0.007
+gas = 0.009
+smoke = 0.024
+0 
+Temp :34.9°C 
+Humi :74.9% 
+co = 0.006
+gas = 0.009
+smoke = 0.022
+error2 time out  i = 0 , j = 5
+co = 0.006
+gas = 0.009
+smoke = 0.025
+1 
+Temp :35.0°C 
+Humi :74.9% 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+0 
+error2 time out  i = 0 , j = 3
+co = 0.006
+gas = 0.009
+smoke = 0.022
+Temp :35.0°C 
+Humi :74.9% 
+co = 0.006
+gas = 0.008
+smoke = 0.023
+error2 time out  i = 0 , j = 4
+co = 0.006
+gas = 0.009
+smoke = 0.024
+Temp :35.0°C 
+Humi :75.0% 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+error2 time out  i = 0 , j = 4
+co = 0.006
+gas = 0.009
+smoke = 0.024
+error2 time out  i = 0 , j = 1
+co = 0.006
+gas = 0.008
+smoke = 0.023
+error2 time out  i = 0 , j = 6
+co = 0.006
+gas = 0.009
+smoke = 0.022
+Temp :35.0°C 
+Humi :74.8% 
+co = 0.006
+gas = 0.009
+smoke = 0.024
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 5
+co = 0.005
+gas = 0.007
+smoke = 0.021
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :35.0°C 
+Humi :74.6% 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+Temp :35.0°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+error2 time out  i = 0 , j = 7
+co = 0.006
+gas = 0.009
+smoke = 0.022
+Temp :35.0°C 
+Humi :74.6% 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+Temp :35.0°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.0°C 
+ enanble people ss 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :35.0°C 
+Humi :74.8% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+error2 time out  i = 0 , j = 5
+co = 0.006
+gas = 0.008
+smoke = 0.021
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.0°C 
+Humi :74.7% 
+ enanble people ss 
+co = 0.005
+gas = 0.008
+smoke = 0.023
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.0°C 
+0 
+Humi :74.7% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.007
+smoke = 0.018
+Temp :35.1°C 
+Humi :74.7% 
+1 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+0 
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.004
+gas = 0.008
+smoke = 0.018
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+Temp :35.0°C 
+Humi :74.7% 
+co = 0.006
+gas = 0.008
+smoke = 0.023
+error2 time out  i = 0 , j = 5
+co = 0.005
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 5
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :35.1°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :35.0°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+Temp :35.1°C 
+Humi :74.6% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :35.0°C 
+Humi :74.5% 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+Temp :35.1°C 
+Humi :74.5% 
+co = 0.005
+gas = 0.007
+smoke = 0.021
+error2 time out  i = 0 , j = 4
+co = 0.005
+gas = 0.008
+smoke = 0.022
+Temp :35.1°C 
+Humi :74.5% 
+co = 0.005
+gas = 0.008
+smoke = 0.019
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+error2 time out  i = 0 , j = 2
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :35.0°C 
+Humi :74.4% 
+co = 0.005
+gas = 0.008
+smoke = 0.019
+Temp :35.0°C 
+Humi :74.4% 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.004
+gas = 0.006
+smoke = 0.015
+error2 time out  i = 0 , j = 6
+co = 0.004
+gas = 0.006
+smoke = 0.016
+error2 time out  i = 0 , j = 5
+co = 0.003
+gas = 0.006
+smoke = 0.016
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 2
+co = 0.003
+gas = 0.006
+smoke = 0.016
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+ enanble people ss 
+Humi :74.3% 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+ enanble people ss 
+0 
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.003
+gas = 0.006
+smoke = 0.016
+Temp :35.0°C 
+Humi :74.4% 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.003
+gas = 0.005
+smoke = 0.015
+Temp :35.0°C 
+Humi :74.4% 
+co = 0.003
+gas = 0.005
+smoke = 0.014
+error2 time out  i = 0 , j = 3
+co = 0.004
+gas = 0.007
+smoke = 0.018
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.003
+gas = 0.006
+smoke = 0.016
+Temp :35.0°C 
+Humi :74.3% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+error2 time out  i = 0 , j = 4
+co = 0.004
+gas = 0.006
+smoke = 0.015
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.003
+gas = 0.006
+smoke = 0.015
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.003
+gas = 0.005
+smoke = 0.013
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.003
+gas = 0.005
+smoke = 0.013
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.003
+gas = 0.005
+smoke = 0.012
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.003
+gas = 0.005
+smoke = 0.013
+error2 time out  i = 0 , j = 7
+co = 0.002
+gas = 0.004
+smoke = 0.010
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.001
+gas = 0.003
+smoke = 0.007
+error2 time out  i = 0 , j = 6
+co = 0.002
+gas = 0.003
+smoke = 0.008
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.001
+gas = 0.003
+smoke = 0.008
+error2 time out  i = 0 , j = 0
+co = 0.002
+gas = 0.003
+smoke = 0.008
+error2 time out  i = 0 , j = 4
+co = 0.002
+gas = 0.003
+smoke = 0.009
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.001
+gas = 0.003
+smoke = 0.008
+error2 time out  i = 0 , j = 6
+co = 0.001
+gas = 0.003
+smoke = 0.007
+error2 time out  i = 0 , j = 1
+co = 0.001
+gas = 0.003
+smoke = 0.007
+error2 time out  i = 0 , j = 2
+co = 0.001
+gas = 0.003
+smoke = 0.009
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.002
+gas = 0.004
+smoke = 0.010
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.002
+gas = 0.004
+smoke = 0.009
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+ enanble people ss 
+Humi :74.3% 
+co = 0.002
+gas = 0.004
+smoke = 0.009
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+ enanble people ss 
+co = 0.004
+gas = 0.007
+smoke = 0.020
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.005
+gas = 0.009
+smoke = 0.022
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+ enanble people ss 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 2
+co = 0.007
+gas = 0.010
+smoke = 0.026
+ enanble people ss 
+0 
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.008
+gas = 0.011
+smoke = 0.028
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.008
+gas = 0.011
+smoke = 0.028
+1 
+ bat sensor ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.009
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+ enanble people ss 
+Humi :74.4% 
+co = 0.010
+gas = 0.012
+smoke = 0.032
+ enanble people ss 
+ enanble people ss 
+0 
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.011
+gas = 0.014
+smoke = 0.036
+error2 time out  i = 0 , j = 5
+co = 0.010
+gas = 0.013
+smoke = 0.037
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.011
+gas = 0.014
+smoke = 0.038
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.012
+gas = 0.014
+smoke = 0.039
+Temp :35.1°C 
+Humi :74.4% 
+1 
+ bat sensor ss 
+ enanble people ss 
+co = 0.011
+gas = 0.013
+smoke = 0.039
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 2
+co = 0.011
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.0°C 
+Humi :74.3% 
+co = 0.011
+gas = 0.013
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 2
+co = 0.012
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 5
+co = 0.011
+gas = 0.013
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.009
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 1
+co = 0.010
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 3
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+ enanble people ss 
+Humi :74.4% 
+co = 0.010
+gas = 0.012
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.3% 
+ enanble people ss 
+co = 0.010
+gas = 0.012
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+ enanble people ss 
+co = 0.009
+gas = 0.013
+smoke = 0.033
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.010
+gas = 0.012
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+ enanble people ss 
+co = 0.010
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 2
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.009
+gas = 0.011
+smoke = 0.033
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+ enanble people ss 
+Humi :74.4% 
+co = 0.010
+gas = 0.011
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+ enanble people ss 
+co = 0.009
+gas = 0.012
+smoke = 0.032
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 6
+co = 0.009
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.5% 
+co = 0.009
+gas = 0.012
+smoke = 0.033
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+ enanble people ss 
+co = 0.009
+gas = 0.012
+smoke = 0.032
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+error2 time out  i = 0 , j = 5
+co = 0.008
+gas = 0.011
+smoke = 0.031
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.009
+gas = 0.011
+smoke = 0.031
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.008
+gas = 0.011
+smoke = 0.033
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.009
+gas = 0.012
+smoke = 0.031
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.008
+gas = 0.010
+smoke = 0.030
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.008
+gas = 0.011
+smoke = 0.028
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.008
+gas = 0.010
+smoke = 0.031
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.008
+gas = 0.010
+smoke = 0.029
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.007
+gas = 0.011
+smoke = 0.027
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.007
+gas = 0.011
+smoke = 0.027
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.008
+gas = 0.011
+smoke = 0.029
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.008
+gas = 0.011
+smoke = 0.028
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.007
+gas = 0.010
+smoke = 0.028
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.007
+gas = 0.010
+smoke = 0.026
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.008
+gas = 0.010
+smoke = 0.029
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.007
+gas = 0.010
+smoke = 0.028
+Temp :35.1°C 
+Humi :74.1% 
+co = 0.007
+gas = 0.010
+smoke = 0.026
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.007
+gas = 0.011
+smoke = 0.028
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.007
+gas = 0.010
+smoke = 0.028
+Temp :35.1°C 
+Humi :74.1% 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.003
+gas = 0.007
+smoke = 0.017
+error2 time out  i = 0 , j = 3
+co = 0.004
+gas = 0.007
+smoke = 0.017
+error2 time out  i = 0 , j = 4
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.004
+gas = 0.006
+smoke = 0.018
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+Temp :35.1°C 
+Humi :74.2% 
+[0;33mW (228636) transport_base: Poll timeout or error, errno=Success, fd=54, timeout_ms=10000[0m
+[0;31mE (228636) mqtt_client: Writing didn't complete in specified timeout: errno=0[0m
+[0;32mI (228636) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (228646) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (228646) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (228656) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+co = 0.004
+[0;33mW (228666) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (228676) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+gas = 0.006
+smoke = 0.017
+Temp :35.1°C 
+Humi :74.2% 
+co = 0.004
+gas = 0.006
+smoke = 0.018
+Temp :35.0°C 
+Humi :74.4% 
+co = 0.003
+gas = 0.006
+smoke = 0.016
+Temp :35.0°C 
+Humi :74.4% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :35.0°C 
+Humi :74.5% 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+Temp :35.0°C 
+Humi :74.5% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :35.0°C 
+Humi :74.5% 
+co = 0.004
+gas = 0.006
+smoke = 0.018
+Temp :35.1°C 
+Humi :74.5% 
+co = 0.003
+gas = 0.006
+smoke = 0.016
+Temp :35.1°C 
+Humi :74.5% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :35.0°C 
+Humi :74.5% 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+[0;32mI (238666) MQTT_EXAMPLE: Other event id:7[0m
+error2 time out  i = 0 , j = 5
+co = 0.004
+gas = 0.007
+smoke = 0.016
+Temp :35.1°C 
+Humi :74.5% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :35.1°C 
+Humi :74.5% 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+Temp :35.1°C 
+Humi :74.5% 
+co = 0.002
+gas = 0.005
+smoke = 0.013
+Temp :35.1°C 
+Humi :74.6% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+Temp :35.1°C 
+Humi :74.5% 
+co = 0.003
+gas = 0.006
+smoke = 0.015
+[0;32mI (245986) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (245996) MQTT_EXAMPLE: sent subscribe successful, msg_id=58037[0m
+[0;32mI (245996) MQTT_EXAMPLE: sent subscribe successful, msg_id=11390[0m
+[0;32mI (245996) MQTT_EXAMPLE: sent subscribe successful, msg_id=1270[0m
+Temp :35.1°C 
+[0;32mI (246176) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=58037[0m
+Humi :74.5% 
+co = 0.003
+gas = 0.005
+smoke = 0.013
+[0;32mI (246366) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=11390[0m
+[0;32mI (246366) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=1270[0m
+respond error 
+error2 time out  i = 0 , j = 7
+co = 0.004
+gas = 0.007
+smoke = 0.017
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.003
+gas = 0.005
+smoke = 0.012
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.003
+gas = 0.005
+smoke = 0.013
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.002
+gas = 0.004
+smoke = 0.009
+error2 time out  i = 0 , j = 5
+co = 0.002
+gas = 0.004
+smoke = 0.012
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.003
+gas = 0.006
+smoke = 0.014
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.002
+gas = 0.004
+smoke = 0.012
+error2 time out  i = 0 , j = 4
+co = 0.003
+gas = 0.005
+smoke = 0.014
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.003
+gas = 0.005
+smoke = 0.014
+error2 time out  i = 0 , j = 6
+co = 0.004
+gas = 0.006
+smoke = 0.015
+error2 time out  i = 0 , j = 7
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.002
+gas = 0.004
+smoke = 0.011
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.004
+gas = 0.006
+smoke = 0.015
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+Temp :35.1°C 
+Humi :74.4% 
+co = 0.004
+gas = 0.006
+smoke = 0.015
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.006
+gas = 0.009
+smoke = 0.023
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.014
+gas = 0.016
+smoke = 0.044
+Temp :35.1°C 
+Humi :74.3% 
+1 
+ bat sensor ss 
+ enanble people ss 
+co = 0.008
+gas = 0.010
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.3% 
+co = 0.009
+gas = 0.013
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.5% 
+ enanble people ss 
+co = 0.009
+gas = 0.011
+smoke = 0.032
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.7% 
+co = 0.012
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+ enanble people ss 
+Humi :74.7% 
+co = 0.012
+gas = 0.014
+smoke = 0.039
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 6
+co = 0.012
+gas = 0.015
+smoke = 0.041
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.7% 
+ enanble people ss 
+co = 0.013
+gas = 0.014
+smoke = 0.040
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 5
+co = 0.012
+gas = 0.014
+smoke = 0.040
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+Humi :74.7% 
+co = 0.011
+gas = 0.014
+smoke = 0.039
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.1°C 
+ enanble people ss 
+Humi :74.7% 
+co = 0.012
+gas = 0.014
+smoke = 0.040
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+respond error 
+error2 time out  i = 0 , j = 5
+co = 0.014
+gas = 0.016
+smoke = 0.045
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.2°C 
+Humi :74.7% 
+co = 0.020
+gas = 0.022
+smoke = 0.065
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.2°C 
+ enanble people ss 
+Humi :74.7% 
+co = 0.011
+gas = 0.013
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.2°C 
+Humi :74.8% 
+co = 0.010
+gas = 0.012
+smoke = 0.036
+ enanble people ss 
+Temp :35.2°C 
+Humi :74.8% 
+ enanble people ss 
+ enanble people ss 
+co = 0.009
+gas = 0.012
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 5
+co = 0.010
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 3
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.3°C 
+Humi :74.9% 
+co = 0.009
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.3°C 
+ enanble people ss 
+Humi :74.8% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 2
+co = 0.010
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.3°C 
+Humi :74.8% 
+ enanble people ss 
+co = 0.010
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.3°C 
+Humi :74.7% 
+co = 0.012
+gas = 0.014
+smoke = 0.040
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.3°C 
+Humi :74.7% 
+ enanble people ss 
+co = 0.011
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :74.6% 
+co = 0.010
+gas = 0.012
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 7
+co = 0.011
+gas = 0.013
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 2
+co = 0.010
+gas = 0.014
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :74.4% 
+co = 0.011
+gas = 0.014
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :74.4% 
+ enanble people ss 
+co = 0.011
+gas = 0.014
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :74.3% 
+co = 0.012
+gas = 0.014
+smoke = 0.039
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :74.3% 
+ enanble people ss 
+co = 0.012
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :74.3% 
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+ enanble people ss 
+Humi :74.2% 
+co = 0.011
+gas = 0.014
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 3
+co = 0.012
+gas = 0.014
+smoke = 0.041
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :74.1% 
+co = 0.012
+gas = 0.014
+ enanble people ss 
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 3
+co = 0.010
+gas = 0.013
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :73.9% 
+co = 0.010
+gas = 0.014
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 2
+co = 0.011
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :73.8% 
+co = 0.011
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :73.8% 
+ enanble people ss 
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 4
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :73.6% 
+co = 0.011
+gas = 0.013
+smoke = 0.039
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :73.6% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :73.6% 
+co = 0.010
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :73.4% 
+co = 0.010
+gas = 0.014
+smoke = 0.039
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :73.4% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 4
+co = 0.010
+gas = 0.014
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :73.3% 
+co = 0.010
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 1
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :73.3% 
+co = 0.011
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :73.2% 
+co = 0.012
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :73.2% 
+co = 0.012
+gas = 0.014
+smoke = 0.039
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :73.2% 
+co = 0.010
+gas = 0.012
+smoke = 0.037
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :73.1% 
+co = 0.011
+gas = 0.013
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :73.1% 
+ enanble people ss 
+co = 0.010
+gas = 0.012
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 2
+co = 0.010
+gas = 0.013
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.7°C 
+Humi :73.1% 
+co = 0.010
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :73.1% 
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :73.0% 
+co = 0.011
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :73.0% 
+co = 0.011
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.9% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :72.9% 
+co = 0.011
+gas = 0.014
+smoke = 0.039
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.9% 
+co = 0.011
+ enanble people ss 
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.8% 
+co = 0.012
+gas = 0.013
+smoke = 0.040
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.7°C 
+Humi :72.8% 
+ enanble people ss 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+co = 0.012
+gas = 0.014
+smoke = 0.039
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+ enanble people ss 
+co = 0.011
+gas = 0.013
+smoke = 0.037
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :72.7% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+co = 0.010
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :72.6% 
+co = 0.011
+gas = 0.014
+smoke = 0.038
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :72.6% 
+co = 0.012
+gas = 0.014
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.6% 
+co = 0.009
+ enanble people ss 
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 1
+co = 0.010
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.6% 
+co = 0.010
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :72.6% 
+co = 0.009
+gas = 0.012
+smoke = 0.035
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.6% 
+co = 0.010
+gas = 0.013
+smoke = 0.037
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :72.6% 
+co = 0.010
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.6% 
+co = 0.010
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :72.6% 
+co = 0.010
+gas = 0.013
+smoke = 0.036
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.6% 
+ enanble people ss 
+co = 0.010
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 1
+co = 0.009
+gas = 0.013
+smoke = 0.033
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.6% 
+co = 0.009
+gas = 0.012
+smoke = 0.033
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 6
+co = 0.009
+gas = 0.012
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 5
+co = 0.009
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.6% 
+co = 0.008
+gas = 0.012
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 1
+co = 0.009
+gas = 0.012
+smoke = 0.032
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :72.6% 
+co = 0.009
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+co = 0.010
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+ enanble people ss 
+Humi :72.6% 
+co = 0.010
+gas = 0.013
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+ enanble people ss 
+co = 0.009
+gas = 0.012
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+co = 0.009
+gas = 0.012
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+ enanble people ss 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 3
+co = 0.009
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 4
+co = 0.008
+ enanble people ss 
+gas = 0.011
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+co = 0.008
+gas = 0.011
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 6
+co = 0.008
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.6% 
+ enanble people ss 
+co = 0.008
+gas = 0.011
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.7% 
+co = 0.009
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 4
+co = 0.007
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.8% 
+[0;33mW (393266) transport_base: Poll timeout or error, errno=Success, fd=54, timeout_ms=10000[0m
+[0;31mE (393266) mqtt_client: Writing didn't complete in specified timeout: errno=0[0m
+[0;32mI (393266) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (393276) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (393276) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+ enanble people ss 
+[0;33mW (393286) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (393296) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (393306) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (393316) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+co = 0.008
+gas = 0.011
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.6°C 
+Humi :72.8% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :72.9% 
+ enanble people ss 
+co = 0.008
+gas = 0.011
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :72.9% 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :73.0% 
+ enanble people ss 
+co = 0.009
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :73.0% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :73.0% 
+ enanble people ss 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.0% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :73.0% 
+ enanble people ss 
+co = 0.009
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.0% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+[0;32mI (403286) MQTT_EXAMPLE: Other event id:7[0m
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+[0;32mI (403736) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (403736) MQTT_EXAMPLE: sent subscribe successful, msg_id=24283[0m
+[0;32mI (403746) MQTT_EXAMPLE: sent subscribe successful, msg_id=15559[0m
+[0;32mI (403746) MQTT_EXAMPLE: sent subscribe successful, msg_id=32072[0m
+ enanble people ss 
+[0;32mI (403946) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=24283[0m
+[0;32mI (404046) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=15559[0m
+[0;32mI (404046) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=32072[0m
+ enanble people ss 
+Temp :35.4°C 
+ enanble people ss 
+Humi :73.1% 
+co = 0.008
+gas = 0.011
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.1% 
+co = 0.009
+gas = 0.012
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+ enanble people ss 
+Humi :73.0% 
+co = 0.009
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.0% 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+ enanble people ss 
+Humi :73.1% 
+co = 0.009
+gas = 0.012
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.0% 
+ enanble people ss 
+co = 0.010
+gas = 0.011
+smoke = 0.032
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.0% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.0% 
+ enanble people ss 
+co = 0.009
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.0% 
+co = 0.009
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+ enanble people ss 
+Humi :73.0% 
+co = 0.009
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :73.1% 
+co = 0.007
+gas = 0.010
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 5
+co = 0.007
+gas = 0.010
+smoke = 0.027
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+ enanble people ss 
+Humi :73.1% 
+co = 0.008
+gas = 0.010
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.1% 
+ enanble people ss 
+co = 0.006
+gas = 0.010
+smoke = 0.026
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.5°C 
+Humi :73.1% 
+co = 0.007
+gas = 0.010
+smoke = 0.027
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.1% 
+ enanble people ss 
+co = 0.006
+gas = 0.010
+smoke = 0.026
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.1% 
+co = 0.007
+gas = 0.010
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.1% 
+ enanble people ss 
+co = 0.008
+gas = 0.010
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+co = 0.007
+gas = 0.010
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+ enanble people ss 
+Humi :73.1% 
+co = 0.007
+gas = 0.010
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 1
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 5
+co = 0.008
+gas = 0.010
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+ enanble people ss 
+co = 0.007
+gas = 0.010
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 1
+co = 0.008
+gas = 0.011
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+co = 0.008
+gas = 0.010
+smoke = 0.027
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+ enanble people ss 
+Humi :73.2% 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+ enanble people ss 
+co = 0.007
+gas = 0.011
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 5
+co = 0.007
+gas = 0.010
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+ enanble people ss 
+co = 0.008
+gas = 0.011
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+co = 0.008
+gas = 0.011
+smoke = 0.028
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+ enanble people ss 
+Humi :73.1% 
+co = 0.007
+gas = 0.011
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.1% 
+co = 0.008
+gas = 0.011
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+ enanble people ss 
+Humi :73.2% 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+co = 0.008
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+ enanble people ss 
+Humi :73.2% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+ enanble people ss 
+co = 0.008
+gas = 0.011
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.2% 
+ enanble people ss 
+co = 0.008
+gas = 0.011
+smoke = 0.031
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.1% 
+co = 0.007
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 3
+co = 0.009
+gas = 0.011
+smoke = 0.032
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 5
+co = 0.008
+gas = 0.011
+smoke = 0.029
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+error2 time out  i = 0 , j = 7
+co = 0.008
+gas = 0.011
+smoke = 0.030
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+Temp :35.4°C 
+Humi :73.1% 
+co = 0.009
+gas = 0.011
+smoke = 0.034
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+ enanble people ss 
+0 
+Temp :35.4°C 
+Humi :73.2% 
+co = 0.009
+gas = 0.012
+smoke = 0.031
+Temp :35.4°C 
+Humi :73.2% 
+co = 0.009
+gas = 0.012
+smoke = 0.031
+error2 time out  i = 0 , j = 3
+co = 0.009
+gas = 0.012
+smoke = 0.031
+Temp :35.4°C 
+Humi :73.2% 

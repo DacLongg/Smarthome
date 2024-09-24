@@ -1,0 +1,74 @@
+[1/5] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/App/ESP32/smart_room/build/partition_table/partition-table.bin D:/App/ESP32/smart_room/build/smart_room.bin"
+smart_room.bin binary size 0xe80f0 bytes. Smallest app partition is 0x100000 bytes. 0x17f10 bytes (9%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_room/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D D:\App\ESP32\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && D:\App\ESP32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=D:/App/ESP32/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/App/ESP32/smart_room/build -P D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2esptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 smart_room.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM4
+Connecting......
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a0:dd:6c:86:05:18
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16366...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16366 compressed) at 0x00001000 in 0.6 seconds (effective 384.5 kbit/s)...
+Hash of data verified.
+Compressed 950512 bytes to 590465...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e4ce... (5 %)
+Writing at 0x0002852e... (8 %)
+Writing at 0x0002d381... (10 %)
+Writing at 0x00034ec0... (13 %)
+Writing at 0x000407b5... (16 %)
+Writing at 0x00046395... (18 %)
+Writing at 0x0004be2e... (21 %)
+Writing at 0x000520a3... (24 %)
+Writing at 0x00057f60... (27 %)
+Writing at 0x0005dcc0... (29 %)
+Writing at 0x0006396e... (32 %)
+Writing at 0x0006a1b4... (35 %)
+Writing at 0x0006fd3a... (37 %)
+Writing at 0x00075aae... (40 %)
+Writing at 0x0007b1e5... (43 %)
+Writing at 0x0008051c... (45 %)
+Writing at 0x00085aa1... (48 %)
+Writing at 0x0008ad0f... (51 %)
+Writing at 0x000903e7... (54 %)
+Writing at 0x00095ad6... (56 %)
+Writing at 0x0009b69f... (59 %)
+Writing at 0x000a1232... (62 %)
+Writing at 0x000a6c3b... (64 %)
+Writing at 0x000ac8ca... (67 %)
+Writing at 0x000b2529... (70 %)
+Writing at 0x000b7d83... (72 %)
+Writing at 0x000bda9d... (75 %)
+Writing at 0x000c3548... (78 %)
+Writing at 0x000c9003... (81 %)
+Writing at 0x000d26aa... (83 %)
+Writing at 0x000dae82... (86 %)
+Writing at 0x000e0bf4... (89 %)
+Writing at 0x000e68cf... (91 %)
+Writing at 0x000ec48b... (94 %)
+Writing at 0x000f25bd... (97 %)
+Writing at 0x000f7dd5... (100 %)
+Wrote 950512 bytes (590465 compressed) at 0x00010000 in 13.4 seconds (effective 565.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1570.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+.1/components/esptool_py/run_serial_tool.cmake"

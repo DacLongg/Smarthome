@@ -1,0 +1,2461 @@
+[0;32mI (13) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a41ch (173084) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0003a444 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0003e108 vaddr=40080000 size=01f10h (  7952) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a27e8h (665576) map[0m
+[0;32mI (388) esp_image: segment 4: paddr=000e2810 vaddr=40081f10 size=15dd8h ( 89560) load[0m
+[0;32mI (435) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (435) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (455) cpu_start: Application information:[0m
+[0;32mI (458) cpu_start: Project name:     smart_room[0m
+[0;32mI (463) cpu_start: App version:      1[0m
+[0;32mI (468) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (474) cpu_start: ELF file SHA256:  c10c355ca...[0m
+[0;32mI (479) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (485) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (489) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (494) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (525) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (539) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (546) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (559) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (570) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (578) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (587) main_task: Started on CPU0[0m
+[0;32mI (597) main_task: Calling app_main()[0m
+[0;32mI (597) uart: queue free spaces: 20[0m
+I (657) wifi:wifi driver task: 3ffc14ac, prio:23, stack:6656, core=0
+I (677) wifi:wifi firmware version: a9f5b59
+I (687) wifi:wifi certification version: v7.0
+I (687) wifi:config NVS flash: enabled
+I (687) wifi:config nano formating: disabled
+I (687) wifi:Init data frame dynamic rx buffer num: 32
+I (687) wifi:Init static rx mgmt buffer num: 5
+I (697) wifi:Init management short buffer num: 32
+I (697) wifi:Init dynamic tx buffer num: 32
+I (707) wifi:Init static rx buffer size: 1600
+I (707) wifi:Init static rx buffer num: 10
+I (707) wifi:Init dynamic rx buffer num: 32
+[0;32mI (717) wifi_init: rx ba win: 6[0m
+[0;32mI (717) wifi_init: tcpip mbox: 32[0m
+[0;32mI (727) wifi_init: udp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp tx win: 5760[0m
+[0;32mI (737) wifi_init: tcp rx win: 5760[0m
+[0;32mI (737) wifi_init: tcp mss: 1440[0m
+[0;32mI (747) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (747) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (757) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (847) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (847) wifi:enable tsf
+handlehandlewifi connecthandle[0;32mI (3267) wifi station: retry to connect to the AP[0m
+[0;32mI (3267) wifi station: connect to the AP fail[0m
+I (3457) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3467) wifi:state: init -> auth (b0)
+I (5267) wifi:state: auth -> assoc (0)
+I (5277) wifi:state: assoc -> run (10)
+I (5337) wifi:connected with VietD, aid = 2, channel 1, BW20, bssid = d2:45:36:a6:08:da
+I (5337) wifi:security: WPA3-SAE, phy: bgn, rssi: -50
+I (5347) wifi:pm start, type: 1
+
+I (5357) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (5387) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:2, winSize:64
+I (5407) wifi:AP's beacon interval = 102400 us, DTIM period = 3
+[0;32mI (6357) esp_netif_handlers: sta ip: 172.20.10.3, mask: 255.255.255.240, gw: 172.20.10.1[0m
+handle[0;32mI (6357) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (6357) wifi station: got ip:172.20.10.3[0m
+[0;32mI (6357) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (6357) wifi station: connected to ap SSID:VietD password:vietzzzz2001[0m
+[0;32mI (6377) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6387) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6397) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6397) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6407) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6417) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (6427) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+uart task 
+
++CME ERROR: 58
+
+respond = 
++CME ERROR: 58
+, 18 
+time out 
+[0;32mI (7277) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (7277) MQTT_EXAMPLE: sent subscribe successful, msg_id=52897[0m
+[0;32mI (7287) MQTT_EXAMPLE: sent subscribe successful, msg_id=36593[0m
+[0;32mI (7287) MQTT_EXAMPLE: sent subscribe successful, msg_id=7534[0m
+time out 
+ 0, 0, 0.000 
+[0;32mI (7557) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=52897[0m
+[0;32mI (7967) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=36593[0m
+[0;32mI (7977) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=7534[0m
+time out 
+ 0, 0, 0.000 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.001
+gas = 0.018
+smoke = 0.043
+ 6, 178, 0.043 
+Temp :25.3°C 
+Humi :74.4% 
+co = 0.001
+gas = 0.019
+smoke = 0.045
+ 7, 191, 0.045 
+Temp :25.3°C 
+Humi :74.4% 
+co = 0.001
+gas = 0.019
+smoke = 0.046
+ 6, 192, 0.046 
+Temp :25.3°C 
+Humi :74.4% 
+co = 0.001
+gas = 0.016
+smoke = 0.037
+ 5, 155, 0.037 
+Temp :25.3°C 
+Humi :74.4% 
+co = 0.001
+gas = 0.019
+smoke = 0.044
+ 6, 185, 0.044 
+Temp :25.3°C 
+Humi :74.4% 
+co = 0.000
+gas = 0.015
+smoke = 0.037
+ 4, 152, 0.037 
+Temp :25.3°C 
+Humi :74.4% 
+co = 0.001
+gas = 0.017
+smoke = 0.043
+ 6, 174, 0.043 
+error2 time out  i = 0 , j = 5
+co = 0.001
+gas = 0.015
+smoke = 0.037
+ 5, 153, 0.037 
+Temp :25.3°C 
+Humi :74.3% 
+co = 0.001
+gas = 0.018
+smoke = 0.043
+ 6, 180, 0.043 
+Temp :25.4°C 
+Humi :74.3% 
+co = 0.000
+gas = 0.016
+smoke = 0.039
+ 4, 161, 0.039 
+Temp :25.4°C 
+Humi :74.2% 
+co = 0.001
+gas = 0.016
+smoke = 0.036
+ 5, 155, 0.036 
+Temp :25.4°C 
+Humi :74.2% 
+co = 0.001
+gas = 0.017
+smoke = 0.043
+ 6, 174, 0.043 
+Temp :25.4°C 
+Humi :74.2% 
+co = 0.001
+gas = 0.016
+smoke = 0.038
+ 5, 164, 0.038 
+Temp :25.4°C 
+Humi :74.1% 
+co = 0.001
+gas = 0.018
+smoke = 0.044
+ 6, 176, 0.044 
+Temp :25.4°C 
+Humi :74.1% 
+co = 0.001
+gas = 0.018
+smoke = 0.044
+ 6, 179, 0.044 
+Temp :25.4°C 
+Humi :74.1% 
+co = 0.000
+gas = 0.016
+smoke = 0.036
+ 4, 156, 0.036 
+Temp :25.4°C 
+Humi :74.0% 
+co = 0.001
+gas = 0.017
+smoke = 0.040
+ 6, 170, 0.040 
+Temp :25.4°C 
+Humi :74.0% 
+co = 0.000
+gas = 0.016
+smoke = 0.037
+ 4, 156, 0.037 
+Temp :25.4°C 
+Humi :73.9% 
+co = 0.001
+gas = 0.017
+smoke = 0.041
+ 6, 170, 0.041 
+error2 time out  i = 0 , j = 7
+co = 0.000
+gas = 0.015
+smoke = 0.038
+ 4, 154, 0.038 
+Temp :25.4°C 
+Humi :73.8% 
+co = 0.001
+gas = 0.018
+smoke = 0.043
+ 6, 178, 0.043 
+Temp :25.4°C 
+Humi :73.8% 
+co = 0.000
+gas = 0.016
+smoke = 0.038
+ 4, 159, 0.038 
+Temp :25.4°C 
+Humi :73.7% 
+co = 0.001
+gas = 0.017
+smoke = 0.041
+ 5, 167, 0.041 
+Temp :25.4°C 
+Humi :73.6% 
+co = 0.001
+gas = 0.017
+smoke = 0.041
+ 6, 166, 0.041 
+Temp :25.5°C 
+Humi :73.6% 
+co = 0.000
+gas = 0.016
+smoke = 0.037
+ 4, 157, 0.037 
+Temp :25.4°C 
+Humi :73.5% 
+co = 0.001
+gas = 0.018
+smoke = 0.041
+ 6, 178, 0.041 
+Temp :25.5°C 
+Humi :73.5% 
+co = 0.000
+gas = 0.015
+smoke = 0.035
+ 4, 152, 0.035 
+Temp :25.5°C 
+Humi :73.4% 
+co = 0.001
+gas = 0.018
+smoke = 0.043
+ 6, 178, 0.043 
+Temp :25.5°C 
+Humi :73.4% 
+co = 0.001
+gas = 0.018
+smoke = 0.043
+ 5, 177, 0.043 
+Temp :25.5°C 
+Humi :73.3% 
+co = 0.001
+gas = 0.017
+smoke = 0.041
+ 6, 174, 0.041 
+error2 time out  i = 0 , j = 4
+co = 0.001
+gas = 0.017
+smoke = 0.042
+ 5, 166, 0.042 
+Temp :25.5°C 
+Humi :73.2% 
+co = 0.000
+gas = 0.015
+smoke = 0.036
+ 4, 154, 0.036 
+error2 time out  i = 0 , j = 7
+co = 0.001
+gas = 0.017
+smoke = 0.040
+ 6, 165, 0.040 
+Temp :25.5°C 
+Humi :73.1% 
+co = 0.001
+gas = 0.016
+smoke = 0.041
+ 5, 164, 0.041 
+Temp :25.5°C 
+Humi :73.0% 
+co = 0.001
+gas = 0.017
+smoke = 0.041
+ 5, 172, 0.041 
+Temp :25.5°C 
+Humi :73.0% 
+co = 0.000
+gas = 0.015
+smoke = 0.037
+ 4, 149, 0.037 
+Temp :25.5°C 
+Humi :72.9% 
+co = 0.001
+gas = 0.016
+smoke = 0.042
+ 5, 164, 0.042 
+Temp :25.5°C 
+Humi :72.8% 
+co = 0.000
+gas = 0.014
+smoke = 0.036
+ 4, 143, 0.036 
+Temp :25.5°C 
+Humi :72.7% 
+co = 0.001
+gas = 0.017
+smoke = 0.040
+ 5, 174, 0.040 
+Temp :25.5°C 
+Humi :72.7% 
+co = 0.001
+gas = 0.017
+smoke = 0.039
+ 5, 166, 0.039 
+Temp :25.5°C 
+Humi :72.6% 
+co = 0.000
+gas = 0.014
+smoke = 0.036
+ 4, 142, 0.036 
+Temp :25.5°C 
+Humi :72.5% 
+co = 0.001
+gas = 0.017
+smoke = 0.039
+ 5, 169, 0.039 
+Temp :25.5°C 
+Humi :72.5% 
+co = 0.000
+gas = 0.015
+smoke = 0.035
+ 4, 153, 0.035 
+Temp :25.5°C 
+Humi :72.4% 
+co = 0.001
+gas = 0.017
+smoke = 0.041
+ 5, 169, 0.041 
+Temp :25.5°C 
+Humi :72.3% 
+co = 0.001
+gas = 0.016
+smoke = 0.038
+ 5, 157, 0.038 
+Temp :25.5°C 
+Humi :72.2% 
+co = 0.000
+gas = 0.017
+smoke = 0.040
+ 4, 170, 0.040 
+error2 time out  i = 0 , j = 4
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 4, 138, 0.034 
+Temp :25.5°C 
+Humi :72.2% 
+co = 0.000
+gas = 0.015
+smoke = 0.036
+ 4, 146, 0.036 
+Temp :25.5°C 
+Humi :72.1% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 3, 140, 0.033 
+Temp :25.5°C 
+Humi :72.0% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 4, 138, 0.033 
+Temp :25.5°C 
+Humi :72.0% 
+co = 0.000
+gas = 0.016
+smoke = 0.038
+ 4, 157, 0.038 
+error2 time out  i = 0 , j = 3
+co = 0.000
+gas = 0.013
+smoke = 0.032
+ 4, 134, 0.032 
+Temp :25.5°C 
+Humi :71.9% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 4, 137, 0.033 
+Temp :25.5°C 
+Humi :71.8% 
+co = 0.000
+gas = 0.014
+smoke = 0.032
+ 3, 136, 0.032 
+Temp :25.5°C 
+Humi :71.7% 
+co = 0.001
+gas = 0.017
+smoke = 0.040
+ 5, 166, 0.040 
+Temp :25.5°C 
+Humi :71.7% 
+co = 0.000
+gas = 0.015
+smoke = 0.034
+ 3, 146, 0.034 
+respond error 
+error2 time out  i = 0 , j = 7
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 4, 144, 0.034 
+Temp :25.6°C 
+Humi :71.6% 
+co = 0.000
+gas = 0.014
+smoke = 0.032
+ 3, 135, 0.032 
+Temp :25.6°C 
+Humi :71.6% 
+co = 0.001
+gas = 0.015
+smoke = 0.036
+ 5, 153, 0.036 
+Temp :25.6°C 
+Humi :71.6% 
+co = 0.000
+gas = 0.014
+smoke = 0.032
+ 3, 141, 0.032 
+Temp :25.5°C 
+Humi :71.5% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 4, 131, 0.031 
+Temp :25.6°C 
+Humi :71.5% 
+co = 0.001
+gas = 0.016
+smoke = 0.038
+ 5, 163, 0.038 
+Temp :25.6°C 
+Humi :71.4% 
+co = 0.000
+gas = 0.013
+smoke = 0.033
+ 3, 134, 0.033 
+Temp :25.6°C 
+Humi :71.3% 
+co = 0.001
+gas = 0.016
+smoke = 0.039
+ 5, 161, 0.039 
+Temp :25.6°C 
+Humi :71.2% 
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 4, 135, 0.034 
+Temp :25.5°C 
+Humi :71.2% 
+co = 0.001
+gas = 0.015
+smoke = 0.037
+ 5, 154, 0.037 
+Temp :25.6°C 
+Humi :71.1% 
+co = 0.000
+gas = 0.015
+smoke = 0.037
+ 4, 153, 0.037 
+Temp :25.6°C 
+Humi :71.0% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 4, 131, 0.031 
+Temp :25.6°C 
+Humi :71.0% 
+co = 0.000
+gas = 0.016
+smoke = 0.037
+ 4, 160, 0.037 
+Temp :25.6°C 
+Humi :70.9% 
+co = 0.000
+gas = 0.016
+smoke = 0.037
+ 4, 158, 0.037 
+Temp :25.6°C 
+Humi :70.9% 
+co = 0.000
+gas = 0.014
+smoke = 0.032
+ 3, 140, 0.032 
+Temp :25.6°C 
+Humi :70.8% 
+co = 0.000
+gas = 0.015
+smoke = 0.035
+ 4, 151, 0.035 
+Temp :25.6°C 
+Humi :70.8% 
+co = 0.000
+gas = 0.013
+smoke = 0.033
+ 3, 133, 0.033 
+error2 time out  i = 0 , j = 5
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 133, 0.031 
+Temp :25.6°C 
+Humi :70.7% 
+co = 0.000
+gas = 0.014
+smoke = 0.032
+ 3, 140, 0.032 
+Temp :25.6°C 
+Humi :70.6% 
+co = 0.000
+gas = 0.013
+smoke = 0.032
+ 3, 131, 0.032 
+error2 time out  i = 0 , j = 5
+co = 0.000
+gas = 0.014
+smoke = 0.031
+ 3, 138, 0.031 
+Temp :25.6°C 
+Humi :70.5% 
+co = 0.000
+gas = 0.015
+smoke = 0.036
+ 4, 153, 0.036 
+Temp :25.6°C 
+Humi :70.5% 
+co = 0.000
+gas = 0.015
+smoke = 0.036
+ 4, 147, 0.036 
+Temp :25.6°C 
+Humi :70.4% 
+co = 0.000
+gas = 0.015
+smoke = 0.036
+ 4, 149, 0.036 
+Temp :25.6°C 
+Humi :70.4% 
+co = 0.000
+gas = 0.015
+smoke = 0.034
+ 4, 149, 0.034 
+Temp :25.6°C 
+Humi :70.3% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 129, 0.031 
+Temp :25.6°C 
+Humi :70.2% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 130, 0.030 
+Temp :25.6°C 
+Humi :70.2% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 132, 0.030 
+Temp :25.6°C 
+Humi :70.2% 
+co = 0.000
+gas = 0.015
+smoke = 0.034
+ 4, 147, 0.034 
+Temp :25.6°C 
+Humi :70.1% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 4, 142, 0.033 
+Temp :25.6°C 
+Humi :70.0% 
+co = 0.000
+gas = 0.013
+smoke = 0.032
+ 3, 132, 0.032 
+Temp :25.6°C 
+Humi :69.9% 
+co = 0.000
+gas = 0.015
+smoke = 0.034
+ 4, 146, 0.034 
+Temp :25.6°C 
+Humi :69.9% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 126, 0.031 
+Temp :25.6°C 
+Humi :69.9% 
+co = 0.000
+gas = 0.015
+smoke = 0.035
+ 4, 150, 0.035 
+Temp :25.6°C 
+Humi :69.8% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 130, 0.030 
+Temp :25.6°C 
+Humi :69.7% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 128, 0.030 
+error2 time out  i = 0 , j = 5
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 126, 0.031 
+Temp :25.6°C 
+Humi :69.6% 
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 3, 141, 0.034 
+Temp :25.6°C 
+Humi :69.5% 
+co = 0.000
+gas = 0.014
+smoke = 0.036
+ 4, 142, 0.036 
+Temp :25.6°C 
+Humi :69.5% 
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 4, 139, 0.034 
+error2 time out  i = 0 , j = 7
+co = 0.000
+gas = 0.015
+smoke = 0.035
+Temp :25.6°C 
+ 4, 148, 0.035 
+Humi :69.4% 
+co = 0.000
+gas = 0.013
+smoke = 0.032
+ 3, 131, 0.032 
+error2 time out  i = 0 , j = 1
+co = 0.000
+gas = 0.013
+smoke = 0.031
+Temp :25.6°C 
+Humi :69.3% 
+ 3, 129, 0.031 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+error2 time out  i = 0 , j = 7
+co = 0.000
+gas = 0.015
+smoke = 0.035
+ 4, 153, 0.035 
+Temp :25.6°C 
+Humi :69.2% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 131, 0.031 
+Temp :25.6°C 
+Humi :69.1% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 4, 139, 0.033 
+Temp :25.6°C 
+Humi :69.1% 
+co = 0.000
+gas = 0.013
+smoke = 0.029
+ 3, 128, 0.029 
+Temp :25.6°C 
+Humi :69.0% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 4, 141, 0.033 
+error2 time out  i = 0 , j = 6
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 3, 120, 0.028 
+error2 time out  i = 0 , j = 5
+co = 0.000
+gas = 0.012
+smoke = 0.030
+ 3, 120, 0.030 
+Temp :25.6°C 
+Humi :68.9% 
+co = 0.000
+gas = 0.013
+smoke = 0.029
+ 3, 126, 0.029 
+Temp :25.6°C 
+Humi :68.8% 
+co = 0.000
+gas = 0.013
+smoke = 0.032
+ 3, 134, 0.032 
+Temp :25.6°C 
+Humi :68.8% 
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 3, 123, 0.029 
+Temp :25.6°C 
+Humi :68.7% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 4, 143, 0.033 
+Temp :25.6°C 
+Humi :68.6% 
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 3, 144, 0.034 
+Temp :25.6°C 
+Humi :68.6% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 126, 0.030 
+Temp :25.6°C 
+Humi :68.5% 
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 3, 142, 0.034 
+Temp :25.6°C 
+Humi :68.5% 
+co = 0.000
+gas = 0.013
+smoke = 0.029
+ 3, 125, 0.029 
+Temp :25.6°C 
+Humi :68.4% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 3, 141, 0.033 
+Temp :25.6°C 
+Humi :68.4% 
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 3, 141, 0.034 
+Temp :25.6°C 
+Humi :68.3% 
+co = 0.000
+gas = 0.011
+smoke = 0.028
+ 3, 114, 0.028 
+Temp :25.6°C 
+Humi :68.3% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 4, 140, 0.033 
+Temp :25.6°C 
+Humi :68.2% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 2, 123, 0.028 
+Temp :25.6°C 
+Humi :68.1% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 3, 136, 0.033 
+error2 time out  i = 0 , j = 6
+co = 0.000
+gas = 0.011
+smoke = 0.029
+ 2, 114, 0.029 
+Temp :25.6°C 
+Humi :68.0% 
+co = 0.000
+gas = 0.015
+smoke = 0.036
+ 4, 147, 0.036 
+error2 time out  i = 0 , j = 3
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 126, 0.031 
+Temp :25.6°C 
+Humi :68.0% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 3, 136, 0.033 
+Temp :25.6°C 
+Humi :67.9% 
+co = 0.000
+gas = 0.014
+smoke = 0.033
+ 3, 142, 0.033 
+Temp :25.6°C 
+Humi :67.9% 
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 4, 143, 0.034 
+Temp :25.6°C 
+Humi :67.9% 
+co = 0.000
+gas = 0.014
+smoke = 0.034
+ 4, 141, 0.034 
+Temp :25.6°C 
+Humi :67.8% 
+co = 0.000
+gas = 0.013
+smoke = 0.029
+ 3, 126, 0.029 
+Temp :25.6°C 
+Humi :67.8% 
+co = 0.000
+gas = 0.014
+smoke = 0.035
+ 3, 141, 0.035 
+Temp :25.6°C 
+Humi :67.8% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 3, 120, 0.028 
+Temp :25.6°C 
+Humi :67.7% 
+co = 0.000
+gas = 0.013
+smoke = 0.033
+ 4, 134, 0.033 
+Temp :25.6°C 
+Humi :67.6% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 133, 0.031 
+Temp :25.6°C 
+Humi :67.6% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 131, 0.031 
+Temp :25.6°C 
+Humi :67.7% 
+co = 0.000
+gas = 0.013
+smoke = 0.032
+ 3, 131, 0.032 
+Temp :25.6°C 
+Humi :67.5% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 2, 116, 0.027 
+Temp :25.6°C 
+Humi :67.5% 
+co = 0.000
+gas = 0.014
+smoke = 0.032
+ 4, 136, 0.032 
+error2 time out  i = 0 , j = 5
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 2, 116, 0.029 
+Temp :25.6°C 
+Humi :67.5% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 131, 0.031 
+Temp :25.6°C 
+Humi :67.4% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 2, 116, 0.027 
+Temp :25.6°C 
+Humi :67.4% 
+co = 0.000
+gas = 0.014
+smoke = 0.032
+ 3, 138, 0.032 
+Temp :25.6°C 
+Humi :67.3% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 4, 130, 0.031 
+Temp :25.6°C 
+Humi :67.3% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 3, 120, 0.028 
+Temp :25.6°C 
+Humi :67.2% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 2, 113, 0.027 
+Temp :25.6°C 
+Humi :67.2% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 3, 120, 0.027 
+Temp :25.6°C 
+Humi :67.2% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 130, 0.031 
+Temp :25.6°C 
+Humi :67.1% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 3, 116, 0.027 
+Temp :25.6°C 
+Humi :67.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.028
+ 2, 112, 0.028 
+Temp :25.6°C 
+Humi :67.0% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 130, 0.031 
+Temp :25.6°C 
+Humi :67.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 2, 113, 0.027 
+Temp :25.6°C 
+Humi :67.0% 
+co = 0.000
+gas = 0.013
+smoke = 0.032
+ 3, 134, 0.032 
+Temp :25.6°C 
+Humi :66.9% 
+co = 0.000
+gas = 0.013
+smoke = 0.032
+ 3, 129, 0.032 
+Temp :25.6°C 
+Humi :66.8% 
+co = 0.000
+gas = 0.012
+smoke = 0.026
+ 2, 120, 0.026 
+Temp :25.6°C 
+Humi :66.9% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 130, 0.030 
+Temp :25.6°C 
+Humi :66.8% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 2, 111, 0.027 
+Temp :25.6°C 
+Humi :66.8% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 126, 0.031 
+Temp :25.6°C 
+Humi :66.7% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 129, 0.031 
+Temp :25.6°C 
+Humi :66.7% 
+co = 0.000
+gas = 0.013
+smoke = 0.027
+ 3, 131, 0.027 
+Temp :25.6°C 
+Humi :66.6% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 131, 0.031 
+Temp :25.6°C 
+Humi :66.6% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 2, 116, 0.027 
+Temp :25.6°C 
+Humi :66.6% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 134, 0.031 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 2, 115, 0.028 
+Temp :25.6°C 
+Humi :66.5% 
+co = 0.000
+gas = 0.013
+smoke = 0.032
+ 3, 131, 0.032 
+Temp :25.6°C 
+Humi :66.4% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 125, 0.031 
+Temp :25.6°C 
+Humi :66.4% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 129, 0.030 
+Temp :25.6°C 
+Humi :66.4% 
+co = 0.000
+gas = 0.013
+smoke = 0.029
+ 3, 127, 0.029 
+Temp :25.6°C 
+Humi :66.4% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 2, 116, 0.027 
+Temp :25.6°C 
+Humi :66.3% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 128, 0.030 
+Temp :25.6°C 
+Humi :66.3% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 2, 110, 0.027 
+Temp :25.6°C 
+Humi :66.3% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 131, 0.031 
+Temp :25.6°C 
+Humi :66.3% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 127, 0.030 
+Temp :25.6°C 
+Humi :66.2% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 2, 115, 0.027 
+Temp :25.6°C 
+Humi :66.2% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 129, 0.030 
+Temp :25.6°C 
+Humi :66.2% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 110, 0.025 
+Temp :25.6°C 
+Humi :66.2% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 108, 0.025 
+error2 time out  i = 0 , j = 5
+co = 0.000
+gas = 0.011
+smoke = 0.026
+ 2, 109, 0.026 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.013
+smoke = 0.031
+ 3, 128, 0.031 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 130, 0.030 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 3, 123, 0.029 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 107, 0.025 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 2, 116, 0.027 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 3, 123, 0.029 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 3, 119, 0.029 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 3, 120, 0.029 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 3, 121, 0.029 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+ 2, 113, 0.026 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.030
+ 3, 123, 0.030 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+ 2, 113, 0.026 
+Temp :25.5°C 
+Humi :65.9% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 3, 120, 0.028 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 3, 124, 0.029 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 109, 0.025 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 3, 118, 0.028 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 110, 0.025 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.013
+smoke = 0.030
+ 3, 125, 0.030 
+error2 time out  i = 0 , j = 2
+co = 0.000
+gas = 0.010
+smoke = 0.025
+ 2, 104, 0.025 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.013
+smoke = 0.029
+ 3, 125, 0.029 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+ 2, 106, 0.026 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 2, 122, 0.028 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 2, 122, 0.029 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 110, 0.025 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 3, 120, 0.028 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 108, 0.025 
+Temp :25.6°C 
+Humi :66.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.029
+ 3, 114, 0.029 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 3, 115, 0.027 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 101, 0.023 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 3, 116, 0.028 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.013
+smoke = 0.029
+ 3, 125, 0.029 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.011
+smoke = 0.023
+ 2, 107, 0.023 
+Temp :25.6°C 
+Humi :66.1% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 3, 120, 0.028 
+Temp :25.6°C 
+Humi :66.2% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 2, 116, 0.027 
+Temp :25.6°C 
+Humi :66.2% 
+co = 0.000
+gas = 0.011
+smoke = 0.028
+ 3, 114, 0.028 
+Temp :25.6°C 
+Humi :66.2% 
+co = 0.000
+gas = 0.010
+smoke = 0.025
+ 2, 104, 0.025 
+Temp :25.6°C 
+Humi :66.3% 
+co = 0.000
+gas = 0.012
+smoke = 0.027
+ 2, 122, 0.027 
+Temp :25.6°C 
+Humi :66.3% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 103, 0.023 
+Temp :25.6°C 
+Humi :66.3% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 3, 113, 0.027 
+Temp :25.6°C 
+Humi :66.4% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 3, 114, 0.027 
+Temp :25.6°C 
+Humi :66.4% 
+co = 0.000
+gas = 0.011
+smoke = 0.024
+ 2, 106, 0.024 
+I (246297) wifi:<ba-del>idx:0, tid:0
+I (246317) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:648, winSize:64
+Temp :25.6°C 
+Humi :66.4% 
+co = 0.000
+gas = 0.012
+smoke = 0.029
+ 2, 116, 0.029 
+Temp :25.6°C 
+Humi :66.5% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 106, 0.025 
+Temp :25.6°C 
+Humi :66.5% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 2, 112, 0.027 
+error2 time out  i = 0 , j = 3
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 103, 0.023 
+Temp :25.6°C 
+Humi :66.5% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 3, 113, 0.027 
+Temp :25.6°C 
+Humi :66.6% 
+co = 0.000
+gas = 0.010
+smoke = 0.025
+ 2, 98, 0.025 
+Temp :25.6°C 
+Humi :66.6% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 2, 113, 0.027 
+I (254267) wifi:<ba-del>idx:0, tid:0
+I (254277) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:662, winSize:64
+Temp :25.6°C 
+Humi :66.7% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 98, 0.023 
+Temp :25.6°C 
+Humi :66.7% 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+ 2, 113, 0.026 
+Temp :25.6°C 
+Humi :66.7% 
+co = 0.000
+gas = 0.012
+smoke = 0.028
+ 2, 116, 0.028 
+Temp :25.6°C 
+Humi :66.8% 
+co = 0.000
+gas = 0.010
+smoke = 0.025
+ 2, 101, 0.025 
+Temp :25.6°C 
+Humi :66.8% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+I (259277) wifi:<ba-del>idx:0, tid:0
+I (259287) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:667, winSize:64
+ 2, 99, 0.023 
+Temp :25.6°C 
+Humi :66.9% 
+co = 0.000
+gas = 0.011
+smoke = 0.028
+ 2, 114, 0.028 
+Temp :25.6°C 
+Humi :66.9% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+Temp :25.6°C 
+Humi :67.0% 
+ 1, 96, 0.023 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+Temp :25.6°C 
+Humi :67.0% 
+ 2, 113, 0.027 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+Temp :25.6°C 
+Humi :67.1% 
+ 2, 97, 0.023 
+co = 0.000
+gas = 0.010
+smoke = 0.024
+Temp :25.6°C 
+Humi :67.1% 
+ 2, 103, 0.024 
+co = 0.000
+gas = 0.011
+smoke = 0.028
+Temp :25.6°C 
+Humi :67.2% 
+ 2, 113, 0.028 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+Temp :25.6°C 
+Humi :67.2% 
+ 2, 100, 0.023 
+I (270257) wifi:<ba-del>idx:0, tid:0
+I (270277) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:677, winSize:64
+co = 0.000
+gas = 0.010
+smoke = 0.024
+Temp :25.6°C 
+Humi :67.2% 
+ 2, 103, 0.024 
+co = 0.000
+gas = 0.011
+smoke = 0.028
+Temp :25.6°C 
+Humi :67.3% 
+ 2, 111, 0.028 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+I (277467) wifi:<ba-del>idx:0, tid:0
+I (277477) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:683, winSize:64
+ 2, 98, 0.023 
+Temp :25.6°C 
+Humi :67.4% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 96, 0.023 
+Temp :25.6°C 
+Humi :67.5% 
+co = 0.000
+gas = 0.010
+smoke = 0.024
+I (280467) wifi:<ba-del>idx:0, tid:0
+I (280477) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:686, winSize:64
+ 2, 98, 0.024 
+error2 time out  i = 0 , j = 4
+co = 0.000
+gas = 0.010
+smoke = 0.024
+Temp :25.6°C 
+ 2, 100, 0.024 
+Humi :67.6% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+Temp :25.6°C 
+ 2, 100, 0.023 
+Humi :67.6% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+Temp :25.6°C 
+ 2, 113, 0.027 
+Humi :67.7% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+Temp :25.6°C 
+ 2, 113, 0.025 
+Humi :67.8% 
+co = 0.000
+gas = 0.010
+smoke = 0.022
+Temp :25.6°C 
+ 2, 98, 0.022 
+Humi :67.8% 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+ 2, 108, 0.026 
+error2 time out  i = 0 , j = 1
+co = 0.000
+gas = 0.010
+smoke = 0.022
+Temp :25.6°C 
+Humi :67.8% 
+ 2, 96, 0.022 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+Temp :25.6°C 
+Humi :67.9% 
+ 2, 113, 0.027 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+Temp :25.6°C 
+Humi :67.9% 
+ 1, 100, 0.023 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+Temp :25.6°C 
+Humi :67.9% 
+ 2, 105, 0.027 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+Temp :25.6°C 
+Humi :68.0% 
+ 2, 108, 0.025 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+Temp :25.6°C 
+ 1, 99, 0.023 
+Humi :68.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+Temp :25.6°C 
+ 2, 109, 0.026 
+Humi :68.1% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+Temp :25.6°C 
+ 2, 98, 0.023 
+Humi :68.2% 
+co = 0.000
+gas = 0.009
+smoke = 0.022
+Temp :25.6°C 
+ 2, 94, 0.022 
+Humi :68.2% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+W (297907) wifi:[ADDBA]rx delba, code:1, delete tid:0
+Temp :25.6°C 
+ 2, 105, 0.025 
+Humi :68.3% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+Temp :25.6°C 
+ 2, 96, 0.023 
+Humi :68.3% 
+co = 0.000
+gas = 0.009
+smoke = 0.022
+Temp :25.6°C 
+Humi :68.4% 
+ 1, 94, 0.022 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+Temp :25.6°C 
+Humi :68.5% 
+ 1, 96, 0.023 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+Temp :25.6°C 
+Humi :68.5% 
+ 2, 109, 0.025 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+Temp :25.6°C 
+Humi :68.5% 
+ 2, 107, 0.025 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+Temp :25.6°C 
+Humi :68.6% 
+ 2, 113, 0.026 
+co = 0.000
+gas = 0.009
+smoke = 0.022
+Temp :25.7°C 
+Humi :68.7% 
+ 1, 92, 0.022 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+error2 time out  i = 0 , j = 6
+co = 0.000
+gas = 0.010
+smoke = 0.025
+ 2, 104, 0.025 
+Temp :25.6°C 
+Humi :68.8% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 1, 97, 0.023 
+Temp :25.7°C 
+Humi :68.8% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 105, 0.025 
+Temp :25.6°C 
+Humi :68.9% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 96, 0.023 
+Temp :25.6°C 
+Humi :69.0% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 2, 112, 0.027 
+Temp :25.6°C 
+Humi :69.0% 
+co = 0.000
+gas = 0.010
+smoke = 0.022
+ 1, 95, 0.022 
+Temp :25.7°C 
+Humi :69.1% 
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 98, 0.023 
+Temp :25.7°C 
+Humi :69.1% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 2, 105, 0.027 
+Temp :25.7°C 
+Humi :69.1% 
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 90, 0.021 
+Temp :25.7°C 
+Humi :69.1% 
+co = 0.000
+gas = 0.010
+smoke = 0.022
+ 1, 99, 0.022 
+Temp :25.7°C 
+Humi :69.2% 
+ 1, 99, 0.022 
+co = 0.000
+gas = 0.010
+smoke = 0.022
+Temp :25.7°C 
+Humi :69.2% 
+ 1, 95, 0.022 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+Temp :25.7°C 
+Humi :69.3% 
+ 2, 107, 0.025 
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 89, 0.022 
+Temp :25.7°C 
+Humi :69.3% 
+co = 0.000
+gas = 0.011
+smoke = 0.027
+ 2, 112, 0.027 
+error2 time out  i = 0 , j = 4
+co = 0.000
+gas = 0.009
+smoke = 0.021
+Temp :25.7°C 
+Humi :69.4% 
+ 1, 91, 0.021 
+co = 0.000
+gas = 0.010
+smoke = 0.025
+Temp :25.7°C 
+ 2, 102, 0.025 
+Humi :69.5% 
+co = 0.000
+gas = 0.011
+smoke = 0.025
+Temp :25.7°C 
+ 2, 106, 0.025 
+Humi :69.6% 
+co = 0.000
+gas = 0.010
+smoke = 0.026
+Temp :25.7°C 
+ 2, 103, 0.026 
+Humi :69.6% 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+Temp :25.7°C 
+ 2, 111, 0.026 
+Humi :69.7% 
+co = 0.000
+gas = 0.009
+smoke = 0.021
+Temp :25.7°C 
+ 1, 89, 0.021 
+Humi :69.7% 
+co = 0.000
+gas = 0.010
+smoke = 0.024
+Temp :25.7°C 
+ 2, 103, 0.024 
+Humi :69.7% 
+co = 0.000
+gas = 0.009
+smoke = 0.021
+Temp :25.7°C 
+ 1, 90, 0.021 
+Humi :69.7% 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+ 2, 108, 0.026 
+error2 time out  i = 0 , j = 3
+co = 0.000
+gas = 0.010
+smoke = 0.024
+Temp :25.7°C 
+Humi :69.8% 
+ 2, 101, 0.024 
+co = 0.000
+gas = 0.011
+smoke = 0.024
+error2 time out  i = 0 , j = 4
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 91, 0.022 
+Temp :25.7°C 
+Humi :69.8% 
+co = 0.000
+gas = 0.011
+smoke = 0.026
+ 2, 105, 0.026 
+Temp :25.7°C 
+Humi :69.9% 
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 89, 0.021 
+ 1, 89, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 93, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 89, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.024
+ 2, 105, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 89, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 92, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 107, 0.025 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 107, 0.025 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.024
+ 2, 101, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.024
+ 2, 108, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 105, 0.025 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.024
+ 2, 107, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.026
+ 2, 98, 0.026 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.025
+ 2, 103, 0.025 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 106, 0.025 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 93, 0.021 
+ 1, 93, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 89, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 110, 0.025 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 93, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.021
+ 1, 96, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.025
+ 2, 107, 0.025 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.024
+ 2, 104, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.011
+smoke = 0.023
+ 2, 107, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 93, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 92, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.025
+ 2, 100, 0.025 
+ 2, 100, 0.025 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 88, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.024
+ 2, 103, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.024
+ 2, 100, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 88, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 104, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 91, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.024
+ 2, 102, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 98, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.024
+ 2, 98, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 103, 0.023 
+I (383077) wifi:<ba-del>idx:0, tid:0
+I (383077) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:879, winSize:64
+ 2, 103, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 90, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 90, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+I (386177) wifi:<ba-del>idx:0, tid:0
+I (386187) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:888, winSize:64
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.020
+ 1, 86, 0.020 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 91, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 85, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.019
+ 1, 88, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+ 1, 88, 0.019 
+co = 0.000
+gas = 0.009
+smoke = 0.019
+ 1, 85, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 90, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 99, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+I (396607) wifi:<ba-del>idx:0, tid:0
+I (396617) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:903, winSize:64
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.024
+ 2, 97, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 1, 96, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.022
+ 1, 95, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.019
+ 1, 88, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.024
+ 2, 97, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.024
+ 2, 101, 0.024 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 82, 0.019 
+I (405197) wifi:<ba-del>idx:0, tid:0
+I (405207) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:918, winSize:64
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 82, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 2, 97, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.023
+ 2, 93, 0.023 
+ 2, 93, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.022
+ 1, 95, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.023
+ 1, 93, 0.023 
+I (411937) wifi:<ba-del>idx:0, tid:0
+I (411947) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:925, winSize:64
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.022
+ 2, 95, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.022
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.020
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.019
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.020
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.021
+I (421187) wifi:<ba-del>idx:0, tid:0
+I (421217) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:928, winSize:64
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.023
+ 1, 94, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 1, 98, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+I (424567) wifi:<ba-del>idx:0, tid:0
+I (424577) wifi:<ba-add>idx:0 (ifx:0, d2:45:36:a6:08:da), tid:0, ssn:932, winSize:64
+ 1, 82, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 1, 96, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 1, 98, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.020
+ 1, 80, 0.020 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.020
+ 1, 83, 0.020 
+ 1, 83, 0.020 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 81, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 1, 95, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 83, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 79, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.018
+ 1, 80, 0.018 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 83, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 82, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 82, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 93, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 91, 0.022 
+ 1, 91, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.023
+ 1, 96, 0.023 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 79, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 82, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+ 1, 94, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.021
+W (447357) wifi:[ADDBA]rx delba, code:1, delete tid:0
+ 1, 93, 0.021 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.023
+ 1, 91, 0.023 
+W (449097) wifi:[ADDBA]rx delba, code:1, delete tid:0
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 78, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.018
+ 1, 78, 0.018 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.018
+ 1, 77, 0.018 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.022
+ 1, 95, 0.022 
+respond timeout 
+ 1, 95, 0.022 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.008
+smoke = 0.019
+ 1, 81, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.010
+smoke = 0.019
+ 1, 95, 0.019 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 89, 0.022 
+respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.000
+gas = 0.009
+smoke = 0.022
+ 1, 89, 0.022 

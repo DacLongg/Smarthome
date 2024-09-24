@@ -1,0 +1,23 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400d9172: mqtt_event_handler at D:/App/ESP32/smart_door_lock/user/device/wifi/wifi.c:112 (discriminator 1)
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x400d916f: mqtt_event_handler at D:/App/ESP32/smart_door_lock/user/device/wifi/wifi.c:112 (discriminator 1)
+0x4016d1a9: handler_execute at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/esp_event.c:137
+0x4016cc1e: esp_event_loop_run at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/esp_event.c:593
+0x400d955a: esp_mqtt_dispatch_event at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1013
+0x400da060: deliver_publish at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1080
+0x400da1a3: mqtt_process_receive at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1347
+0x400da680: esp_mqtt_task at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/mqtt_client.c:1626
+0x4008b295: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

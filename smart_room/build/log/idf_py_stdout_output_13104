@@ -1,0 +1,522 @@
+[0;32mI (13) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=28280h (164480) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=000382a8 vaddr=3ffb0000 size=03c5ch ( 15452) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=0003bf0c vaddr=40080000 size=0410ch ( 16652) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9bd00h (638208) map[0m
+[0;32mI (375) esp_image: segment 4: paddr=000dbd28 vaddr=4008410c size=12570h ( 75120) load[0m
+[0;32mI (416) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (416) boot: Disabling RNG early entropy source...[0m
+[0;32mI (428) cpu_start: Multicore app[0m
+[0;32mI (437) cpu_start: Pro cpu start user code[0m
+[0;32mI (437) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (437) cpu_start: Application information:[0m
+[0;32mI (440) cpu_start: Project name:     smart_room[0m
+[0;32mI (445) cpu_start: App version:      1[0m
+[0;32mI (449) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (455) cpu_start: ELF file SHA256:  73bd9b5de...[0m
+[0;32mI (461) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (466) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (471) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (476) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (481) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (488) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (494) heap_init: At 3FFB8390 len 00027C70 (159 KiB): DRAM[0m
+[0;32mI (500) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (506) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (513) heap_init: At 4009667C len 00009984 (38 KiB): IRAM[0m
+[0;32mI (520) spi_flash: detected chip: generic[0m
+[0;32mI (524) spi_flash: flash io: dio[0m
+[0;33mW (527) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (541) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (549) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (558) main_task: Started on CPU0[0m
+[0;32mI (568) main_task: Calling app_main()[0m
+I (628) wifi:wifi driver task: 3ffc03f4, prio:23, stack:6656, core=0
+I (648) wifi:wifi firmware version: a9f5b59
+I (648) wifi:wifi certification version: v7.0
+I (648) wifi:config NVS flash: enabled
+I (648) wifi:config nano formating: disabled
+I (658) wifi:Init data frame dynamic rx buffer num: 32
+I (658) wifi:Init static rx mgmt buffer num: 5
+I (668) wifi:Init management short buffer num: 32
+I (668) wifi:Init dynamic tx buffer num: 32
+I (678) wifi:Init static rx buffer size: 1600
+I (678) wifi:Init static rx buffer num: 10
+I (678) wifi:Init dynamic rx buffer num: 32
+[0;32mI (688) wifi_init: rx ba win: 6[0m
+[0;32mI (688) wifi_init: tcpip mbox: 32[0m
+[0;32mI (688) wifi_init: udp mbox: 6[0m
+[0;32mI (698) wifi_init: tcp mbox: 6[0m
+[0;32mI (698) wifi_init: tcp tx win: 5760[0m
+[0;32mI (708) wifi_init: tcp rx win: 5760[0m
+[0;32mI (708) wifi_init: tcp mss: 1440[0m
+[0;32mI (708) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (718) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (728) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (818) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (818) wifi:enable tsf
+handlehandlewifi connectI (838) wifi:new:<2,1>, old:<1,0>, ap:<255,255>, sta:<2,1>, prof:1
+I (838) wifi:state: init -> auth (b0)
+handleI (838) wifi:state: auth -> assoc (0)
+I (848) wifi:state: assoc -> run (10)
+I (958) wifi:connected with be Moon, aid = 2, channel 2, 40U, bssid = b0:4e:26:bf:7b:86
+I (958) wifi:security: WPA2-PSK, phy: bgn, rssi: -50
+I (968) wifi:pm start, type: 1
+
+I (968) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (978) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+handleI (998) wifi:<ba-add>idx:0 (ifx:0, b0:4e:26:bf:7b:86), tid:0, ssn:3, winSize:64
+[0;32mI (2478) esp_netif_handlers: sta ip: 192.168.0.118, mask: 255.255.255.0, gw: 192.168.0.1[0m
+handle[0;32mI (2478) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (2478) wifi station: got ip:192.168.0.118[0m
+[0;32mI (2478) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (2488) wifi station: connected to ap SSID:be Moon password:yeubemoon[0m
+[0;32mI (2498) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+error2 time out  i = 192 , j = 1
+DHT22_value temp = 326 
+DHT22_value humi = 836 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+[0;31mE (2568) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (2568) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (2578) mqtt_client: Error transport connect[0m
+[0;32mI (2578) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (2588) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+DHT22_value temp = 325 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+error2 time out  i = 132 , j = 5
+error2 time out  i = 128 , j = 0
+DHT22_value temp = 11264 
+DHT22_value humi = 906 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+error2 time out  i = 68 , j = 5
+error2 time out  i = 128 , j = 0
+DHT22_value temp = 256 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+[0;32mI (17588) MQTT_EXAMPLE: Other event id:7[0m
+DHT22_value temp = 325 
+DHT22_value humi = 840 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+[0;31mE (17768) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (17768) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (17778) mqtt_client: Error transport connect[0m
+[0;32mI (17778) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (17788) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+error2 time out  i = 152 , j = 4
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+error2 time out  i = 140 , j = 5
+error2 time out  i = 128 , j = 0
+DHT22_value temp = 13312 
+DHT22_value humi = 14346 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 325 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+error2 time out  i = 140 , j = 5
+error2 time out  i = 128 , j = 0
+DHT22_value temp = 256 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+[0;32mI (32788) MQTT_EXAMPLE: Other event id:7[0m
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+[0;31mE (32928) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (32928) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (32928) mqtt_client: Error transport connect[0m
+[0;32mI (32938) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (32938) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+error2 time out  i = 152 , j = 4
+DHT22_value temp = 326 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 839 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+[0;32mI (42948) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (43368) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (43378) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (43378) mqtt_client: Error transport connect[0m
+[0;32mI (43378) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (43388) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+error2 time out  i = 160 , j = 2
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 
+DHT22_value temp = 326 
+DHT22_value humi = 838 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+adc value 0 
+value 0 

@@ -1,0 +1,45 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM6 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM6 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40085476: esp_crosscore_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834f9: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d7917: Publisher_task at D:/App/ESP32/smart_room/user/App/mainApp.c:310
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085476: esp_crosscore_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834f9: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d7917: Publisher_task at D:/App/ESP32/smart_room/user/App/mainApp.c:310
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085476: esp_crosscore_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834f9: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d7917: Publisher_task at D:/App/ESP32/smart_room/user/App/mainApp.c:310
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085476: esp_crosscore_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834f9: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d7914: Publisher_task at D:/App/ESP32/smart_room/user/App/mainApp.c:304
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085476: esp_crosscore_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834f9: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d7917: Publisher_task at D:/App/ESP32/smart_room/user/App/mainApp.c:310
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085476: esp_crosscore_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834f9: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d7917: Publisher_task at D:/App/ESP32/smart_room/user/App/mainApp.c:310
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085476: esp_crosscore_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834f9: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d7917: Publisher_task at D:/App/ESP32/smart_room/user/App/mainApp.c:310
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40085476: esp_crosscore_isr at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/crosscore_int.c:103
+0x400834f9: _xt_lowint1 at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/xtensa_vectors.S:1240
+0x400d7914: Publisher_task at D:/App/ESP32/smart_room/user/App/mainApp.c:304
+0x4008b0f5: vPortTaskWrapper at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

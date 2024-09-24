@@ -1,0 +1,19 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_room/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/7] Building C object esp-idf/mq2/CMakeFiles/__idf_mq2.dir/mq2.c.obj
+In file included from D:/App/ESP32/smart_room/user/mq2/mq2.c:2:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/driver/deprecated/driver/adc.h:19:2: warning: #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively" [-Wcpp]
+   19 | #warning "legacy adc driver is deprecated, please migrate to use esp_adc/adc_oneshot.h and esp_adc/adc_continuous.h for oneshot mode and continuous mode drivers respectively"
+      |  ^~~~~~~
+[3/7] Linking C static library esp-idf\mq2\libmq2.a
+[4/7] Generating ld/sections.ld
+[5/7] Linking CXX executable smart_room.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/App/ESP32/smart_room/build/smart_room.bin
+[7/7] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/App/ESP32/smart_room/build/partition_table/partition-table.bin D:/App/ESP32/smart_room/build/smart_room.bin"
+smart_room.bin binary size 0xde2d0 bytes. Smallest app partition is 0x100000 bytes. 0x21d30 bytes (13%) free.

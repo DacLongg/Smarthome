@@ -1,0 +1,122 @@
+-- ccache will be used for faster recompilation
+-- git rev-parse returned 'fatal: not a git repository (or any of the parent directories): .git'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/App/ESP32/smart_room/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "smart_room" version: 1
+-- Adding linker script D:/App/ESP32/smart_room/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: App app_trace app_update bootloader bootloader_support bt cmock console cxx dht22 driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json lcd log lwip main mbedtls mq2 mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread sdmmc sim soc spi_flash spiffs tcp_transport ulp unity usb user_mqtt vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/App/ESP32/smart_room/user/App D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/app_trace D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/app_update D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bt D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/cmock D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/console D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/cxx D:/App/ESP32/smart_room/user/dht22 D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/efuse D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp-tls D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_app_format D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_bootloader_format D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_coex D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_eth D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_gdbstub D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hid D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_client D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_server D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_https_ota D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_https_server D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_lcd D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_local_ctrl D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_mm D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_netif D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_netif_stack D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_partition D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_phy D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_pm D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_psram D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_ringbuf D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_timer D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/espcoredump D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/heap D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/http_parser D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/idf_test D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/ieee802154 D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/json D:/App/ESP32/smart_room/user/lcd D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip D:/App/ESP32/smart_room/main D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls D:/App/ESP32/smart_room/user/mq2 D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_flash D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_sec_provider D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/openthread D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/perfmon D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protobuf-c D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/pthread D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/sdmmc D:/App/ESP32/smart_room/user/sim D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/spi_flash D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/spiffs D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/tcp_transport D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/ulp D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/unity D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/usb D:/App/ESP32/smart_room/user/user_mqtt D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/vfs D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wear_levelling D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wifi_provisioning D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/App/ESP32/smart_room/build
+[0/1] Re-running CMake...
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[2/10] Linking C static library esp-idf\main\libmain.a
+[3/10] Performing build step for 'bootloader'
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/App/ESP32/smart_room/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/ld/esp32.peripherals.ld
+-- Bootloader project name: "bootloader" version: 1
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_bootloader_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/efuse D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_app_format D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_bootloader_format D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader/subproject/main D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader/subproject/components/micro-ecc D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/spi_flash D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/App/ESP32/smart_room/build/bootloader
+[0/1] Re-running CMake...
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_room/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable smart_room.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/App/ESP32/smart_room/build/smart_room.bin
+[7/8] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/App/ESP32/smart_room/build/partition_table/partition-table.bin D:/App/ESP32/smart_room/build/smart_room.bin"
+smart_room.bin binary size 0xe6340 bytes. Smallest app partition is 0x100000 bytes. 0x19cc0 bytes (10%) free.
+[7/8] cmd.exe /C "cd /D D:\App\ESP32\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && D:\App\ESP32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=D:/App/ESP32/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exeesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 smart_room.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a0:dd:6c:86:05:18
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16366...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16366 compressed) at 0x00001000 in 0.5 seconds (effective 390.3 kbit/s)...
+Hash of data verified.
+Compressed 942912 bytes to 585737...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e3f4... (5 %)
+Writing at 0x000283c3... (8 %)
+Writing at 0x0002d222... (11 %)
+Writing at 0x00034e38... (13 %)
+Writing at 0x00040658... (16 %)
+Writing at 0x000461cb... (19 %)
+Writing at 0x0004bc26... (22 %)
+Writing at 0x00051ec6... (25 %)
+Writing at 0x00057e1f... (27 %)
+Writing at 0x0005dac5... (30 %)
+Writing at 0x0006382c... (33 %)
+Writing at 0x00069fe4... (36 %)
+Writing at 0x0006fbab... (38 %)
+Writing at 0x00075899... (41 %)
+Writing at 0x0007af90... (44 %)
+Writing at 0x000802b9... (47 %)
+Writing at 0x000858c0... (50 %)
+Writing at 0x0008aa95... (52 %)
+Writing at 0x000901b1... (55 %)
+Writing at 0x00095865... (58 %)
+Writing at 0x0009b4e0... (61 %)
+Writing at 0x000a111b... (63 %)
+Writing at 0x000a6b49... (66 %)
+Writing at 0x000ac735... (69 %)
+Writing at 0x000b2445... (72 %)
+Writing at 0x000b7cb0... (75 %)
+Writing at 0x000bd973... (77 %)
+Writing at 0x000c3445... (80 %)
+Writing at 0x000c8de2... (83 %)
+Writing at 0x000d2ebd... (86 %)
+Writing at 0x000dacaf... (88 %)
+Writing at 0x000e0a1c... (91 %)
+Writing at 0x000e63d7... (94 %)
+Writing at 0x000ec672... (97 %)
+Writing at 0x000f2020... (100 %)
+Wrote 942912 bytes (585737 compressed) at 0x00010000 in 13.4 seconds (effective 561.6 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 983.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+;;D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/App/ESP32/smart_room/build -P D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"

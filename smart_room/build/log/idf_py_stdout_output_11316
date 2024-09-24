@@ -1,0 +1,715 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a80ch ( 43020) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a834 vaddr=3ffb0000 size=02264h (  8804) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001caa0 vaddr=40080000 size=03578h ( 13688) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15cdch ( 89308) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035d04 vaddr=40083578 size=091a4h ( 37284) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (197) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Project name:     smart_room[0m
+[0;32mI (214) cpu_start: App version:      1[0m
+[0;32mI (219) cpu_start: Compile time:     May  8 2024 10:36:30[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  e1725649b...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (235) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (240) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (245) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFB2B58 len 0002D4A8 (181 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (275) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (282) heap_init: At 4008C71C len 000138E4 (78 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (293) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (310) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (318) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (327) main_task: Started on CPU0[0m
+[0;32mI (337) main_task: Calling app_main()[0m
+[0;32mI (337) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+DHT22_value temp = 317 
+DHT22_value humi = 859 
+adc value 2193 
+adc value 2202 
+adc value 2198 
+adc value 2198 
+adc value 2202 
+value 2198 
+DHT22_value temp = 317 
+DHT22_value humi = 858 
+adc value 2211 
+adc value 2215 
+adc value 2214 
+adc value 2213 
+adc value 2220 
+value 2214 
+DHT22_value temp = 317 
+DHT22_value humi = 858 
+adc value 2221 
+adc value 2225 
+adc value 2225 
+adc value 2224 
+adc value 2224 
+value 2223 
+DHT22_value temp = 317 
+DHT22_value humi = 858 
+adc value 2227 
+adc value 2230 
+adc value 2226 
+adc value 2227 
+adc value 2228 
+value 2227 
+DHT22_value temp = 317 
+DHT22_value humi = 858 
+adc value 2231 
+adc value 2232 
+adc value 2230 
+adc value 2231 
+adc value 2233 
+value 2231 
+DHT22_value temp = 317 
+DHT22_value humi = 858 
+adc value 2229 
+adc value 2231 
+adc value 2235 
+adc value 2233 
+adc value 2230 
+value 2231 
+DHT22_value temp = 317 
+DHT22_value humi = 857 
+adc value 2227 
+adc value 2231 
+adc value 2234 
+adc value 2234 
+adc value 2234 
+value 2232 
+DHT22_value temp = 317 
+DHT22_value humi = 858 
+adc value 2233 
+adc value 2238 
+adc value 2238 
+adc value 2238 
+adc value 2239 
+value 2237 
+DHT22_value temp = 317 
+DHT22_value humi = 857 
+adc value 2245 
+adc value 2245 
+adc value 2242 
+adc value 2243 
+adc value 2240 
+value 2243 
+DHT22_value temp = 317 
+DHT22_value humi = 857 
+adc value 2240 
+adc value 2241 
+adc value 2241 
+adc value 2243 
+adc value 2242 
+value 2241 
+DHT22_value temp = 317 
+DHT22_value humi = 857 
+adc value 2243 
+adc value 2247 
+adc value 2245 
+adc value 2247 
+adc value 2245 
+value 2245 
+DHT22_value temp = 317 
+DHT22_value humi = 857 
+adc value 2242 
+adc value 2239 
+adc value 2245 
+adc value 2244 
+adc value 2245 
+value 2243 
+DHT22_value temp = 317 
+DHT22_value humi = 856 
+adc value 2241 
+adc value 2242 
+adc value 2243 
+adc value 2242 
+adc value 2243 
+value 2242 
+DHT22_value temp = 317 
+DHT22_value humi = 857 
+adc value 2240 
+adc value 2242 
+adc value 2239 
+adc value 2240 
+adc value 2239 
+value 2240 
+DHT22_value temp = 317 
+DHT22_value humi = 856 
+adc value 2247 
+adc value 2247 
+adc value 2244 
+adc value 2246 
+adc value 2245 
+value 2245 
+DHT22_value temp = 317 
+DHT22_value humi = 856 
+adc value 2258 
+adc value 2257 
+adc value 2261 
+adc value 2259 
+adc value 2256 
+value 2258 
+DHT22_value temp = 317 
+DHT22_value humi = 856 
+adc value 2271 
+adc value 2271 
+adc value 2267 
+adc value 2271 
+adc value 2271 
+value 2270 
+DHT22_value temp = 317 
+DHT22_value humi = 855 
+adc value 2322 
+adc value 2325 
+adc value 2330 
+adc value 2324 
+adc value 2329 
+value 2326 
+DHT22_value temp = 318 
+DHT22_value humi = 856 
+adc value 2416 
+adc value 2418 
+adc value 2416 
+adc value 2416 
+adc value 2416 
+value 2416 
+DHT22_value temp = 318 
+DHT22_value humi = 856 
+adc value 2311 
+adc value 2318 
+adc value 2317 
+adc value 2307 
+adc value 2311 
+value 2312 
+DHT22_value temp = 317 
+DHT22_value humi = 856 
+adc value 2466 
+adc value 2466 
+adc value 2466 
+adc value 2468 
+adc value 2467 
+value 2466 
+DHT22_value temp = 317 
+DHT22_value humi = 855 
+adc value 2320 
+adc value 2320 
+adc value 2320 
+adc value 2320 
+adc value 2320 
+value 2320 
+DHT22_value temp = 317 
+DHT22_value humi = 855 
+adc value 2509 
+adc value 2506 
+adc value 2507 
+adc value 2505 
+adc value 2505 
+value 2506 
+DHT22_value temp = 317 
+DHT22_value humi = 855 
+adc value 2452 
+adc value 2454 
+adc value 2454 
+adc value 2458 
+adc value 2454 
+value 2454 
+DHT22_value temp = 317 
+DHT22_value humi = 854 
+adc value 2487 
+adc value 2489 
+adc value 2490 
+adc value 2486 
+adc value 2491 
+value 2488 
+DHT22_value temp = 318 
+DHT22_value humi = 855 
+adc value 2310 
+adc value 2314 
+adc value 2308 
+adc value 2314 
+adc value 2313 
+value 2311 
+DHT22_value temp = 318 
+DHT22_value humi = 854 
+adc value 2526 
+adc value 2531 
+adc value 2528 
+adc value 2528 
+adc value 2526 
+value 2527 
+DHT22_value temp = 318 
+DHT22_value humi = 854 
+adc value 2374 
+adc value 2376 
+adc value 2379 
+adc value 2382 
+adc value 2381 
+value 2378 
+DHT22_value temp = 317 
+DHT22_value humi = 854 
+adc value 2391 
+adc value 2394 
+adc value 2393 
+adc value 2394 
+adc value 2387 
+value 2391 
+DHT22_value temp = 318 
+DHT22_value humi = 854 
+adc value 2404 
+adc value 2407 
+adc value 2411 
+adc value 2410 
+adc value 2409 
+value 2408 
+DHT22_value temp = 318 
+DHT22_value humi = 854 
+adc value 2420 
+adc value 2418 
+adc value 2420 
+adc value 2420 
+adc value 2420 
+value 2419 
+DHT22_value temp = 318 
+DHT22_value humi = 854 
+adc value 2423 
+adc value 2428 
+adc value 2429 
+adc value 2428 
+adc value 2427 
+value 2427 
+DHT22_value temp = 318 
+DHT22_value humi = 854 
+adc value 2592 
+adc value 2593 
+adc value 2594 
+adc value 2597 
+adc value 2595 
+value 2594 
+DHT22_value temp = 318 
+DHT22_value humi = 854 
+adc value 2703 
+adc value 2706 
+adc value 2704 
+adc value 2704 
+adc value 2704 
+value 2704 
+DHT22_value temp = 318 
+DHT22_value humi = 854 
+adc value 2769 
+adc value 2765 
+adc value 2768 
+adc value 2767 
+adc value 2768 
+value 2767 
+DHT22_value temp = 318 
+DHT22_value humi = 854 
+adc value 2805 
+adc value 2809 
+adc value 2807 
+adc value 2810 
+adc value 2807 
+value 2807 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2786 
+adc value 2785 
+adc value 2789 
+adc value 2789 
+adc value 2791 
+value 2788 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2782 
+adc value 2781 
+adc value 2780 
+adc value 2780 
+adc value 2779 
+value 2780 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2858 
+adc value 2859 
+adc value 2863 
+adc value 2853 
+adc value 2859 
+value 2858 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2873 
+adc value 2877 
+adc value 2877 
+adc value 2879 
+adc value 2875 
+value 2876 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2897 
+adc value 2902 
+adc value 2902 
+adc value 2896 
+adc value 2898 
+value 2899 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2923 
+adc value 2923 
+adc value 2922 
+adc value 2923 
+adc value 2921 
+value 2922 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2927 
+adc value 2926 
+adc value 2928 
+adc value 2928 
+adc value 2928 
+value 2927 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2798 
+adc value 2797 
+adc value 2794 
+adc value 2797 
+adc value 2799 
+value 2797 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2610 
+adc value 2610 
+adc value 2613 
+adc value 2610 
+adc value 2610 
+value 2610 
+DHT22_value temp = 318 
+DHT22_value humi = 853 
+adc value 2623 
+adc value 2618 
+adc value 2623 
+adc value 2621 
+adc value 2621 
+value 2621 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2601 
+adc value 2606 
+adc value 2603 
+adc value 2602 
+adc value 2598 
+value 2602 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2559 
+adc value 2559 
+adc value 2559 
+adc value 2559 
+adc value 2559 
+value 2559 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2539 
+adc value 2541 
+adc value 2543 
+adc value 2542 
+adc value 2537 
+value 2540 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2502 
+adc value 2499 
+adc value 2502 
+adc value 2502 
+adc value 2502 
+value 2501 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2484 
+adc value 2487 
+adc value 2486 
+adc value 2485 
+adc value 2486 
+value 2485 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2480 
+adc value 2481 
+adc value 2482 
+adc value 2481 
+adc value 2480 
+value 2480 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2505 
+adc value 2505 
+adc value 2501 
+adc value 2496 
+adc value 2503 
+value 2502 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2509 
+adc value 2511 
+adc value 2511 
+adc value 2506 
+adc value 2512 
+value 2509 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2443 
+adc value 2442 
+adc value 2447 
+adc value 2441 
+adc value 2445 
+value 2443 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2385 
+adc value 2386 
+adc value 2385 
+adc value 2384 
+adc value 2384 
+value 2384 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+adc value 4095 
+value 4095 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 2446 
+adc value 2446 
+adc value 2443 
+adc value 2447 
+adc value 2446 
+value 2445 
+DHT22_value temp = 318 
+DHT22_value humi = 852 
+adc value 2429 
+adc value 2422 
+adc value 2432 
+adc value 2430 
+adc value 2431 
+value 2428 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 2437 
+adc value 2442 
+adc value 2443 
+adc value 2438 
+adc value 2441 
+value 2440 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 2448 
+adc value 2449 
+adc value 2446 
+adc value 2448 
+adc value 2447 
+value 2447 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 2453 
+adc value 2453 
+adc value 2453 
+adc value 2454 
+adc value 2453 
+value 2453 
+DHT22_value temp = 318 
+DHT22_value humi = 851 
+adc value 2462 
+adc value 2461 
+adc value 2464 
+adc value 2461 
+adc value 2463 
+value 2462 

@@ -1,0 +1,4390 @@
+[0;32mI (13) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a18ch (172428) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0003a1b4 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0003de78 vaddr=40080000 size=021a0h (  8608) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a2340h (664384) map[0m
+[0;32mI (387) esp_image: segment 4: paddr=000e2368 vaddr=400821a0 size=15b48h ( 88904) load[0m
+[0;32mI (434) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (434) boot: Disabling RNG early entropy source...[0m
+[0;32mI (445) cpu_start: Multicore app[0m
+[0;32mI (454) cpu_start: Pro cpu start user code[0m
+[0;32mI (454) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (454) cpu_start: Application information:[0m
+[0;32mI (457) cpu_start: Project name:     smart_room[0m
+[0;32mI (463) cpu_start: App version:      1[0m
+[0;32mI (467) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (473) cpu_start: ELF file SHA256:  26e168475...[0m
+[0;32mI (478) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (484) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (489) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (493) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (498) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (511) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (524) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (530) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (538) spi_flash: detected chip: generic[0m
+[0;32mI (541) spi_flash: flash io: dio[0m
+[0;33mW (545) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (559) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (569) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (578) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (587) main_task: Started on CPU0[0m
+[0;32mI (597) main_task: Calling app_main()[0m
+[0;32mI (597) uart: queue free spaces: 20[0m
+I (657) wifi:wifi driver task: 3ffc14ac, prio:23, stack:6656, core=0
+I (677) wifi:wifi firmware version: a9f5b59
+I (677) wifi:wifi certification version: v7.0
+I (677) wifi:config NVS flash: enabled
+I (677) wifi:config nano formating: disabled
+I (687) wifi:Init data frame dynamic rx buffer num: 32
+I (687) wifi:Init static rx mgmt buffer num: 5
+I (697) wifi:Init management short buffer num: 32
+I (697) wifi:Init dynamic tx buffer num: 32
+I (707) wifi:Init static rx buffer size: 1600
+I (707) wifi:Init static rx buffer num: 10
+I (707) wifi:Init dynamic rx buffer num: 32
+[0;32mI (717) wifi_init: rx ba win: 6[0m
+[0;32mI (717) wifi_init: tcpip mbox: 32[0m
+[0;32mI (727) wifi_init: udp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp tx win: 5760[0m
+[0;32mI (737) wifi_init: tcp rx win: 5760[0m
+[0;32mI (737) wifi_init: tcp mss: 1440[0m
+[0;32mI (747) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (747) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (757) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (847) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (847) wifi:enable tsf
+handlehandlewifi connectI (867) wifi:new:<4,0>, old:<1,0>, ap:<255,255>, sta:<4,0>, prof:1
+I (867) wifi:state: init -> auth (b0)
+handleI (867) wifi:state: auth -> init (8a0)
+I (877) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1
+handle[0;32mI (877) wifi station: retry to connect to the AP[0m
+[0;32mI (877) wifi station: connect to the AP fail[0m
+handle[0;32mI (3297) wifi station: retry to connect to the AP[0m
+[0;32mI (3297) wifi station: connect to the AP fail[0m
+I (3307) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1
+I (3307) wifi:state: init -> auth (b0)
+I (4307) wifi:state: auth -> init (200)
+I (4307) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1
+handle[0;32mI (4307) wifi station: retry to connect to the AP[0m
+[0;32mI (4307) wifi station: connect to the AP fail[0m
+handle[0;32mI (6727) wifi station: retry to connect to the AP[0m
+[0;32mI (6727) wifi station: connect to the AP fail[0m
+I (6737) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1
+I (6737) wifi:state: init -> auth (b0)
+I (7737) wifi:state: auth -> init (200)
+I (7737) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1
+handle[0;32mI (7737) wifi station: retry to connect to the AP[0m
+[0;32mI (7737) wifi station: connect to the AP fail[0m
+handle[0;32mI (10157) wifi station: retry to connect to the AP[0m
+[0;32mI (10157) wifi station: connect to the AP fail[0m
+I (10167) wifi:new:<4,0>, old:<4,0>, ap:<255,255>, sta:<4,0>, prof:1
+I (10167) wifi:state: init -> auth (b0)
+I (10167) wifi:state: auth -> assoc (0)
+I (10187) wifi:state: assoc -> run (10)
+I (10297) wifi:connected with Long Bien, aid = 6, channel 4, BW20, bssid = 3c:55:76:82:b6:50
+I (10297) wifi:security: WPA2-PSK, phy: bgn, rssi: -60
+I (10297) wifi:pm start, type: 1
+
+I (10297) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (10347) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (11307) esp_netif_handlers: sta ip: 192.168.1.16, mask: 255.255.255.0, gw: 192.168.1.1[0m
+handle[0;32mI (11307) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (11307) wifi station: got ip:192.168.1.16[0m
+[0;32mI (11307) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (11317) wifi station: connected to ap SSID:Long Bien password:phuongphuong[0m
+[0;32mI (11327) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (11327) wifi:<ba-add>idx:0 (ifx:0, 3c:55:76:82:b6:50), tid:0, ssn:5, winSize:64
+[0;32mI (11337) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11347) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11357) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11367) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11377) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (11387) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+uart task 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+[0;32mI (11987) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (11997) MQTT_EXAMPLE: sent subscribe successful, msg_id=53992[0m
+[0;32mI (11997) MQTT_EXAMPLE: sent subscribe successful, msg_id=15901[0m
+ no detect people 
+turn on 1 no detect people 
+turn on 1[0;32mI (12197) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=53992[0m
+ no detect people 
+turn on 1 no detect people 
+turn on 1[0;32mI (12457) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=15901[0m
+ no detect people 
+turn on 1 no detect people 
+turn on 1adc2 value 837 
+ no detect people 
+turn on 1respond timeout 
+ no detect people 
+turn on 1error2 time out  i = 0 , j = 0
+adc2 value 833 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 833 
+adc2 value 831 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1error2 time out  i = 0 , j = 5
+adc2 value 833 
+adc2 value 4095 
+adc2 value 833 
+adc2 value 834 
+adc2 value 834 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1Temp :30.2°C 
+ no detect people 
+turn on 1Humi :87.8% 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 831 
+adc2 value 833 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1Temp :30.2°C 
+ no detect people 
+turn on 1Humi :87.8% 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 831 
+adc2 value 831 
+adc2 value 833 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1Temp :30.2°C 
+ no detect people 
+turn on 1Humi :87.8% 
+ no detect people 
+turn on 1adc2 value 827 
+adc2 value 4095 
+adc2 value 831 
+adc2 value 829 
+adc2 value 829 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1Temp :30.2°C 
+Humi :87.8% 
+ no detect people 
+turn on 1adc2 value 831 
+adc2 value 4095 
+adc2 value 827 
+adc2 value 828 
+adc2 value 829 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1Temp :30.2°C 
+Humi :87.8% 
+ no detect people 
+turn on 1adc2 value 821 
+adc2 value 4095 
+adc2 value 830 
+adc2 value 832 
+adc2 value 826 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1error2 time out  i = 0 , j = 5
+adc2 value 826 
+adc2 value 4095 
+adc2 value 830 
+adc2 value 825 
+adc2 value 831 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1Temp :30.2°C 
+ no detect people 
+turn on 1Humi :87.9% 
+adc2 value 831 
+adc2 value 4095 
+adc2 value 827 
+adc2 value 824 
+adc2 value 822 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1Temp :30.2°C 
+ no detect people 
+turn on 1Humi :87.9% 
+adc2 value 833 
+adc2 value 4095 
+adc2 value 829 
+adc2 value 831 
+adc2 value 827 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1Temp :30.2°C 
+ no detect people 
+turn on 1Humi :87.9% 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 827 
+adc2 value 830 
+adc2 value 829 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1 no detect people 
+turn on 1Temp :30.2°C 
+ no detect people 
+turn on 1Humi :87.9% 
+ detect people 
+turn on 1adc2 value 833 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 822 
+adc2 value 825 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.2°C 
+Humi :87.9% 
+ detect people 
+turn on 1adc2 value 832 
+adc2 value 4095 
+adc2 value 827 
+adc2 value 823 
+adc2 value 827 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.2°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 826 
+adc2 value 4095 
+adc2 value 819 
+adc2 value 823 
+adc2 value 823 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 817 
+adc2 value 4095 
+adc2 value 825 
+adc2 value 825 
+adc2 value 825 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.2°C 
+Humi :87.9% 
+ detect people 
+turn on 1adc2 value 819 
+adc2 value 4095 
+adc2 value 823 
+adc2 value 826 
+adc2 value 827 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.2°C 
+ detect people 
+turn on 1Humi :87.9% 
+adc2 value 820 
+adc2 value 4095 
+adc2 value 823 
+adc2 value 830 
+adc2 value 829 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1error2 time out  i = 0 , j = 0
+adc2 value 830 
+adc2 value 4095 
+adc2 value 826 
+ detect people 
+turn on 1adc2 value 830 
+adc2 value 826 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.9% 
+ detect people 
+turn on 1adc2 value 825 
+adc2 value 4095 
+adc2 value 829 
+adc2 value 824 
+adc2 value 827 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 829 
+adc2 value 4095 
+adc2 value 829 
+adc2 value 827 
+adc2 value 827 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 833 
+adc2 value 4095 
+adc2 value 827 
+adc2 value 826 
+adc2 value 826 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.9% 
+ detect people 
+turn on 1adc2 value 824 
+adc2 value 4095 
+adc2 value 823 
+adc2 value 823 
+adc2 value 827 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 831 
+adc2 value 4095 
+adc2 value 829 
+adc2 value 827 
+adc2 value 827 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+ detect people 
+turn on 1Humi :87.8% 
+adc2 value 819 
+adc2 value 4095 
+adc2 value 826 
+adc2 value 829 
+adc2 value 825 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1error2 time out  i = 0 , j = 4
+adc2 value 835 
+adc2 value 4095 
+adc2 value 827 
+adc2 value 829 
+ detect people 
+turn on 1adc2 value 826 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 823 
+adc2 value 4095 
+adc2 value 829 
+adc2 value 831 
+adc2 value 829 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 841 
+adc2 value 4095 
+adc2 value 826 
+adc2 value 826 
+adc2 value 827 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 829 
+adc2 value 4095 
+adc2 value 829 
+adc2 value 821 
+adc2 value 827 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 822 
+adc2 value 4095 
+adc2 value 825 
+adc2 value 827 
+adc2 value 827 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 825 
+adc2 value 4095 
+adc2 value 823 
+adc2 value 821 
+adc2 value 823 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1error2 time out  i = 0 , j = 6
+adc2 value 826 
+adc2 value 4095 
+adc2 value 821 
+adc2 value 825 
+adc2 value 826 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+ detect people 
+turn on 1Humi :87.8% 
+ detect people 
+turn on 1adc2 value 832 
+adc2 value 4095 
+adc2 value 826 
+adc2 value 823 
+adc2 value 825 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+turn on 1adc2 value 825 
+adc2 value 4095 
+adc2 value 821 
+adc2 value 827 
+adc2 value 828 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1 detect people 
+turn on 1Temp :30.3°C 
+Humi :87.8% 
+[0;31mE (32577) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (32577) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (32577) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+ detect people 
+[0;31mE (32587) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+turn on 1[0;32mI (32597) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (32597) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+adc2 value 823 
+adc2 value 4095 
+adc2 value 827 
+adc2 value 828 
+adc2 value 829 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+adc2 value 828 
+adc2 value 4095 
+adc2 value 831 
+adc2 value 832 
+adc2 value 833 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+adc2 value 841 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 834 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 834 
+adc2 value 835 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.8% 
+ detect people 
+adc2 value 818 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 830 
+adc2 value 831 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 834 
+adc2 value 837 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 828 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 838 
+adc2 value 835 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 836 
+adc2 value 835 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 841 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 837 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 837 
+adc2 value 837 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 833 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 837 
+adc2 value 838 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 830 
+adc2 value 4095 
+adc2 value 831 
+adc2 value 832 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 837 
+adc2 value 842 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 841 
+adc2 value 839 
+adc2 value 842 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 834 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 843 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 843 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 843 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 842 
+adc2 value 841 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 835 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 849 
+adc2 value 4095 
+adc2 value 844 
+adc2 value 848 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.6% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 846 
+adc2 value 843 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 848 
+adc2 value 843 
+adc2 value 845 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 847 
+adc2 value 846 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+[0;32mI (47597) MQTT_EXAMPLE: Other event id:7[0m
+ detect people 
+Humi :87.7% 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 836 
+adc2 value 837 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+[0;31mE (47947) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (47947) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (47957) mqtt_client: Error transport connect[0m
+[0;32mI (47957) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (47967) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 842 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 838 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.6% 
+ detect people 
+adc2 value 849 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 848 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 844 
+adc2 value 841 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.7% 
+ detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 845 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.6% 
+ detect people 
+adc2 value 850 
+adc2 value 4095 
+adc2 value 847 
+adc2 value 847 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.6% 
+ detect people 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 848 
+adc2 value 845 
+adc2 value 845 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+error2 time out  i = 0 , j = 4
+adc2 value 846 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 845 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.6% 
+adc2 value 840 
+adc2 value 4095 
+adc2 value 848 
+adc2 value 846 
+adc2 value 846 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.6% 
+adc2 value 840 
+adc2 value 4095 
+adc2 value 847 
+adc2 value 847 
+adc2 value 848 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+[0;31mE (53447) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (53447) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (53447) task_wdt: Tasks currently running:[0m
+[0;31mE (53447) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (53447) task_wdt: CPU 1: Publisher_Task[0m
+[0;31mE (53447) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085476:0x3FFB23C0 0x400834F9:0x3FFB23E0 0x400D7917:0x3FFCBF60 0x4008B0F5:0x3FFCBFA0
+
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.6% 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 837 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.6% 
+adc2 value 851 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 835 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.6% 
+adc2 value 841 
+adc2 value 4095 
+adc2 value 847 
+adc2 value 846 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.6% 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 846 
+adc2 value 844 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.6% 
+ detect people 
+adc2 value 849 
+adc2 value 4095 
+adc2 value 846 
+adc2 value 835 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.6% 
+ detect people 
+adc2 value 846 
+adc2 value 4095 
+adc2 value 844 
+adc2 value 843 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.6% 
+ detect people 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 847 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 844 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 848 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.6% 
+ detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 846 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.6% 
+ detect people 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 846 
+adc2 value 838 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 846 
+adc2 value 846 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 844 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 846 
+adc2 value 4095 
+adc2 value 841 
+adc2 value 843 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 841 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 847 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+[0;32mI (62967) MQTT_EXAMPLE: Other event id:7[0m
+ detect people 
+adc2 value 833 
+adc2 value 4095 
+adc2 value 843 
+adc2 value 838 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+[0;31mE (63087) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (63087) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (63087) mqtt_client: Error transport connect[0m
+[0;32mI (63097) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (63097) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 846 
+adc2 value 848 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 848 
+adc2 value 848 
+adc2 value 843 
+co = 0.006
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+error2 time out  i = 0 , j = 3
+adc2 value 836 
+adc2 value 4095 
+adc2 value 847 
+adc2 value 848 
+adc2 value 849 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 843 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.6% 
+ detect people 
+adc2 value 851 
+adc2 value 4095 
+adc2 value 847 
+adc2 value 845 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 843 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 841 
+adc2 value 841 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 837 
+adc2 value 839 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 849 
+adc2 value 4095 
+adc2 value 844 
+adc2 value 843 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 841 
+adc2 value 4095 
+adc2 value 842 
+adc2 value 845 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 842 
+adc2 value 4095 
+adc2 value 836 
+adc2 value 845 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.5% 
+adc2 value 830 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 847 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.5% 
+adc2 value 840 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 841 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.5% 
+adc2 value 850 
+adc2 value 4095 
+adc2 value 843 
+adc2 value 843 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.5% 
+adc2 value 849 
+adc2 value 4095 
+adc2 value 843 
+adc2 value 839 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+[0;32mI (73107) MQTT_EXAMPLE: Other event id:7[0m
+ detect people 
+ detect people 
+ detect people 
+[0;31mE (73327) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (73337) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (73337) mqtt_client: Error transport connect[0m
+[0;32mI (73337) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (73347) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 842 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 846 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 846 
+adc2 value 847 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 842 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 843 
+adc2 value 844 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 846 
+adc2 value 847 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 848 
+adc2 value 845 
+adc2 value 847 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 843 
+adc2 value 845 
+adc2 value 848 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 847 
+adc2 value 847 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 845 
+adc2 value 4095 
+adc2 value 847 
+adc2 value 847 
+adc2 value 848 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 845 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+[0;31mE (79147) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (79147) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (79147) task_wdt: Tasks currently running:[0m
+[0;31mE (79147) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (79147) task_wdt: CPU 1: Publisher_Task[0m
+[0;31mE (79147) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085476:0x3FFB23C0 0x400834F9:0x3FFB23E0 0x400D7917:0x3FFCBF60 0x4008B0F5:0x3FFCBFA0
+
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 842 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 844 
+adc2 value 845 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 846 
+adc2 value 4095 
+adc2 value 843 
+adc2 value 846 
+adc2 value 842 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 847 
+adc2 value 845 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 845 
+adc2 value 846 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+respond error 
+error2 time out  i = 0 , j = 6
+adc2 value 848 
+adc2 value 4095 
+adc2 value 848 
+adc2 value 844 
+adc2 value 848 
+co = 0.006
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.5% 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 841 
+adc2 value 845 
+adc2 value 847 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.5% 
+adc2 value 831 
+adc2 value 4095 
+adc2 value 832 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+adc2 value 834 
+adc2 value 835 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 845 
+adc2 value 846 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 849 
+adc2 value 4095 
+adc2 value 843 
+adc2 value 845 
+adc2 value 844 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 841 
+adc2 value 4095 
+adc2 value 840 
+adc2 value 842 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 843 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+[0;32mI (88347) MQTT_EXAMPLE: Other event id:7[0m
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 840 
+adc2 value 4095 
+adc2 value 842 
+adc2 value 843 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 842 
+adc2 value 843 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+[0;31mE (89707) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (89707) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (89717) mqtt_client: Error transport connect[0m
+[0;32mI (89717) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (89727) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ detect people 
+error2 time out  i = 0 , j = 5
+adc2 value 837 
+adc2 value 4095 
+adc2 value 842 
+adc2 value 843 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 843 
+adc2 value 845 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 833 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 835 
+adc2 value 835 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 834 
+adc2 value 4095 
+adc2 value 837 
+adc2 value 843 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 842 
+adc2 value 4095 
+adc2 value 841 
+adc2 value 843 
+adc2 value 842 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 840 
+adc2 value 4095 
+adc2 value 842 
+adc2 value 839 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 839 
+adc2 value 842 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 835 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 831 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 838 
+adc2 value 842 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 840 
+adc2 value 4095 
+adc2 value 837 
+adc2 value 840 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 839 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 842 
+adc2 value 843 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 833 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+adc2 value 835 
+adc2 value 829 
+co = 0.005
+gas = 0.008
+smoke = 0.019
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 840 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 843 
+adc2 value 845 
+adc2 value 842 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 834 
+adc2 value 4095 
+adc2 value 837 
+adc2 value 835 
+adc2 value 838 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 831 
+adc2 value 4095 
+adc2 value 836 
+adc2 value 837 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 833 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 838 
+adc2 value 835 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 834 
+adc2 value 834 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+error2 time out  i = 0 , j = 5
+adc2 value 833 
+adc2 value 4095 
+adc2 value 833 
+adc2 value 837 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+[0;32mI (104727) MQTT_EXAMPLE: Other event id:7[0m
+Humi :87.4% 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 829 
+adc2 value 831 
+adc2 value 829 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ no detect people 
+[0;31mE (104867) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (104867) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (104867) mqtt_client: Error transport connect[0m
+[0;32mI (104877) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (104877) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 836 
+adc2 value 834 
+adc2 value 835 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 827 
+adc2 value 830 
+adc2 value 830 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 842 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 836 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 826 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 826 
+adc2 value 831 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 844 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 835 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 830 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 838 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 835 
+adc2 value 832 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 831 
+adc2 value 4095 
+adc2 value 833 
+adc2 value 832 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 837 
+adc2 value 841 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Humi :87.5% 
+ no detect people 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 836 
+adc2 value 837 
+adc2 value 838 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 837 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ no detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 837 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+[0;32mI (114887) MQTT_EXAMPLE: Other event id:7[0m
+ no detect people 
+[0;31mE (115007) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (115007) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (115007) mqtt_client: Error transport connect[0m
+[0;32mI (115007) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (115017) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+Humi :87.5% 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 841 
+adc2 value 837 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 833 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 834 
+adc2 value 838 
+co = 0.005
+gas = 0.007
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.5% 
+adc2 value 830 
+adc2 value 4095 
+adc2 value 837 
+adc2 value 837 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 835 
+adc2 value 838 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 837 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.5% 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 837 
+adc2 value 837 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+Humi :87.5% 
+adc2 value 834 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 832 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+error2 time out  i = 0 , j = 1
+adc2 value 835 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 835 
+adc2 value 832 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+error2 time out  i = 0 , j = 5
+adc2 value 838 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 837 
+adc2 value 838 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+[0;31mE (120817) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (120817) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (120817) task_wdt: Tasks currently running:[0m
+[0;31mE (120817) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (120817) task_wdt: CPU 1: Publisher_Task[0m
+[0;31mE (120817) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085476:0x3FFB23C0 0x400834F9:0x3FFB23E0 0x400D7917:0x3FFCBF60 0x4008B0F5:0x3FFCBFA0
+
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ no detect people 
+adc2 value 844 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 843 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+error2 time out  i = 0 , j = 4
+adc2 value 832 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 839 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.5% 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 839 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 842 
+adc2 value 4095 
+adc2 value 842 
+adc2 value 843 
+adc2 value 843 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 837 
+adc2 value 838 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+error2 time out  i = 0 , j = 6
+adc2 value 836 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 843 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.5% 
+adc2 value 826 
+adc2 value 4095 
+adc2 value 831 
+adc2 value 837 
+adc2 value 835 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+error2 time out  i = 0 , j = 3
+adc2 value 842 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 837 
+adc2 value 838 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+error2 time out  i = 0 , j = 5
+adc2 value 842 
+adc2 value 4095 
+adc2 value 841 
+adc2 value 837 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+[0;31mE (125817) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (125817) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (125817) task_wdt: Tasks currently running:[0m
+[0;31mE (125817) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (125817) task_wdt: CPU 1: Publisher_Task[0m
+[0;31mE (125817) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085476:0x3FFB23C0 0x400834F9:0x3FFB23E0 0x400D7914:0x3FFCBF60 0x4008B0F5:0x3FFCBFA0
+
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.3°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 838 
+adc2 value 842 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+error2 time out  i = 0 , j = 4
+adc2 value 845 
+adc2 value 4095 
+adc2 value 840 
+adc2 value 841 
+adc2 value 838 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 842 
+adc2 value 841 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+Humi :87.4% 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 845 
+adc2 value 845 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+ no detect people 
+Temp :30.4°C 
+ no detect people 
+Humi :87.5% 
+adc2 value 848 
+adc2 value 4095 
+adc2 value 839 
+adc2 value 839 
+adc2 value 841 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ no detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+error2 time out  i = 0 , j = 6
+adc2 value 849 
+adc2 value 4095 
+adc2 value 841 
+adc2 value 842 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+[0;32mI (130017) MQTT_EXAMPLE: Other event id:7[0m
+ detect people 
+error2 time out  i = 0 , j = 5
+adc2 value 831 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 832 
+adc2 value 831 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+[0;31mE (130257) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (130257) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (130267) mqtt_client: Error transport connect[0m
+[0;32mI (130267) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (130277) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 827 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 830 
+adc2 value 831 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 844 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 838 
+adc2 value 839 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 838 
+adc2 value 836 
+adc2 value 835 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 833 
+adc2 value 835 
+adc2 value 835 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 832 
+adc2 value 835 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 825 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 834 
+adc2 value 833 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 829 
+adc2 value 828 
+adc2 value 829 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+error2 time out  i = 0 , j = 7
+adc2 value 829 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 830 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+error2 time out  i = 0 , j = 6
+adc2 value 831 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 832 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+[0;31mE (135767) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (135767) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (135767) task_wdt: Tasks currently running:[0m
+[0;31mE (135767) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (135767) task_wdt: CPU 1: Publisher_Task[0m
+[0;31mE (135767) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085476:0x3FFB23C0 0x400834F9:0x3FFB23E0 0x400D7917:0x3FFCBF60 0x4008B0F5:0x3FFCBFA0
+
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.5% 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 831 
+adc2 value 832 
+adc2 value 833 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+error2 time out  i = 0 , j = 5
+adc2 value 843 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 833 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 843 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 830 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 818 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 832 
+adc2 value 830 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 816 
+adc2 value 4095 
+adc2 value 824 
+adc2 value 822 
+adc2 value 819 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+error2 time out  i = 0 , j = 5
+adc2 value 828 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 832 
+adc2 value 830 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 830 
+adc2 value 4095 
+adc2 value 823 
+adc2 value 824 
+adc2 value 824 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 826 
+adc2 value 4095 
+adc2 value 822 
+adc2 value 825 
+adc2 value 826 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+[0;31mE (140767) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (140767) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (140767) task_wdt: Tasks currently running:[0m
+[0;31mE (140767) task_wdt: CPU 0: main[0m
+[0;31mE (140767) task_wdt: CPU 1: Publisher_Task[0m
+[0;31mE (140767) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085476:0x3FFB23C0 0x400834F9:0x3FFB23E0 0x400D7917:0x3FFCBF60 0x4008B0F5:0x3FFCBFA0
+
+adc2 value 823 
+adc2 value 4095 
+adc2 value 820 
+adc2 value 823 
+adc2 value 823 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.5% 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 823 
+adc2 value 827 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.5% 
+adc2 value 823 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 834 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Humi :87.5% 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 833 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 831 
+adc2 value 830 
+adc2 value 827 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 834 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 833 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+[0;32mI (145277) MQTT_EXAMPLE: Other event id:7[0m
+adc2 value 832 
+adc2 value 4095 
+adc2 value 825 
+adc2 value 824 
+adc2 value 829 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+[0;31mE (145727) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (145727) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (145727) mqtt_client: Error transport connect[0m
+[0;32mI (145737) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (145737) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.4% 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 826 
+adc2 value 827 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 820 
+adc2 value 4095 
+adc2 value 833 
+adc2 value 833 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 831 
+adc2 value 833 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 834 
+adc2 value 830 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 835 
+adc2 value 832 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 832 
+adc2 value 836 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 833 
+adc2 value 833 
+adc2 value 833 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 835 
+adc2 value 834 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 837 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 838 
+adc2 value 837 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 831 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 837 
+adc2 value 836 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+[0;31mE (152567) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (152567) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (152567) task_wdt: Tasks currently running:[0m
+[0;31mE (152567) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (152567) task_wdt: CPU 1: Publisher_Task[0m
+[0;31mE (152567) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085476:0x3FFB23C0 0x400834F9:0x3FFB23E0 0x400D7917:0x3FFCBF60 0x4008B0F5:0x3FFCBFA0
+
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 837 
+adc2 value 833 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 835 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 833 
+adc2 value 835 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 828 
+adc2 value 4095 
+adc2 value 833 
+adc2 value 834 
+adc2 value 834 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 827 
+adc2 value 4095 
+adc2 value 834 
+adc2 value 833 
+adc2 value 833 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 847 
+adc2 value 4095 
+adc2 value 835 
+adc2 value 837 
+adc2 value 835 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+ detect people 
+ detect people 
+[0;32mI (155747) MQTT_EXAMPLE: Other event id:7[0m
+ detect people 
+ detect people 
+[0;31mE (155877) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (155877) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (155877) mqtt_client: Error transport connect[0m
+[0;32mI (155887) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (155887) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.4% 
+adc2 value 833 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 833 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.4% 
+adc2 value 838 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 834 
+adc2 value 832 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.5% 
+adc2 value 839 
+adc2 value 4095 
+adc2 value 832 
+adc2 value 829 
+adc2 value 831 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.4% 
+adc2 value 833 
+adc2 value 4095 
+adc2 value 829 
+adc2 value 830 
+adc2 value 829 
+co = 0.005
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.4% 
+adc2 value 832 
+adc2 value 4095 
+adc2 value 821 
+adc2 value 821 
+adc2 value 821 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.4% 
+adc2 value 823 
+adc2 value 4095 
+adc2 value 822 
+adc2 value 824 
+adc2 value 823 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.4% 
+adc2 value 815 
+adc2 value 4095 
+adc2 value 816 
+adc2 value 818 
+adc2 value 819 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+error2 time out  i = 0 , j = 7
+adc2 value 827 
+adc2 value 4095 
+adc2 value 819 
+adc2 value 821 
+adc2 value 818 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.5% 
+adc2 value 815 
+adc2 value 4095 
+adc2 value 819 
+adc2 value 819 
+adc2 value 819 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.4% 
+adc2 value 827 
+adc2 value 4095 
+adc2 value 817 
+adc2 value 819 
+adc2 value 816 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 819 
+adc2 value 4095 
+adc2 value 821 
+adc2 value 813 
+adc2 value 810 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.4% 
+ detect people 
+adc2 value 817 
+adc2 value 4095 
+adc2 value 819 
+adc2 value 816 
+adc2 value 820 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 806 
+adc2 value 4095 
+adc2 value 807 
+adc2 value 819 
+adc2 value 826 
+co = 0.004
+gas = 0.007
+smoke = 0.019
+ detect people 
+ detect people 
+ detect people 
+[0;32mI (165897) MQTT_EXAMPLE: Other event id:7[0m
+ detect people 
+[0;31mE (165997) esp-tls: [sock=54] delayed connect error: Connection reset by peer[0m
+[0;31mE (165997) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (165997) mqtt_client: Error transport connect[0m
+[0;32mI (166007) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;32mI (166007) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.4% 
+adc2 value 827 
+adc2 value 4095 
+adc2 value 816 
+adc2 value 812 
+adc2 value 814 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.4% 
+adc2 value 816 
+adc2 value 4095 
+adc2 value 818 
+adc2 value 816 
+adc2 value 820 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+Humi :87.4% 
+adc2 value 827 
+adc2 value 4095 
+adc2 value 816 
+adc2 value 816 
+adc2 value 817 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Humi :87.5% 
+adc2 value 807 
+adc2 value 4095 
+adc2 value 818 
+adc2 value 817 
+adc2 value 819 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+ detect people 
+Humi :87.4% 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+adc2 value 799 
+adc2 value 4095 
+adc2 value 808 
+adc2 value 813 
+adc2 value 807 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 814 
+adc2 value 4095 
+adc2 value 818 
+adc2 value 817 
+adc2 value 819 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 814 
+adc2 value 4095 
+adc2 value 813 
+adc2 value 812 
+adc2 value 810 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+error2 time out  i = 0 , j = 7
+adc2 value 814 
+adc2 value 4095 
+adc2 value 819 
+adc2 value 820 
+adc2 value 822 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 814 
+adc2 value 4095 
+adc2 value 813 
+adc2 value 816 
+adc2 value 810 
+co = 0.004
+gas = 0.007
+smoke = 0.016
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 826 
+adc2 value 4095 
+adc2 value 821 
+adc2 value 819 
+adc2 value 814 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 827 
+adc2 value 4095 
+adc2 value 826 
+adc2 value 823 
+adc2 value 823 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.4% 
+ detect people 
+adc2 value 817 
+adc2 value 4095 
+adc2 value 820 
+adc2 value 821 
+adc2 value 820 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 820 
+adc2 value 4095 
+adc2 value 819 
+adc2 value 819 
+adc2 value 818 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+[0;31mE (176017) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (176017) task_wdt:  - IDLE1 (CPU 1)[0m
+[0;31mE (176017) task_wdt: Tasks currently running:[0m
+[0;31mE (176017) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (176017) task_wdt: CPU 1: Publisher_Task[0m
+[0;31mE (176017) task_wdt: Print CPU 1 backtrace[0m
+
+
+Backtrace: 0x40085476:0x3FFB23C0 0x400834F9:0x3FFB23E0 0x400D7914:0x3FFCBF60 0x4008B0F5:0x3FFCBFA0
+
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 816 
+adc2 value 4095 
+adc2 value 821 
+adc2 value 818 
+adc2 value 820 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 
+Humi :87.5% 
+ detect people 
+adc2 value 815 
+adc2 value 4095 
+adc2 value 821 
+adc2 value 823 
+adc2 value 821 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 808 
+adc2 value 4095 
+adc2 value 809 
+adc2 value 810 
+adc2 value 810 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.3°C 
+Humi :87.5% 
+ detect people 
+adc2 value 819 
+adc2 value 4095 
+adc2 value 807 
+adc2 value 806 
+adc2 value 807 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+ detect people 
+Temp :30.4°C 

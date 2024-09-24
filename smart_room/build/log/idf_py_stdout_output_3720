@@ -1,0 +1,1075 @@
+[0;32mI (13) boot: ESP-IDF v5.2.1-dirty 2nd stage bootloader[0m
+[0;32mI (13) boot: compile time May  8 2024 10:36:51[0m
+[0;32mI (13) boot: Multicore bootloader[0m
+[0;32mI (17) boot: chip revision: v3.1[0m
+[0;32mI (21) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (26) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (30) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (35) boot: Enabling RNG early entropy source...[0m
+[0;32mI (40) boot: Partition Table:[0m
+[0;32mI (44) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (51) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=2a21ch (172572) map[0m
+[0;32mI (145) esp_image: segment 1: paddr=0003a244 vaddr=3ffb0000 size=03cbch ( 15548) load[0m
+[0;32mI (151) esp_image: segment 2: paddr=0003df08 vaddr=40080000 size=02110h (  8464) load[0m
+[0;32mI (155) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a2608h (665096) map[0m
+[0;32mI (387) esp_image: segment 4: paddr=000e2630 vaddr=40082110 size=15bd8h ( 89048) load[0m
+[0;32mI (434) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (434) boot: Disabling RNG early entropy source...[0m
+[0;32mI (446) cpu_start: Multicore app[0m
+[0;32mI (455) cpu_start: Pro cpu start user code[0m
+[0;32mI (455) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (455) cpu_start: Application information:[0m
+[0;32mI (458) cpu_start: Project name:     smart_room[0m
+[0;32mI (463) cpu_start: App version:      1[0m
+[0;32mI (467) cpu_start: Compile time:     May 26 2024 17:14:11[0m
+[0;32mI (473) cpu_start: ELF file SHA256:  eccd3a7e4...[0m
+[0;32mI (479) cpu_start: ESP-IDF:          v5.2.1-dirty[0m
+[0;32mI (484) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (489) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (494) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB8500 len 00027B00 (158 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (524) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40097CE8 len 00008318 (32 KiB): IRAM[0m
+[0;32mI (538) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (545) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (559) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;33mW (569) timer_group: legacy driver is deprecated, please migrate to `driver/gptimer.h`[0m
+[0;33mW (578) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (587) main_task: Started on CPU0[0m
+[0;32mI (597) main_task: Calling app_main()[0m
+[0;32mI (597) uart: queue free spaces: 20[0m
+I (657) wifi:wifi driver task: 3ffc14ac, prio:23, stack:6656, core=0
+I (677) wifi:wifi firmware version: a9f5b59
+I (687) wifi:wifi certification version: v7.0
+I (687) wifi:config NVS flash: enabled
+I (687) wifi:config nano formating: disabled
+I (687) wifi:Init data frame dynamic rx buffer num: 32
+I (687) wifi:Init static rx mgmt buffer num: 5
+I (697) wifi:Init management short buffer num: 32
+I (697) wifi:Init dynamic tx buffer num: 32
+I (707) wifi:Init static rx buffer size: 1600
+I (707) wifi:Init static rx buffer num: 10
+I (707) wifi:Init dynamic rx buffer num: 32
+[0;32mI (717) wifi_init: rx ba win: 6[0m
+[0;32mI (717) wifi_init: tcpip mbox: 32[0m
+[0;32mI (727) wifi_init: udp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp mbox: 6[0m
+[0;32mI (727) wifi_init: tcp tx win: 5760[0m
+[0;32mI (737) wifi_init: tcp rx win: 5760[0m
+[0;32mI (737) wifi_init: tcp mss: 1440[0m
+[0;32mI (747) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (747) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (757) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (847) wifi:mode : sta (a0:dd:6c:86:05:18)
+I (847) wifi:enable tsf
+handlehandlewifi connectI (867) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (867) wifi:state: init -> auth (b0)
+handleI (877) wifi:state: auth -> init (8a0)
+I (877) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+handle[0;32mI (877) wifi station: retry to connect to the AP[0m
+[0;32mI (877) wifi station: connect to the AP fail[0m
+handle[0;32mI (3297) wifi station: retry to connect to the AP[0m
+[0;32mI (3297) wifi station: connect to the AP fail[0m
+I (3307) wifi:new:<10,0>, old:<10,0>, ap:<255,255>, sta:<10,0>, prof:1
+I (3307) wifi:state: init -> auth (b0)
+I (3307) wifi:state: auth -> assoc (0)
+I (3327) wifi:state: assoc -> run (10)
+I (3447) wifi:connected with Long Bien, aid = 5, channel 10, BW20, bssid = 3c:55:76:82:b6:50
+I (3447) wifi:security: WPA2-PSK, phy: bgn, rssi: -73
+I (3457) wifi:pm start, type: 1
+
+I (3457) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+handleI (3467) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4457) esp_netif_handlers: sta ip: 192.168.1.28, mask: 255.255.255.0, gw: 192.168.1.1[0m
+handle[0;32mI (4457) MQTT_EXAMPLE: STARTING MQTT[0m
+[0;32mI (4457) wifi station: got ip:192.168.1.28[0m
+[0;32mI (4457) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (4457) wifi station: connected to ap SSID:Long Bien password:phuongphuong[0m
+[0;32mI (4477) gpio: GPIO[14]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (4477) wifi:<ba-add>idx:0 (ifx:0, 3c:55:76:82:b6:50), tid:0, ssn:5, winSize:64
+[0;32mI (4497) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4497) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4507) gpio: GPIO[5]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4517) gpio: GPIO[12]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4527) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (4537) gpio: GPIO[15]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+uart task 
+1 
+0 
+time out 
+[0;32mI (5527) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5527) MQTT_EXAMPLE: sent subscribe successful, msg_id=28886[0m
+[0;32mI (5527) MQTT_EXAMPLE: sent subscribe successful, msg_id=34324[0m
+time out 
+turn on 1[0;32mI (5667) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=28886[0m
+turn on 1[0;32mI (6037) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=34324[0m
+turn on 1time out 
+turn on 1turn on 1turn on 1turn on 1turn on 1turn on 1respond timeout 
+error2 time out  i = 0 , j = 0
+co = 0.005
+gas = 0.008
+smoke = 0.022
+turn on 1turn on 1turn on 1turn on 1turn on 1error2 time out  i = 0 , j = 6
+co = 0.005
+gas = 0.008
+smoke = 0.022
+turn on 1turn on 1turn on 1turn on 1error2 time out  i = 0 , j = 4
+co = 0.005
+gas = 0.008
+smoke = 0.020
+Temp :36.7°C 
+Humi :70.2% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+Temp :36.7°C 
+Humi :70.2% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+error2 time out  i = 0 , j = 4
+co = 0.005
+gas = 0.007
+smoke = 0.020
+Temp :36.7°C 
+Humi :70.3% 
+co = 0.005
+gas = 0.008
+smoke = 0.020
+error2 time out  i = 0 , j = 5
+co = 0.005
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 7
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :36.7°C 
+Humi :70.4% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 1
+co = 0.005
+gas = 0.008
+smoke = 0.022
+error2 time out  i = 0 , j = 6
+co = 0.005
+gas = 0.008
+smoke = 0.022
+Temp :36.7°C 
+Humi :70.2% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :36.7°C 
+Humi :70.2% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+error2 time out  i = 0 , j = 5
+co = 0.005
+gas = 0.008
+smoke = 0.022
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+Temp :36.7°C 
+Humi :70.0% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+call 
+cmd : ATD0965579663;
+ 
+respond = 
+> 
+S: 11
+
+OK
+, 19 
+turn on 1turn on 1time out 
+turn on 1error2 time out  i = 0 , j = 2
+co = 0.005
+gas = 0.008
+smoke = 0.022
+turn on 1turn on 1time out 
+turn on 1turn on 1time out 
+turn on 1Temp :36.7°C 
+turn on 1Humi :70.1% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+turn on 1time out 
+turn on 1turn on 1time out 
+respond = 
+OK
+S: 12
+
+OK
+, 19 
+respond = 
+> , 4 
+turn on 1turn on 1error2 time out  i = 0 , j = 1
+co = 0.005
+gas = 0.008
+smoke = 0.021
+turn on 1time out 
+turn on 1turn on 1time out 
+turn on 1turn on 1Temp :36.7°C 
+Humi :70.1% 
+turn on 1time out 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+turn on 1turn on 1time out 
+time out 
+error2 time out  i = 0 , j = 7
+co = 0.005
+gas = 0.008
+smoke = 0.021
+time out 
+time out 
+Temp :36.7°C 
+Humi :70.0% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+time out 
+time out 
+Temp :36.7°C 
+Humi :70.0% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+time out 
+time out 
+Temp :36.7°C 
+Humi :70.0% 
+co = 0.005
+gas = 0.008
+smoke = 0.022
+time out 
+time out 
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.006
+gas = 0.008
+smoke = 0.021
+time out 
+time out 
+cmd : ATD0965579663;
+ 
+turn on 1turn on 1Temp :36.7°C 
+time out 
+Humi :69.9% 
+co = 0.005
+gas = 0.008
+smoke = 0.021
+turn on 1turn on 1turn on 1time out 
+turn on 1turn on 1time out 
+Temp :36.7°C 
+turn on 1Humi :69.9% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+turn on 1turn on 1time out 
+turn on 1turn on 1respond = 
++CME ERROR: 58
+
+
+OK
+, 25 
+return ok 
+calling 
+turn on 1Temp :36.7°C 
+Humi :69.9% 
+turn on 1co = 0.005
+gas = 0.007
+smoke = 0.020
+turn on 1turn on 1turn on 1turn on 1turn on 1Temp :36.7°C 
+Humi :69.9% 
+co = 0.005
+gas = 0.007
+smoke = 0.020
+turn on 1turn on 1turn on 1Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.007
+smoke = 0.018
+turn on 1Temp :36.7°C 
+Humi :70.0% 
+turn on 1co = 0.004
+gas = 0.007
+smoke = 0.017
+turn on 1end call 
+turn on 1turn on 1turn on 1turn on 1Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+turn on 1turn on 1turn on 1turn on 1turn on 1Temp :36.7°C 
+turn on 1Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+turn on 1turn on 1turn on 1turn on 1turn on 1error2 time out  i = 0 , j = 2
+co = 0.004
+gas = 0.006
+smoke = 0.018
+turn on 1turn on 1turn on 1turn on 1Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+respond = 
+AT Ready
+
+AST_POWERON
+, 27 
+error2 time out  i = 0 , j = 6
+co = 0.004
+gas = 0.006
+smoke = 0.017
+return ok 
+respond = 
+> , 4 
+time out 
+Temp :36.7°C 
+Humi :69.9% 
+time out 
+phat hien lua 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+turn on 1turn on 1turn on 1turn on 1turn on 1Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+turn on 1turn on 1turn on 1turn on 1turn on 1Temp :36.7°C 
+Humi :69.9% 
+turn on 1co = 0.004
+gas = 0.006
+smoke = 0.017
+turn on 1turn on 1turn on 1turn on 1turn on 1Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+turn on 1turn on 1turn on 1turn on 1turn on 1Temp :36.7°C 
+turn on 1Humi :69.9% 
+co = 0.004
+gas = 0.007
+smoke = 0.017
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :70.0% 
+co = 0.004
+gas = 0.006
+smoke = 0.017
+error2 time out  i = 0 , j = 2
+co = 0.004
+gas = 0.006
+smoke = 0.017
+error2 time out  i = 0 , j = 6
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.003
+gas = 0.006
+smoke = 0.016
+error2 time out  i = 0 , j = 5
+co = 0.004
+gas = 0.006
+smoke = 0.015
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.003
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :70.0% 
+co = 0.004
+gas = 0.006
+smoke = 0.015
+error2 time out  i = 0 , j = 5
+co = 0.004
+gas = 0.006
+smoke = 0.015
+error2 time out  i = 0 , j = 5
+co = 0.003
+gas = 0.006
+smoke = 0.015
+Temp :36.7°C 
+Humi :70.0% 
+co = 0.003
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.015
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.003
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.003
+gas = 0.006
+smoke = 0.017
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.015
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+error2 time out  i = 0 , j = 7
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.003
+gas = 0.006
+smoke = 0.015
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.003
+gas = 0.006
+smoke = 0.015
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.003
+gas = 0.006
+smoke = 0.016
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.004
+gas = 0.006
+smoke = 0.015
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.006
+gas = 0.009
+smoke = 0.025
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.008
+gas = 0.010
+smoke = 0.028
+error2 time out  i = 0 , j = 4
+co = 0.008
+gas = 0.010
+smoke = 0.029
+Temp :36.6°C 
+Humi :69.9% 
+co = 0.007
+gas = 0.009
+smoke = 0.026
+Temp :36.6°C 
+Humi :69.9% 
+co = 0.016
+gas = 0.018
+smoke = 0.049
+Temp :36.6°C 
+Humi :69.9% 
+co = 0.011
+gas = 0.014
+smoke = 0.039
+Temp :36.6°C 
+Humi :70.0% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+Temp :36.6°C 
+Humi :70.0% 
+co = 0.019
+gas = 0.021
+smoke = 0.056
+Temp :36.6°C 
+Humi :70.0% 
+co = 0.018
+gas = 0.019
+smoke = 0.054
+error2 time out  i = 0 , j = 7
+co = 0.014
+gas = 0.017
+smoke = 0.047
+Temp :36.6°C 
+Humi :70.0% 
+co = 0.018
+gas = 0.019
+smoke = 0.052
+error2 time out  i = 0 , j = 1
+co = 0.019
+gas = 0.020
+smoke = 0.059
+Temp :36.6°C 
+Humi :57.3% 
+co = 0.016
+gas = 0.018
+smoke = 0.050
+Temp :36.6°C 
+Humi :70.1% 
+co = 0.022
+gas = 0.021
+smoke = 0.061
+error2 time out  i = 0 , j = 2
+co = 0.027
+gas = 0.026
+smoke = 0.073
+error2 time out  i = 0 , j = 6
+co = 0.059
+gas = 0.045
+smoke = 0.140
+Temp :36.6°C 
+Humi :70.1% 
+co = 0.117
+gas = 0.076
+smoke = 0.235
+Temp :36.6°C 
+Humi :70.2% 
+[0;33mW (140977) transport_base: Poll timeout or error, errno=Success, fd=54, timeout_ms=10000[0m
+[0;31mE (140977) mqtt_client: Writing didn't complete in specified timeout: errno=0[0m
+[0;32mI (140977) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (140987) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (140987) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (140997) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (141007) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (141017) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;33mW (141017) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+co = 0.029
+gas = 0.027
+smoke = 0.085
+Temp :36.6°C 
+Humi :70.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.056
+respond error 
+error2 time out  i = 0 , j = 6
+co = 0.013
+gas = 0.016
+smoke = 0.044
+Temp :36.6°C 
+Humi :70.2% 
+co = 0.013
+gas = 0.016
+smoke = 0.045
+respond error 
+error2 time out  i = 0 , j = 6
+co = 0.015
+gas = 0.017
+smoke = 0.051
+Temp :36.6°C 
+Humi :70.2% 
+co = 0.013
+gas = 0.015
+smoke = 0.043
+Temp :36.6°C 
+Humi :70.2% 
+co = 0.012
+gas = 0.014
+smoke = 0.041
+Temp :36.6°C 
+Humi :70.2% 
+co = 0.013
+gas = 0.016
+smoke = 0.045
+Temp :36.6°C 
+Humi :70.2% 
+co = 0.214
+gas = 0.116
+smoke = 0.370
+Temp :36.6°C 
+Humi :70.2% 
+co = 0.648
+gas = 0.254
+smoke = 0.916
+respond = 
++CMGS: 14
+
+OK
+EG: 1
+, 26 
+return ok 
+respond = 
+> , 4 
+[0;32mI (150997) MQTT_EXAMPLE: Other event id:7[0m
+time out 
+[0;32mI (151547) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (151547) MQTT_EXAMPLE: sent subscribe successful, msg_id=36505[0m
+[0;32mI (151547) MQTT_EXAMPLE: sent subscribe successful, msg_id=6353[0m
+turn on 1[0;32mI (151747) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=36505[0m
+turn on 1time out 
+error2 time out  i = 0 , j = 0
+co = 1.037
+gas = 0.354
+smoke = 1.175
+WARNING SMOKE 
+[0;32mI (151957) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=6353[0m
+turn on 1turn on 1turn on 1time out 
+turn on 1turn on 1Temp :36.6°C 
+time out 
+Humi :70.2% 
+co = 0.826
+gas = 0.328
+smoke = 1.118
+turn on 1turn on 1time out 
+turn on 1WARNING SMOKE 
+turn on 1turn on 1return ok 
+respond = 
+> , 4 
+Temp :36.7°C 
+turn on 1Humi :70.3% 
+co = 0.224
+gas = 0.122
+smoke = 0.381
+turn on 1turn on 1time out 
+turn on 1turn on 1time out 
+turn on 1Temp :36.7°C 
+Humi :70.2% 
+co = 0.139
+gas = 0.080
+smoke = 0.262
+turn on 1turn on 1turn on 1Temp :36.6°C 
+Humi :70.3% 
+co = 0.065
+gas = 0.050
+smoke = 0.148
+error2 time out  i = 0 , j = 6
+co = 0.060
+gas = 0.047
+smoke = 0.137
+Temp :36.7°C 
+Humi :70.2% 
+co = 0.047
+gas = 0.039
+smoke = 0.115
+Temp :36.7°C 
+Humi :70.3% 
+co = 0.036
+gas = 0.032
+smoke = 0.092
+error2 time out  i = 0 , j = 5
+co = 0.031
+gas = 0.029
+smoke = 0.084
+Temp :36.7°C 
+Humi :70.3% 
+co = 0.031
+gas = 0.029
+smoke = 0.087
+Temp :36.7°C 
+Humi :70.3% 
+co = 0.028
+gas = 0.027
+smoke = 0.078
+error2 time out  i = 0 , j = 0
+co = 0.025
+gas = 0.026
+smoke = 0.075
+error2 time out  i = 0 , j = 5
+co = 0.026
+gas = 0.024
+smoke = 0.071
+error2 time out  i = 0 , j = 6
+co = 0.025
+gas = 0.025
+smoke = 0.075
+Temp :36.7°C 
+Humi :70.2% 
+co = 0.024
+gas = 0.025
+smoke = 0.071
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.027
+gas = 0.026
+smoke = 0.075
+error2 time out  i = 0 , j = 0
+co = 0.023
+gas = 0.024
+smoke = 0.069
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.023
+gas = 0.023
+smoke = 0.069
+error2 time out  i = 0 , j = 0
+co = 0.022
+gas = 0.023
+smoke = 0.065
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.020
+gas = 0.023
+smoke = 0.061
+error2 time out  i = 0 , j = 0
+co = 0.022
+gas = 0.021
+smoke = 0.067
+error2 time out  i = 0 , j = 7
+co = 0.022
+gas = 0.021
+smoke = 0.061
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.020
+gas = 0.021
+smoke = 0.059
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.020
+gas = 0.021
+smoke = 0.058
+error2 time out  i = 0 , j = 5
+co = 0.019
+gas = 0.021
+smoke = 0.058
+error2 time out  i = 0 , j = 7
+co = 0.020
+gas = 0.021
+smoke = 0.058
+error2 time out  i = 0 , j = 4
+co = 0.018
+gas = 0.020
+smoke = 0.056
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.056
+Temp :36.7°C 
+Humi :69.9% 
+co = 0.018
+gas = 0.019
+smoke = 0.055
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.056
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.019
+gas = 0.020
+smoke = 0.057
+Temp :36.7°C 
+Humi :70.0% 
+co = 0.018
+gas = 0.020
+smoke = 0.056
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.055
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.019
+gas = 0.019
+smoke = 0.055
+respond error 
+error2 time out  i = 0 , j = 5
+co = 0.018
+gas = 0.021
+smoke = 0.057
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.017
+gas = 0.019
+smoke = 0.056
+Temp :36.7°C 
+Humi :70.1% 
+co = 0.018
+gas = 0.019
+smoke = 0.054
+turn on 1turn on 1turn on 1turn on 1Temp :36.8°C 
+Humi :70.1% 
+co = 0.016
+gas = 0.018
+smoke = 0.053
+turn on 1turn on 1turn on 1turn on 1turn on 1error2 time out  i = 0 , j = 0
+co = 0.016
+gas = 0.019
+smoke = 0.050
+turn on 1turn on 1turn on 1turn on 1turn on 1Temp :36.8°C 
+Humi :70.1% 
+co = 0.017
+gas = 0.019
+smoke = 0.054
+turn on 1turn on 1turn on 1turn on 1turn on 1Temp :36.8°C 
+Humi :70.1% 
+co = 0.010
+gas = 0.013
+smoke = 0.035
+turn on 1Temp :36.8°C 
+Humi :70.1% 
+co = 0.018
+gas = 0.018
+smoke = 0.055
+Temp :36.8°C 
+Humi :70.0% 
+co = 0.024
+gas = 0.024
+smoke = 0.073
+Temp :36.8°C 
+Humi :70.1% 
+co = 0.029
+gas = 0.026
+smoke = 0.082
+Temp :36.8°C 
+Humi :70.0% 
+co = 0.039
+gas = 0.035
+smoke = 0.101
+Temp :36.8°C 
+Humi :70.0% 
+co = 0.046
+gas = 0.037
+smoke = 0.117
+error2 time out  i = 0 , j = 6
+co = 0.047
+gas = 0.040
+smoke = 0.121
+Temp :36.8°C 
+Humi :70.0% 
+co = 0.052
+gas = 0.042
+smoke = 0.125
+Temp :36.8°C 
+Humi :70.0% 
+co = 0.055
+gas = 0.043
+smoke = 0.133
+Temp :36.8°C 
+Humi :70.0% 
+co = 0.058
+gas = 0.043
+smoke = 0.129
+Temp :36.8°C 
+Humi :70.0% 
+co = 0.059
+gas = 0.048
+smoke = 0.140
+Temp :36.8°C 
+Humi :70.1% 
+co = 0.070
+gas = 0.051
+smoke = 0.152
+Temp :36.8°C 
+Humi :70.2% 
+co = 0.064
+gas = 0.048
+smoke = 0.152
+Temp :36.8°C 
+Humi :70.2% 
+co = 0.069
+gas = 0.052
+smoke = 0.154
+Temp :36.8°C 
+Humi :70.2% 
+co = 0.157
+gas = 0.091
+smoke = 0.304
+Temp :36.8°C 
+Humi :70.2% 
+co = 0.444
+gas = 0.196
+smoke = 0.673
+WARNING SMOKE 
+respond = 
+> 
+S: 16
+
+OK
+, 19 
+turn on 1turn on 1time out 
+turn on 1turn on 1Temp :36.8°C 
+time out 
+turn on 1Humi :70.3% 
+co = 0.270
+gas = 0.138
+smoke = 0.430
+turn on 1turn on 1time out 
+turn on 1turn on 1turn on 1Temp :36.8°C 
+Humi :70.4% 
+co = 0.335
+gas = 0.163
+smoke = 0.527
+turn on 1WARNING SMOKE 
+turn on 1turn on 1return ok 
+respond = 
+> , 4 
+turn on 1turn on 1Temp :36.8°C 
+turn on 1time out 
+Humi :70.4% 
+co = 0.206
+gas = 0.108
+smoke = 0.345
+turn on 1turn on 1time out 
+turn on 1turn on 1turn on 1Temp :36.8°C 
+Humi :70.4% 
+turn on 1co = 0.151
+gas = 0.093
+smoke = 0.312
+error2 time out  i = 0 , j = 3
+co = 0.149
+gas = 0.090
+smoke = 0.283
+Temp :36.8°C 
+Humi :70.4% 
+co = 0.131
+gas = 0.080
+smoke = 0.244
+Temp :36.9°C 
+Humi :70.3% 
+co = 0.116
+gas = 0.075
+smoke = 0.233
+error2 time out  i = 0 , j = 6
+co = 0.112
+gas = 0.071
+smoke = 0.224
+error2 time out  i = 0 , j = 4
+co = 0.102
+gas = 0.068
+smoke = 0.216
+Temp :36.9°C 
+Humi :70.4% 
+co = 0.098
+gas = 0.066
+smoke = 0.197
+error2 time out  i = 0 , j = 2
+co = 0.095
+gas = 0.063
+smoke = 0.194
+Temp :36.9°C 
+Humi :70.3% 
+co = 0.090
+gas = 0.061
+smoke = 0.192
+error2 time out  i = 0 , j = 4
+co = 0.091
+gas = 0.061
+smoke = 0.191
+error2 time out  i = 0 , j = 6
+co = 0.081
+gas = 0.060
+smoke = 0.185
+Temp :36.9°C 
+Humi :70.2% 
+co = 0.079
+gas = 0.059
+smoke = 0.174
+error2 time out  i = 0 , j = 5
+co = 0.077
+gas = 0.056
+smoke = 0.170
+Temp :36.9°C 
+Humi :70.1% 
+co = 0.077
+gas = 0.053
+smoke = 0.166
+error2 time out  i = 0 , j = 2
+co = 0.071
+gas = 0.052
+smoke = 0.157
+Temp :36.9°C 
+Humi :70.1% 
+co = 0.070
+gas = 0.050
+smoke = 0.157
+error2 time out  i = 0 , j = 6
+co = 0.070
+gas = 0.051
+smoke = 0.155
+Temp :36.9°C 
+Humi :70.1% 
+co = 0.070
+gas = 0.051
+smoke = 0.152
+error2 time out  i = 0 , j = 6
+co = 0.070
+gas = 0.051
+smoke = 0.155
+Temp :36.9°C 
+Humi :70.0% 
+co = 0.061
+gas = 0.049
+smoke = 0.141
+error2 time out  i = 0 , j = 3
+co = 0.062
+gas = 0.047
+smoke = 0.142
+Temp :36.9°C 

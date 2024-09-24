@@ -1,0 +1,769 @@
+[1/14] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_room/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/12] Building C object esp-idf/dht22/CMakeFiles/__idf_dht22.dir/dht22.c.obj
+FAILED: esp-idf/dht22/CMakeFiles/__idf_dht22.dir/dht22.c.obj 
+ccache D:\App\ESP32\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/App/ESP32/smart_room/build/config -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include -ID:/App/ESP32/smart_room/user/dht22 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated -ID:/App/ESP32/smart_room/user/lcd -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel-SMP/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/platform_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/esp_additions/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/port/esp32/. -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/heap/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/platform_port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/include/private -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/deprecated_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps/sntp -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/arch -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/sys -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/App/ESP32/smart_room=. -fmacro-prefix-map=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/dht22/CMakeFiles/__idf_dht22.dir/dht22.c.obj -MF esp-idf\dht22\CMakeFiles\__idf_dht22.dir\dht22.c.obj.d -o esp-idf/dht22/CMakeFiles/__idf_dht22.dir/dht22.c.obj -c D:/App/ESP32/smart_room/user/dht22/dht22.c
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:12,
+                 from D:/App/ESP32/smart_room/user/dht22/dht22.c:2:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include/esp_err.h: In function 'DHT22_Start':
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include/esp_err.h:19:13: error: storage class specified for parameter 'esp_err_t'
+   19 | typedef int esp_err_t;
+      |             ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include/esp_err.h:59:29: error: expected declaration specifiers or '...' before 'esp_err_t'
+   59 | const char *esp_err_to_name(esp_err_t code);
+      |                             ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include/esp_err.h:77:31: error: expected declaration specifiers or '...' before 'esp_err_t'
+   77 | const char *esp_err_to_name_r(esp_err_t code, char *buf, size_t buflen);
+      |                               ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include/esp_err.h:80:30: error: expected declaration specifiers or '...' before 'esp_err_t'
+   80 | void _esp_error_check_failed(esp_err_t rc, const char *file, int line, const char *function, const char *expression) __attribute__((__noreturn__));
+      |                              ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include/esp_err.h:82:44: error: expected declaration specifiers or '...' before 'esp_err_t'
+   82 | void _esp_error_check_failed_without_abort(esp_err_t rc, const char *file, int line, const char *function, const char *expression);
+      |                                            ^~~~~~~~~
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:13,
+                 from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:13:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_types.h:13:16: error: storage class specified for parameter 'intr_handler_t'
+   13 | typedef void (*intr_handler_t)(void *arg);
+      |                ^~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_types.h:16:36: error: storage class specified for parameter 'intr_handle_t'
+   16 | typedef struct intr_handle_data_t *intr_handle_t;
+      |                                    ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_types.h:27:3: error: storage class specified for parameter 'esp_intr_cpu_affinity_t'
+   27 | } esp_intr_cpu_affinity_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:98:1: error: expected declaration specifiers before 'esp_err_t'
+   98 | esp_err_t esp_intr_mark_shared(int intno, int cpu, bool is_in_iram);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:112:1: error: expected declaration specifiers before 'esp_err_t'
+  112 | esp_err_t esp_intr_reserve(int intno, int cpu);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:147:1: error: expected declaration specifiers before 'esp_err_t'
+  147 | esp_err_t esp_intr_alloc(int source, int flags, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:185:1: error: expected declaration specifiers before 'esp_err_t'
+  185 | esp_err_t esp_intr_alloc_intrstatus(int source, int flags, uint32_t intrstatusreg, uint32_t intrstatusmask, intr_handler_t handler, void *arg, intr_handle_t *ret_handle);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:206:1: error: expected declaration specifiers before 'esp_err_t'
+  206 | esp_err_t esp_intr_free(intr_handle_t handle);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:216:22: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  216 | int esp_intr_get_cpu(intr_handle_t handle);
+      |                      ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:225:24: error: expected declaration specifiers or '...' before 'intr_handle_t'
+  225 | int esp_intr_get_intno(intr_handle_t handle);
+      |                        ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:243:1: error: expected declaration specifiers before 'esp_err_t'
+  243 | esp_err_t esp_intr_disable(intr_handle_t handle);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:256:1: error: expected declaration specifiers before 'esp_err_t'
+  256 | esp_err_t esp_intr_enable(intr_handle_t handle);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:270:1: error: expected declaration specifiers before 'esp_err_t'
+  270 | esp_err_t esp_intr_set_in_iram(intr_handle_t handle, bool is_in_iram);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:299:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  299 | {
+      | ^
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:308:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  308 | {
+      | ^
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_intr_alloc.h:317:1: error: expected declaration specifiers before 'esp_err_t'
+  317 | esp_err_t esp_intr_dump(FILE *stream);
+      | ^~~~~~~~~
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/gpio_types.h:10,
+                 from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:15:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/gpio_num.h:58:3: error: storage class specified for parameter 'gpio_num_t'
+   58 | } gpio_num_t;
+      |   ^~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/gpio_types.h:20:3: error: storage class specified for parameter 'gpio_port_t'
+   20 | } gpio_port_t;
+      |   ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/gpio_types.h:88:3: error: storage class specified for parameter 'gpio_int_type_t'
+   88 | } gpio_int_type_t;
+      |   ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/gpio_types.h:104:3: error: storage class specified for parameter 'gpio_mode_t'
+  104 | } gpio_mode_t;
+      |   ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/gpio_types.h:109:3: error: storage class specified for parameter 'gpio_pullup_t'
+  109 | } gpio_pullup_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/gpio_types.h:114:3: error: storage class specified for parameter 'gpio_pulldown_t'
+  114 | } gpio_pulldown_t;
+      |   ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/gpio_types.h:121:3: error: storage class specified for parameter 'gpio_pull_mode_t'
+  121 | } gpio_pull_mode_t;
+      |   ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/gpio_types.h:130:3: error: storage class specified for parameter 'gpio_drive_cap_t'
+  130 | } gpio_drive_cap_t;
+      |   ^~~~~~~~~~~~~~~~
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:10,
+                 from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:17:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:19:35: error: storage class specified for parameter 'esp_etm_channel_handle_t'
+   19 | typedef struct esp_etm_channel_t *esp_etm_channel_handle_t;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:24:33: error: storage class specified for parameter 'esp_etm_event_handle_t'
+   24 | typedef struct esp_etm_event_t *esp_etm_event_handle_t;
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:29:32: error: storage class specified for parameter 'esp_etm_task_handle_t'
+   29 | typedef struct esp_etm_task_t *esp_etm_task_handle_t;
+      |                                ^~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:36:3: error: storage class specified for parameter 'esp_etm_channel_config_t'
+   36 | } esp_etm_channel_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:52:1: error: expected declaration specifiers before 'esp_err_t'
+   52 | esp_err_t esp_etm_new_channel(const esp_etm_channel_config_t *config, esp_etm_channel_handle_t *ret_chan);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:63:1: error: expected declaration specifiers before 'esp_err_t'
+   63 | esp_err_t esp_etm_del_channel(esp_etm_channel_handle_t chan);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:77:1: error: expected declaration specifiers before 'esp_err_t'
+   77 | esp_err_t esp_etm_channel_enable(esp_etm_channel_handle_t chan);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:91:1: error: expected declaration specifiers before 'esp_err_t'
+   91 | esp_err_t esp_etm_channel_disable(esp_etm_channel_handle_t chan);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:106:1: error: expected declaration specifiers before 'esp_err_t'
+  106 | esp_err_t esp_etm_channel_connect(esp_etm_channel_handle_t chan, esp_etm_event_handle_t event, esp_etm_task_handle_t task);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:119:1: error: expected declaration specifiers before 'esp_err_t'
+  119 | esp_err_t esp_etm_del_event(esp_etm_event_handle_t event);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:132:1: error: expected declaration specifiers before 'esp_err_t'
+  132 | esp_err_t esp_etm_del_task(esp_etm_task_handle_t task);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/esp_etm.h:143:1: error: expected declaration specifiers before 'esp_err_t'
+  143 | esp_err_t esp_etm_dump(FILE *out_stream);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:23:3: error: storage class specified for parameter 'gpio_etm_event_edge_t'
+   23 | } gpio_etm_event_edge_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:29:5: error: expected specifier-qualifier-list before 'gpio_etm_event_edge_t'
+   29 |     gpio_etm_event_edge_t edge; /*!< Which kind of edge can trigger the ETM event module */
+      |     ^~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:30:3: error: storage class specified for parameter 'gpio_etm_event_config_t'
+   30 | } gpio_etm_event_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:47:1: error: expected declaration specifiers before 'esp_err_t'
+   47 | esp_err_t gpio_new_etm_event(const gpio_etm_event_config_t *config, esp_etm_event_handle_t *ret_event);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:62:1: error: expected declaration specifiers before 'esp_err_t'
+   62 | esp_err_t gpio_etm_event_bind_gpio(esp_etm_event_handle_t event, int gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:71:3: error: storage class specified for parameter 'gpio_etm_task_action_t'
+   71 | } gpio_etm_task_action_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:77:5: error: expected specifier-qualifier-list before 'gpio_etm_task_action_t'
+   77 |     gpio_etm_task_action_t action; /*!< Which action to take by the ETM task module */
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:78:3: error: storage class specified for parameter 'gpio_etm_task_config_t'
+   78 | } gpio_etm_task_config_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:96:1: error: expected declaration specifiers before 'esp_err_t'
+   96 | esp_err_t gpio_new_etm_task(const gpio_etm_task_config_t *config, esp_etm_task_handle_t *ret_task);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:112:1: error: expected declaration specifiers before 'esp_err_t'
+  112 | esp_err_t gpio_etm_task_add_gpio(esp_etm_task_handle_t task, int gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio_etm.h:128:1: error: expected declaration specifiers before 'esp_err_t'
+  128 | esp_err_t gpio_etm_task_rm_gpio(esp_etm_task_handle_t task, int gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:34:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gpio_isr_handle_t'
+   34 | typedef intr_handle_t gpio_isr_handle_t;
+      |                       ^~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:41:16: error: storage class specified for parameter 'gpio_isr_t'
+   41 | typedef void (*gpio_isr_t)(void *arg);
+      |                ^~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:48:5: error: expected specifier-qualifier-list before 'gpio_mode_t'
+   48 |     gpio_mode_t mode;               /*!< GPIO mode: set input/output mode                     */
+      |     ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:55:3: error: storage class specified for parameter 'gpio_config_t'
+   55 | } gpio_config_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:69:1: error: expected declaration specifiers before 'esp_err_t'
+   69 | esp_err_t gpio_config(const gpio_config_t *pGPIOConfig);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:82:1: error: expected declaration specifiers before 'esp_err_t'
+   82 | esp_err_t gpio_reset_pin(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:95:1: error: expected declaration specifiers before 'esp_err_t'
+   95 | esp_err_t gpio_set_intr_type(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:112:1: error: expected declaration specifiers before 'esp_err_t'
+  112 | esp_err_t gpio_intr_enable(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:126:1: error: expected declaration specifiers before 'esp_err_t'
+  126 | esp_err_t gpio_intr_disable(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:141:1: error: expected declaration specifiers before 'esp_err_t'
+  141 | esp_err_t gpio_set_level(gpio_num_t gpio_num, uint32_t level);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:155:20: error: expected declaration specifiers or '...' before 'gpio_num_t'
+  155 | int gpio_get_level(gpio_num_t gpio_num);
+      |                    ^~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:170:1: error: expected declaration specifiers before 'esp_err_t'
+  170 | esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:185:1: error: expected declaration specifiers before 'esp_err_t'
+  185 | esp_err_t gpio_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:198:1: error: expected declaration specifiers before 'esp_err_t'
+  198 | esp_err_t gpio_wakeup_enable(gpio_num_t gpio_num, gpio_int_type_t intr_type);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:209:1: error: expected declaration specifiers before 'esp_err_t'
+  209 | esp_err_t gpio_wakeup_disable(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:235:1: error: expected declaration specifiers before 'esp_err_t'
+  235 | esp_err_t gpio_isr_register(void (*fn)(void *), void *arg, int intr_alloc_flags, gpio_isr_handle_t *handle);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:246:1: error: expected declaration specifiers before 'esp_err_t'
+  246 | esp_err_t gpio_pullup_en(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:257:1: error: expected declaration specifiers before 'esp_err_t'
+  257 | esp_err_t gpio_pullup_dis(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:268:1: error: expected declaration specifiers before 'esp_err_t'
+  268 | esp_err_t gpio_pulldown_en(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:279:1: error: expected declaration specifiers before 'esp_err_t'
+  279 | esp_err_t gpio_pulldown_dis(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:296:1: error: expected declaration specifiers before 'esp_err_t'
+  296 | esp_err_t gpio_install_isr_service(int intr_alloc_flags);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:327:1: error: expected declaration specifiers before 'esp_err_t'
+  327 | esp_err_t gpio_isr_handler_add(gpio_num_t gpio_num, gpio_isr_t isr_handler, void *args);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:339:1: error: expected declaration specifiers before 'esp_err_t'
+  339 | esp_err_t gpio_isr_handler_remove(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:351:1: error: expected declaration specifiers before 'esp_err_t'
+  351 | esp_err_t gpio_set_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t strength);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:363:1: error: expected declaration specifiers before 'esp_err_t'
+  363 | esp_err_t gpio_get_drive_capability(gpio_num_t gpio_num, gpio_drive_cap_t *strength);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:390:1: error: expected declaration specifiers before 'esp_err_t'
+  390 | esp_err_t gpio_hold_en(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:409:1: error: expected declaration specifiers before 'esp_err_t'
+  409 | esp_err_t gpio_hold_dis(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:477:1: error: expected declaration specifiers before 'esp_err_t'
+  477 | esp_err_t gpio_sleep_sel_en(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:486:1: error: expected declaration specifiers before 'esp_err_t'
+  486 | esp_err_t gpio_sleep_sel_dis(gpio_num_t gpio_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:500:1: error: expected declaration specifiers before 'esp_err_t'
+  500 | esp_err_t gpio_sleep_set_direction(gpio_num_t gpio_num, gpio_mode_t mode);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:514:1: error: expected declaration specifiers before 'esp_err_t'
+  514 | esp_err_t gpio_sleep_set_pull_mode(gpio_num_t gpio_num, gpio_pull_mode_t pull);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include/driver/gpio.h:559:1: error: expected declaration specifiers before 'esp_err_t'
+  559 | esp_err_t gpio_dump_io_configuration(FILE *out_stream, uint64_t io_bit_mask);
+      | ^~~~~~~~~
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:12,
+                 from D:/App/ESP32/smart_room/user/dht22/dht22.c:3:
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:315:3: error: storage class specified for parameter 'imaxdiv_t'
+  315 | } imaxdiv_t;
+      |   ^~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:323:18: error: storage class specified for parameter 'imaxabs'
+  323 | extern intmax_t  imaxabs(intmax_t);
+      |                  ^~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:324:18: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'imaxdiv'
+  324 | extern imaxdiv_t imaxdiv(intmax_t __numer, intmax_t __denomer);
+      |                  ^~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:325:18: error: storage class specified for parameter 'strtoimax'
+  325 | extern intmax_t  strtoimax(const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:326:18: error: storage class specified for parameter '_strtoimax_r'
+  326 | extern intmax_t  _strtoimax_r(struct _reent *, const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:327:18: error: storage class specified for parameter 'strtoumax'
+  327 | extern uintmax_t strtoumax(const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:328:18: error: storage class specified for parameter '_strtoumax_r'
+  328 | extern uintmax_t _strtoumax_r(struct _reent *, const char *__restrict, char **__restrict, int);
+      |                  ^~~~~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:329:18: error: storage class specified for parameter 'wcstoimax'
+  329 | extern intmax_t  wcstoimax(const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:330:18: error: storage class specified for parameter '_wcstoimax_r'
+  330 | extern intmax_t  _wcstoimax_r(struct _reent *, const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:331:18: error: storage class specified for parameter 'wcstoumax'
+  331 | extern uintmax_t wcstoumax(const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:332:18: error: storage class specified for parameter '_wcstoumax_r'
+  332 | extern uintmax_t _wcstoumax_r(struct _reent *, const wchar_t *__restrict, wchar_t **__restrict, int);
+      |                  ^~~~~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:335:18: error: storage class specified for parameter 'strtoimax_l'
+  335 | extern intmax_t  strtoimax_l(const char *__restrict, char **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:336:18: error: storage class specified for parameter 'strtoumax_l'
+  336 | extern uintmax_t strtoumax_l(const char *__restrict, char **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:337:18: error: storage class specified for parameter 'wcstoimax_l'
+  337 | extern intmax_t  wcstoimax_l(const wchar_t *__restrict, wchar_t **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+D:/App/ESP32/Espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/xtensa-esp-elf/sys-include/inttypes.h:338:18: error: storage class specified for parameter 'wcstoumax_l'
+  338 | extern uintmax_t wcstoumax_l(const wchar_t *__restrict, wchar_t **_restrict, int, locale_t);
+      |                  ^~~~~~~~~~~
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp_rom_sys.h:10,
+                 from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:14:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/reset_reasons.h:54:3: error: storage class specified for parameter 'soc_reset_reason_t'
+   54 | } soc_reset_reason_t;
+      |   ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp_rom_sys.h:71:1: error: expected declaration specifiers before 'soc_reset_reason_t'
+   71 | soc_reset_reason_t esp_rom_get_reset_reason(int cpu_no);
+      | ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:31:3: error: storage class specified for parameter 'esp_log_level_t'
+   31 | } esp_log_level_t;
+      |   ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:33:15: error: storage class specified for parameter 'vprintf_like_t'
+   33 | typedef int (*vprintf_like_t)(const char *, va_list);
+      |               ^~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:42:24: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'esp_log_default_level'
+   42 | extern esp_log_level_t esp_log_default_level;
+      |                        ^~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:87:41: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   87 | void esp_log_level_set(const char* tag, esp_log_level_t level);
+      |                                         ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:97:1: error: expected declaration specifiers before 'esp_log_level_t'
+   97 | esp_log_level_t esp_log_level_get(const char* tag);
+      | ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:113:1: error: expected declaration specifiers before 'vprintf_like_t'
+  113 | vprintf_like_t esp_log_set_vprintf(vprintf_like_t func);
+      | ^~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:162:20: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+  162 | void esp_log_write(esp_log_level_t level, const char* tag, const char* format, ...) __attribute__ ((format (printf, 3, 4)));
+      |                    ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:171:21: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+  171 | void esp_log_writev(esp_log_level_t level, const char* tag, const char* format, va_list args);
+      |                     ^~~~~~~~~~~~~~~
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log.h:175:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log_internal.h:11:90: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   11 | void esp_log_buffer_hex_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
+      |                                                                                          ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log_internal.h:12:91: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   12 | void esp_log_buffer_char_internal(const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t level);
+      |                                                                                           ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include/esp_log_internal.h:13:95: error: expected declaration specifiers or '...' before 'esp_log_level_t'
+   13 | void esp_log_buffer_hexdump_internal( const char *tag, const void *buffer, uint16_t buff_len, esp_log_level_t log_level);
+      |                                                                                               ^~~~~~~~~~~~~~~
+In file included from D:/App/ESP32/smart_room/user/dht22/dht22.c:4:
+D:/App/ESP32/smart_room/user/lcd/lcd.h:17:6: error: redefinition of parameter 'SetUp_password_screen'
+   17 | void SetUp_password_screen(void);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/smart_room/user/lcd/lcd.h:13:6: note: previous definition of 'SetUp_password_screen' with type 'void (*)(void)'
+   13 | void SetUp_password_screen(void);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:10,
+                 from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:13,
+                 from D:/App/ESP32/smart_room/user/dht22/dht22.c:5:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:58:3: error: storage class specified for parameter 'soc_root_clk_t'
+   58 | } soc_root_clk_t;
+      |   ^~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:70:3: error: storage class specified for parameter 'soc_cpu_clk_src_t'
+   70 | } soc_cpu_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:81:3: error: storage class specified for parameter 'soc_rtc_slow_clk_src_t'
+   81 | } soc_rtc_slow_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:92:3: error: storage class specified for parameter 'soc_rtc_fast_clk_src_t'
+   92 | } soc_rtc_fast_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:119:3: error: storage class specified for parameter 'soc_module_clk_t'
+  119 | } soc_module_clk_t;
+      |   ^~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:129:3: error: storage class specified for parameter 'soc_periph_systimer_clk_src_t'
+  129 | } soc_periph_systimer_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:153:3: error: storage class specified for parameter 'soc_periph_gptimer_clk_src_t'
+  153 | } soc_periph_gptimer_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:161:3: error: storage class specified for parameter 'soc_periph_tg_clk_src_legacy_t'
+  161 | } soc_periph_tg_clk_src_legacy_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:176:3: error: storage class specified for parameter 'soc_periph_lcd_clk_src_t'
+  176 | } soc_periph_lcd_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:192:3: error: storage class specified for parameter 'soc_periph_rmt_clk_src_t'
+  192 | } soc_periph_rmt_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:201:3: error: storage class specified for parameter 'soc_periph_rmt_clk_src_legacy_t'
+  201 | } soc_periph_rmt_clk_src_legacy_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:212:3: error: storage class specified for parameter 'soc_periph_uart_clk_src_legacy_t'
+  212 | } soc_periph_uart_clk_src_legacy_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:227:3: error: storage class specified for parameter 'soc_periph_mcpwm_timer_clk_src_t'
+  227 | } soc_periph_mcpwm_timer_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:240:3: error: storage class specified for parameter 'soc_periph_mcpwm_capture_clk_src_t'
+  240 | } soc_periph_mcpwm_capture_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:253:3: error: storage class specified for parameter 'soc_periph_mcpwm_carrier_clk_src_t'
+  253 | } soc_periph_mcpwm_carrier_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:269:3: error: storage class specified for parameter 'soc_periph_i2s_clk_src_t'
+  269 | } soc_periph_i2s_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:284:3: error: storage class specified for parameter 'soc_periph_i2c_clk_src_t'
+  284 | } soc_periph_i2c_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:299:3: error: storage class specified for parameter 'soc_periph_spi_clk_src_t'
+  299 | } soc_periph_spi_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:314:3: error: storage class specified for parameter 'soc_periph_sdm_clk_src_t'
+  314 | } soc_periph_sdm_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:331:3: error: storage class specified for parameter 'soc_periph_dac_digi_clk_src_t'
+  331 | } soc_periph_dac_digi_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:345:3: error: storage class specified for parameter 'soc_periph_dac_cosine_clk_src_t'
+  345 | } soc_periph_dac_cosine_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:360:3: error: storage class specified for parameter 'soc_periph_twai_clk_src_t'
+  360 | } soc_periph_twai_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:378:3: error: storage class specified for parameter 'soc_periph_adc_digi_clk_src_t'
+  378 | } soc_periph_adc_digi_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:391:3: error: storage class specified for parameter 'soc_periph_adc_rtc_clk_src_t'
+  391 | } soc_periph_adc_rtc_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:407:3: error: storage class specified for parameter 'soc_periph_mwdt_clk_src_t'
+  407 | } soc_periph_mwdt_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:426:3: error: storage class specified for parameter 'soc_periph_ledc_clk_src_legacy_t'
+  426 | } soc_periph_ledc_clk_src_legacy_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:442:3: error: storage class specified for parameter 'soc_periph_sdmmc_clk_src_t'
+  442 | } soc_periph_sdmmc_clk_src_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include/soc/clk_tree_defs.h:456:3: error: storage class specified for parameter 'soc_clkout_sig_id_t'
+  456 | } soc_clkout_sig_id_t;
+      |   ^~~~~~~~~~~~~~~~~~~
+In file included from D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:11:
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/timer_types.h:21:38: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'gptimer_clock_source_t'
+   21 | typedef soc_periph_gptimer_clk_src_t gptimer_clock_source_t;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/timer_types.h:35:3: error: storage class specified for parameter 'gptimer_count_direction_t'
+   35 | } gptimer_count_direction_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/timer_types.h:47:3: error: storage class specified for parameter 'gptimer_etm_task_type_t'
+   47 | } gptimer_etm_task_type_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include/hal/timer_types.h:55:3: error: storage class specified for parameter 'gptimer_etm_event_type_t'
+   55 | } gptimer_etm_event_type_t;
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:28:3: error: storage class specified for parameter 'timer_group_t'
+   28 | } timer_group_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:39:3: error: storage class specified for parameter 'timer_idx_t'
+   39 | } timer_idx_t;
+      |   ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:53:3: error: storage class specified for parameter 'timer_intr_t'
+   53 | } timer_intr_t;
+      |   ^~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:62:3: error: storage class specified for parameter 'timer_count_dir_t'
+   62 | } timer_count_dir_t;
+      |   ^~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:70:3: error: storage class specified for parameter 'timer_start_t'
+   70 | } timer_start_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:79:3: error: storage class specified for parameter 'timer_alarm_t'
+   79 | } timer_alarm_t;
+      |   ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:87:3: error: storage class specified for parameter 'timer_intr_mode_t'
+   87 | } timer_intr_mode_t;
+      |   ^~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:96:3: error: storage class specified for parameter 'timer_autoreload_t'
+   96 | } timer_autoreload_t;
+      |   ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:102:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'timer_src_clk_t'
+  102 | typedef soc_periph_tg_clk_src_legacy_t timer_src_clk_t;
+      |                                        ^~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:122:16: error: storage class specified for parameter 'timer_isr_t'
+  122 | typedef bool (*timer_isr_t)(void *);
+      |                ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:127:23: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'timer_isr_handle_t'
+  127 | typedef intr_handle_t timer_isr_handle_t;
+      |                       ^~~~~~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:133:5: error: expected specifier-qualifier-list before 'timer_alarm_t'
+  133 |     timer_alarm_t alarm_en;         /*!< Timer alarm enable */
+      |     ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer_types_legacy.h:140:3: error: storage class specified for parameter 'timer_config_t'
+  140 | } timer_config_t;
+      |   ^~~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:16:2: warning: #warning "legacy timer group driver is deprecated, please migrate to driver/gptimer.h" [-Wcpp]
+   16 | #warning "legacy timer group driver is deprecated, please migrate to driver/gptimer.h"
+      |  ^~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:34:1: error: expected declaration specifiers before 'esp_err_t'
+   34 | esp_err_t timer_get_counter_value(timer_group_t group_num, timer_idx_t timer_num, uint64_t *timer_val);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:47:1: error: expected declaration specifiers before 'esp_err_t'
+   47 | esp_err_t timer_get_counter_time_sec(timer_group_t group_num, timer_idx_t timer_num, double *time);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:60:1: error: expected declaration specifiers before 'esp_err_t'
+   60 | esp_err_t timer_set_counter_value(timer_group_t group_num, timer_idx_t timer_num, uint64_t load_val);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:72:1: error: expected declaration specifiers before 'esp_err_t'
+   72 | esp_err_t timer_start(timer_group_t group_num, timer_idx_t timer_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:84:1: error: expected declaration specifiers before 'esp_err_t'
+   84 | esp_err_t timer_pause(timer_group_t group_num, timer_idx_t timer_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:97:1: error: expected declaration specifiers before 'esp_err_t'
+   97 | esp_err_t timer_set_counter_mode(timer_group_t group_num, timer_idx_t timer_num, timer_count_dir_t counter_dir);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:110:1: error: expected declaration specifiers before 'esp_err_t'
+  110 | esp_err_t timer_set_auto_reload(timer_group_t group_num, timer_idx_t timer_num, timer_autoreload_t reload);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:124:1: error: expected declaration specifiers before 'esp_err_t'
+  124 | esp_err_t timer_set_divider(timer_group_t group_num, timer_idx_t timer_num, uint32_t divider);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:137:1: error: expected declaration specifiers before 'esp_err_t'
+  137 | esp_err_t timer_set_alarm_value(timer_group_t group_num, timer_idx_t timer_num, uint64_t alarm_value);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:150:1: error: expected declaration specifiers before 'esp_err_t'
+  150 | esp_err_t timer_get_alarm_value(timer_group_t group_num, timer_idx_t timer_num, uint64_t *alarm_value);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:163:1: error: expected declaration specifiers before 'esp_err_t'
+  163 | esp_err_t timer_set_alarm(timer_group_t group_num, timer_idx_t timer_num, timer_alarm_t alarm_en);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:191:1: error: expected declaration specifiers before 'esp_err_t'
+  191 | esp_err_t timer_isr_callback_add(timer_group_t group_num, timer_idx_t timer_num, timer_isr_t isr_handler, void *arg, int intr_alloc_flags);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:203:1: error: expected declaration specifiers before 'esp_err_t'
+  203 | esp_err_t timer_isr_callback_remove(timer_group_t group_num, timer_idx_t timer_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:231:1: error: expected declaration specifiers before 'esp_err_t'
+  231 | esp_err_t timer_isr_register(timer_group_t group_num, timer_idx_t timer_num, void (*fn)(void *), void *arg, int intr_alloc_flags, timer_isr_handle_t *handle);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:243:1: error: expected declaration specifiers before 'esp_err_t'
+  243 | esp_err_t timer_init(timer_group_t group_num, timer_idx_t timer_num, const timer_config_t *config);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:254:1: error: expected declaration specifiers before 'esp_err_t'
+  254 | esp_err_t timer_deinit(timer_group_t group_num, timer_idx_t timer_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:266:1: error: expected declaration specifiers before 'esp_err_t'
+  266 | esp_err_t timer_get_config(timer_group_t group_num, timer_idx_t timer_num, timer_config_t *config);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:280:1: error: expected declaration specifiers before 'esp_err_t'
+  280 | esp_err_t timer_group_intr_enable(timer_group_t group_num, timer_intr_t intr_mask);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:294:1: error: expected declaration specifiers before 'esp_err_t'
+  294 | esp_err_t timer_group_intr_disable(timer_group_t group_num, timer_intr_t intr_mask);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:305:1: error: expected declaration specifiers before 'esp_err_t'
+  305 | esp_err_t timer_enable_intr(timer_group_t group_num, timer_idx_t timer_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:316:1: error: expected declaration specifiers before 'esp_err_t'
+  316 | esp_err_t timer_disable_intr(timer_group_t group_num, timer_idx_t timer_num);
+      | ^~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:324:41: error: expected declaration specifiers or '...' before 'timer_group_t'
+  324 | void timer_group_clr_intr_status_in_isr(timer_group_t group_num, timer_idx_t timer_num);
+      |                                         ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:324:66: error: expected declaration specifiers or '...' before 'timer_idx_t'
+  324 | void timer_group_clr_intr_status_in_isr(timer_group_t group_num, timer_idx_t timer_num);
+      |                                                                  ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:332:38: error: expected declaration specifiers or '...' before 'timer_group_t'
+  332 | void timer_group_enable_alarm_in_isr(timer_group_t group_num, timer_idx_t timer_num);
+      |                                      ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:332:63: error: expected declaration specifiers or '...' before 'timer_idx_t'
+  332 | void timer_group_enable_alarm_in_isr(timer_group_t group_num, timer_idx_t timer_num);
+      |                                                               ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:342:47: error: expected declaration specifiers or '...' before 'timer_group_t'
+  342 | uint64_t timer_group_get_counter_value_in_isr(timer_group_t group_num, timer_idx_t timer_num);
+      |                                               ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:342:72: error: expected declaration specifiers or '...' before 'timer_idx_t'
+  342 | uint64_t timer_group_get_counter_value_in_isr(timer_group_t group_num, timer_idx_t timer_num);
+      |                                                                        ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:351:41: error: expected declaration specifiers or '...' before 'timer_group_t'
+  351 | void timer_group_set_alarm_value_in_isr(timer_group_t group_num, timer_idx_t timer_num, uint64_t alarm_val);
+      |                                         ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:351:66: error: expected declaration specifiers or '...' before 'timer_idx_t'
+  351 | void timer_group_set_alarm_value_in_isr(timer_group_t group_num, timer_idx_t timer_num, uint64_t alarm_val);
+      |                                                                  ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:360:44: error: expected declaration specifiers or '...' before 'timer_group_t'
+  360 | void timer_group_set_counter_enable_in_isr(timer_group_t group_num, timer_idx_t timer_num, timer_start_t counter_en);
+      |                                            ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:360:69: error: expected declaration specifiers or '...' before 'timer_idx_t'
+  360 | void timer_group_set_counter_enable_in_isr(timer_group_t group_num, timer_idx_t timer_num, timer_start_t counter_en);
+      |                                                                     ^~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:360:92: error: expected declaration specifiers or '...' before 'timer_start_t'
+  360 | void timer_group_set_counter_enable_in_isr(timer_group_t group_num, timer_idx_t timer_num, timer_start_t counter_en);
+      |                                                                                            ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:370:45: error: expected declaration specifiers or '...' before 'timer_group_t'
+  370 | uint32_t timer_group_get_intr_status_in_isr(timer_group_t group_num);
+      |                                             ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:380:41: error: expected declaration specifiers or '...' before 'timer_group_t'
+  380 | bool timer_group_get_auto_reload_in_isr(timer_group_t group_num, timer_idx_t timer_num);
+      |                                         ^~~~~~~~~~~~~
+D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated/driver/timer.h:380:66: error: expected declaration specifiers or '...' before 'timer_idx_t'
+  380 | bool timer_group_get_auto_reload_in_isr(timer_group_t group_num, timer_idx_t timer_num);
+      |                                                                  ^~~~~~~~~~~
+D:/App/ESP32/smart_room/user/dht22/dht22.c:16:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   16 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:22:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   22 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:32:1: error: parameter 'Timer0_Update' is initialized
+   32 | volatile uint32_t * const Timer0_Update = (uint32_t *)0x3FF5F00C;
+      | ^~~~~~~~
+D:/App/ESP32/smart_room/user/dht22/dht22.c:33:1: error: parameter 'Timer0_Reload_lo' is initialized
+   33 | volatile uint32_t * const Timer0_Reload_lo = (uint32_t *)0x3FF5F018;
+      | ^~~~~~~~
+D:/App/ESP32/smart_room/user/dht22/dht22.c:34:1: error: parameter 'Timer0_Reload_hi' is initialized
+   34 | volatile uint32_t * const Timer0_Reload_hi = (uint32_t *)0x3FF5F01C;
+      | ^~~~~~~~
+D:/App/ESP32/smart_room/user/dht22/dht22.c:42:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   42 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:80:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   80 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:124:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  124 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:130:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  130 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:181:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  181 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:192:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  192 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:208:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  208 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:214:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  214 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:220:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  220 | {
+      | ^
+D:/App/ESP32/smart_room/user/dht22/dht22.c:225:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  225 | {
+      | ^
+In file included from D:/App/ESP32/smart_room/user/dht22/dht22.c:1:
+D:/App/ESP32/smart_room/user/dht22/dht22.h:33:9: error: old-style parameter declarations in prototyped function definition
+   33 | uint8_t DHT22_Start (void)
+      |         ^~~~~~~~~~~
+D:/App/ESP32/smart_room/user/dht22/dht22.c:248: error: expected '{' at end of input
+D:/App/ESP32/smart_room/user/dht22/dht22.c:248: error: control reaches end of non-void function [-Werror=return-type]
+cc1.exe: some warnings being treated as errors
+[3/12] Building C object esp-idf/App/CMakeFiles/__idf_App.dir/mainApp.c.obj
+FAILED: esp-idf/App/CMakeFiles/__idf_App.dir/mainApp.c.obj 
+ccache D:\App\ESP32\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/App/ESP32/smart_room/build/config -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/include -ID:/App/ESP32/smart_room/user/lcd -ID:/App/ESP32/smart_room/user/mq2 -ID:/App/ESP32/smart_room/user/dht22 -ID:/App/ESP32/smart_room/user/user_mqtt -ID:/App/ESP32/smart_room/user/wifi -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/mqtt/esp-mqtt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel-SMP/include/freertos -ID:/App/ESP32/smart_room/user/App -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_ringbuf/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_netif/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_partition/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/nvs_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/driver/uart/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/tcp_transport/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/platform_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/esp_additions/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/port/esp32/. -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/heap/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/platform_port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/include/private -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/deprecated_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps/sntp -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/arch -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/sys -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/App/ESP32/smart_room=. -fmacro-prefix-map=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/App/CMakeFiles/__idf_App.dir/mainApp.c.obj -MF esp-idf\App\CMakeFiles\__idf_App.dir\mainApp.c.obj.d -o esp-idf/App/CMakeFiles/__idf_App.dir/mainApp.c.obj -c D:/App/ESP32/smart_room/user/App/mainApp.c
+In file included from D:/App/ESP32/smart_room/user/App/mainApp.c:3:
+D:/App/ESP32/smart_room/user/App/mainApp.h: In function 'DHT22_Start':
+D:/App/ESP32/smart_room/user/App/mainApp.h:37:27: error: storage class specified for parameter 'Mqtt_event_group'
+   37 | extern EventGroupHandle_t Mqtt_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.h:41:33: error: storage class specified for parameter 'client'
+   41 | extern esp_mqtt_client_handle_t client;
+      |                                 ^~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:11:17: error: storage class specified for parameter 'denta_t'
+   11 | extern uint64_t denta_t;
+      |                 ^~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:15:28: error: storage class specified for parameter 'Timer0_G0_Low'
+   15 | extern volatile uint32_t * Timer0_G0_Low;
+      |                            ^~~~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:16:28: error: storage class specified for parameter 'Timer0_G0_High'
+   16 | extern volatile uint32_t * Timer0_G0_High;
+      |                            ^~~~~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:18:27: error: storage class specified for parameter 'Mqtt_event_group'
+   18 | extern EventGroupHandle_t Mqtt_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:18:27: error: redefinition of parameter 'Mqtt_event_group'
+D:/App/ESP32/smart_room/user/App/mainApp.h:37:27: note: previous definition of 'Mqtt_event_group' with type 'EventGroupHandle_t' {aka 'struct EventGroupDef_t *'}
+   37 | extern EventGroupHandle_t Mqtt_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:20:20: error: storage class specified for parameter 'TAG'
+   20 | static const char *TAG = "wifi station";
+      |                    ^~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:20:1: error: parameter 'TAG' is initialized
+   20 | static const char *TAG = "wifi station";
+      | ^~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:23:12: error: storage class specified for parameter 's_retry_num'
+   23 | static int s_retry_num = 0;
+      |            ^~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:23:1: error: parameter 's_retry_num' is initialized
+   23 | static int s_retry_num = 0;
+      | ^~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:29:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   29 | {
+      | ^
+D:/App/ESP32/smart_room/user/App/mainApp.c:61:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   61 | {
+      | ^
+D:/App/ESP32/smart_room/user/App/mainApp.c:140:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  140 | {
+      | ^
+D:/App/ESP32/smart_room/user/App/mainApp.c:207:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  207 | {
+      | ^
+D:/App/ESP32/smart_room/user/App/mainApp.c:259:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  259 | {
+      | ^
+D:/App/ESP32/smart_room/user/App/mainApp.c:334:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  334 | {
+      | ^
+In file included from D:/App/ESP32/smart_room/user/App/mainApp.h:30:
+D:/App/ESP32/smart_room/user/dht22/dht22.h:33:9: error: old-style parameter declarations in prototyped function definition
+   33 | uint8_t DHT22_Start (void)
+      |         ^~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c:337: error: expected '{' at end of input
+D:/App/ESP32/smart_room/user/App/mainApp.c:337: error: control reaches end of non-void function [-Werror=return-type]
+cc1.exe: some warnings being treated as errors
+[4/12] Building C object esp-idf/App/CMakeFiles/__idf_App.dir/sesion_communication.c.obj
+FAILED: esp-idf/App/CMakeFiles/__idf_App.dir/sesion_communication.c.obj 
+ccache D:\App\ESP32\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/App/ESP32/smart_room/build/config -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/include -ID:/App/ESP32/smart_room/user/lcd -ID:/App/ESP32/smart_room/user/mq2 -ID:/App/ESP32/smart_room/user/dht22 -ID:/App/ESP32/smart_room/user/user_mqtt -ID:/App/ESP32/smart_room/user/wifi -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/mqtt/esp-mqtt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel-SMP/include/freertos -ID:/App/ESP32/smart_room/user/App -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_ringbuf/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_netif/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_partition/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/nvs_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/driver/uart/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/tcp_transport/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/platform_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/esp_additions/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/port/esp32/. -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/heap/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/platform_port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/include/private -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/deprecated_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps/sntp -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/arch -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/sys -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/App/ESP32/smart_room=. -fmacro-prefix-map=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/App/CMakeFiles/__idf_App.dir/sesion_communication.c.obj -MF esp-idf\App\CMakeFiles\__idf_App.dir\sesion_communication.c.obj.d -o esp-idf/App/CMakeFiles/__idf_App.dir/sesion_communication.c.obj -c D:/App/ESP32/smart_room/user/App/sesion_communication.c
+In file included from D:/App/ESP32/smart_room/user/App/sesion_communication.c:1:
+D:/App/ESP32/smart_room/user/App/mainApp.h: In function 'DHT22_Start':
+D:/App/ESP32/smart_room/user/App/mainApp.h:37:27: error: storage class specified for parameter 'Mqtt_event_group'
+   37 | extern EventGroupHandle_t Mqtt_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.h:41:33: error: storage class specified for parameter 'client'
+   41 | extern esp_mqtt_client_handle_t client;
+      |                                 ^~~~~~
+D:/App/ESP32/smart_room/user/App/sesion_communication.c:4:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+    4 | {
+      | ^
+In file included from D:/App/ESP32/smart_room/user/App/mainApp.h:30:
+D:/App/ESP32/smart_room/user/dht22/dht22.h:33:9: error: old-style parameter declarations in prototyped function definition
+   33 | uint8_t DHT22_Start (void)
+      |         ^~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/sesion_communication.c:11: error: expected '{' at end of input
+D:/App/ESP32/smart_room/user/App/sesion_communication.c:11: error: control reaches end of non-void function [-Werror=return-type]
+cc1.exe: some warnings being treated as errors
+[5/12] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+FAILED: esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj 
+ccache D:\App\ESP32\Espressif\tools\xtensa-esp-elf\esp-13.2.0_20230928\xtensa-esp-elf\bin\xtensa-esp32-elf-gcc.exe -DESP_PLATFORM -DIDF_VER=\"v5.2.1-dirty\" -DMBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -DUNITY_INCLUDE_CONFIG_H -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -ID:/App/ESP32/smart_room/build/config -ID:/App/ESP32/smart_room/main -ID:/App/ESP32/smart_room/user/App -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/newlib/platform_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/config/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/esp_additions/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/include/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hw_support/port/esp32/. -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/heap/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/log/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/soc/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/platform_port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/include/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_rom/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_common/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/soc -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_system/port/include/private -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/xtensa/deprecated_include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/include/apps/sntp -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/lwip/src/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/freertos/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/arch -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/lwip/port/esp32xx/include/sys -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_ringbuf/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/efuse/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/efuse/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_mm/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/deprecated -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/analog_comparator/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/dac/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gpio/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/gptimer/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2c/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/i2s/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/ledc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/mcpwm/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/parlio/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/pcnt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/rmt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sdio_slave/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sdmmc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/sigma_delta/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/spi/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/temperature_sensor/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/touch_sensor/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/twai/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/uart/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/usb_serial_jtag/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/driver/touch_sensor/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_pm/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/library -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/esp_crt_bundle/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/3rdparty/everest/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/3rdparty/p256-m -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_bootloader_format/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_app_format/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/bootloader_support/bootloader_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_partition/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/app_update/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/spi_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/pthread/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_timer/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/app_trace/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_event/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_phy/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_phy/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/vfs/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_netif/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant/port/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wpa_supplicant/esp_supplicant/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_coex/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_wifi/wifi_apps/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/unity/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/unity/unity/src -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/cmock/CMock/src -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/console -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/http_parser -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp-tls -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp-tls/esp-tls-crypto -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/interface -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/esp32/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_adc/deprecated/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_eth/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_gdbstub/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_hid/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/tcp_transport/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_client/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_http_server/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_https_ota/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_psram/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_lcd/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_lcd/interface -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protobuf-c/protobuf-c -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/common -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/security -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/transports -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/protocomm/include/crypto/srp6a -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esp_local_ctrl/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/espcoredump/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/espcoredump/include/port/xtensa -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wear_levelling/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/sdmmc/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs/diskio -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs/src -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/fatfs/vfs -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/idf_test/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/idf_test/include/esp32 -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/ieee802154/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/json/cJSON -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/mqtt/esp-mqtt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/nvs_sec_provider/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/perfmon/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/spiffs/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/wifi_provisioning/include -ID:/App/ESP32/smart_room/user/lcd -ID:/App/ESP32/smart_room/user/mq2 -ID:/App/ESP32/smart_room/user/dht22 -ID:/App/ESP32/smart_room/user/user_mqtt -ID:/App/ESP32/smart_room/user/wifi -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/mqtt/esp-mqtt/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/freertos/FreeRTOS-Kernel-SMP/include/freertos -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_ringbuf/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_netif/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/esp_partition/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/nvs_flash/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/driver/uart/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/hal/include -ID:/App/ESP32/Espressif/frameworks/esp-idf-v5.1.3/components/driver/deprecated -mlongcalls -Wno-frame-address  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fno-shrink-wrap -fmacro-prefix-map=D:/App/ESP32/smart_room=. -fmacro-prefix-map=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -MF esp-idf\main\CMakeFiles\__idf_main.dir\main.c.obj.d -o esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj -c D:/App/ESP32/smart_room/main/main.c
+In file included from D:/App/ESP32/smart_room/main/main.c:2:
+D:/App/ESP32/smart_room/user/App/mainApp.h: In function 'DHT22_Start':
+D:/App/ESP32/smart_room/user/App/mainApp.h:37:27: error: storage class specified for parameter 'Mqtt_event_group'
+   37 | extern EventGroupHandle_t Mqtt_event_group;
+      |                           ^~~~~~~~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.h:41:33: error: storage class specified for parameter 'client'
+   41 | extern esp_mqtt_client_handle_t client;
+      |                                 ^~~~~~
+D:/App/ESP32/smart_room/main/main.c:5:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+    5 | {
+      | ^
+In file included from D:/App/ESP32/smart_room/user/App/mainApp.h:30:
+D:/App/ESP32/smart_room/user/dht22/dht22.h:33:9: error: old-style parameter declarations in prototyped function definition
+   33 | uint8_t DHT22_Start (void)
+      |         ^~~~~~~~~~~
+D:/App/ESP32/smart_room/main/main.c:13: error: expected '{' at end of input
+D:/App/ESP32/smart_room/main/main.c:13: error: control reaches end of non-void function [-Werror=return-type]
+cc1.exe: some warnings being treated as errors
+ninja: build stopped: subcommand failed.

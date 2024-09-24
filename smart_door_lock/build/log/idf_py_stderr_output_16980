@@ -1,0 +1,9 @@
+CMake Error at D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/tools/cmake/component.cmake:313 (message):
+  Include directory 'D:/App/ESP32/smart_door_lock/user/device/fingerfrint' is
+  not a directory.
+Call Stack (most recent call first):
+  D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/tools/cmake/component.cmake:481 (__component_add_include_dirs)
+  user/device/password/CMakeLists.txt:3 (idf_component_register)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed

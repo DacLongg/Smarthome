@@ -1,0 +1,83 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_room/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/8] Building C object esp-idf/user_mqtt/CMakeFiles/__idf_user_mqtt.dir/user_mqtt.c.obj
+[3/8] Linking C static library esp-idf\user_mqtt\libuser_mqtt.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable smart_room.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/App/ESP32/smart_room/build/smart_room.bin
+[7/8] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/App/ESP32/smart_room/build/partition_table/partition-table.bin D:/App/ESP32/smart_room/build/smart_room.bin"
+smart_room.bin binary size 0xe6210 bytes. Smallest app partition is 0x100000 bytes. 0x19df0 bytes (10%) free.
+[7/8] cmd.exe /C "cd /D D:\App\ESP32\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && D:\App\ESP32\Espressif\tools\cmake\3.24.0\bin\cmake.eesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 smart_room.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: 30:c9:22:f2:62:f8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f6fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16366...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16366 compressed) at 0x00001000 in 0.8 seconds (effective 278.1 kbit/s)...
+Hash of data verified.
+Compressed 942608 bytes to 585651...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e39d... (5 %)
+Writing at 0x0002835f... (8 %)
+Writing at 0x0002d1ba... (11 %)
+Writing at 0x00034d99... (13 %)
+Writing at 0x000405d8... (16 %)
+Writing at 0x00046166... (19 %)
+Writing at 0x0004bb95... (22 %)
+Writing at 0x00051e19... (25 %)
+Writing at 0x00057d94... (27 %)
+Writing at 0x0005da57... (30 %)
+Writing at 0x0006379e... (33 %)
+Writing at 0x00069f54... (36 %)
+Writing at 0x0006fb27... (38 %)
+Writing at 0x000757ff... (41 %)
+Writing at 0x0007aef6... (44 %)
+Writing at 0x00080244... (47 %)
+Writing at 0x00085816... (50 %)
+Writing at 0x0008a9e9... (52 %)
+Writing at 0x00090113... (55 %)
+Writing at 0x000957d0... (58 %)
+Writing at 0x0009b435... (61 %)
+Writing at 0x000a1062... (63 %)
+Writing at 0x000a6a8c... (66 %)
+Writing at 0x000ac672... (69 %)
+Writing at 0x000b23b3... (72 %)
+Writing at 0x000b7bf7... (75 %)
+Writing at 0x000bd8b5... (77 %)
+Writing at 0x000c3395... (80 %)
+Writing at 0x000c8d57... (83 %)
+Writing at 0x000d2df8... (86 %)
+Writing at 0x000dabef... (88 %)
+Writing at 0x000e0976... (91 %)
+Writing at 0x000e6304... (94 %)
+Writing at 0x000ec5a8... (97 %)
+Writing at 0x000f1f5f... (100 %)
+Wrote 942608 bytes (585651 compressed) at 0x00010000 in 13.8 seconds (effective 547.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 472.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+xe -D IDF_PATH=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=D:/App/ESP32/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/App/ESP32/smart_room/build -P D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"

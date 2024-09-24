@@ -1,0 +1,94 @@
+[1/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\bootloader\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/App/ESP32/smart_room/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/10] Building C object esp-idf/user_mqtt/CMakeFiles/__idf_user_mqtt.dir/user_mqtt.c.obj
+[3/10] Linking C static library esp-idf\user_mqtt\libuser_mqtt.a
+[4/10] Building C object esp-idf/App/CMakeFiles/__idf_App.dir/mainApp.c.obj
+D:/App/ESP32/smart_room/user/App/mainApp.c: In function 'fire_alarm':
+D:/App/ESP32/smart_room/user/App/mainApp.c:497:20: warning: unused variable 'count_time' [-Wunused-variable]
+  497 |     static uint8_t count_time = 0;
+      |                    ^~~~~~~~~~
+D:/App/ESP32/smart_room/user/App/mainApp.c: In function 'Dht22_getParan':
+D:/App/ESP32/smart_room/user/App/mainApp.c:709:17: warning: variable 'Ret' set but not used [-Wunused-but-set-variable]
+  709 |         uint8_t Ret;
+      |                 ^~~
+[5/10] Linking C static library esp-idf\App\libApp.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable smart_room.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/App/ESP32/smart_room/build/smart_room.bin
+[9/10] cmd.exe /C "cd /D D:\App\ESP32\smart_room\build\esp-idf\esptool_py && D:\App\ESP32\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/App/ESP32/smart_room/build/partition_table/partition-table.bin D:/App/ESP32/smart_room/build/smart_room.bin"
+smart_room.bin binary size 0xe8590 bytes. Smallest app partition is 0x100000 bytes. 0x17a70 bytes (9%) free.
+[9/10] cmd.exe /C "cd /D D:\App\ESP32\Espressif\frameworks\esp-idf-v5.2.1\components\esptool_py && D:\App\ESP32\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1 -D SERIAL_TOOL=D:/App/ESP32/Espressif/python_env/idf5.2_py3.11_envesptool.py --chip esp32 -p COM4 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 smart_room.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM4
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: a0:dd:6c:86:05:18
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000f8fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16366...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16366 compressed) at 0x00001000 in 0.5 seconds (effective 389.6 kbit/s)...
+Hash of data verified.
+Compressed 951696 bytes to 591143...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e553... (5 %)
+Writing at 0x00028659... (8 %)
+Writing at 0x0002d4ad... (10 %)
+Writing at 0x00034e6d... (13 %)
+Writing at 0x00040930... (16 %)
+Writing at 0x00046498... (18 %)
+Writing at 0x0004beac... (21 %)
+Writing at 0x000521bd... (24 %)
+Writing at 0x00058065... (27 %)
+Writing at 0x0005de1c... (29 %)
+Writing at 0x00063a72... (32 %)
+Writing at 0x0006a2e4... (35 %)
+Writing at 0x0006fdd1... (37 %)
+Writing at 0x00075bfd... (40 %)
+Writing at 0x0007b353... (43 %)
+Writing at 0x00080681... (45 %)
+Writing at 0x00085c1a... (48 %)
+Writing at 0x0008ae89... (51 %)
+Writing at 0x00090533... (54 %)
+Writing at 0x00095c30... (56 %)
+Writing at 0x0009b6ff... (59 %)
+Writing at 0x000a131e... (62 %)
+Writing at 0x000a6d16... (64 %)
+Writing at 0x000ac9e4... (67 %)
+Writing at 0x000b264a... (70 %)
+Writing at 0x000b7e71... (72 %)
+Writing at 0x000bdb93... (75 %)
+Writing at 0x000c366a... (78 %)
+Writing at 0x000c90fe... (81 %)
+Writing at 0x000d26e2... (83 %)
+Writing at 0x000daf60... (86 %)
+Writing at 0x000e0d2f... (89 %)
+Writing at 0x000e69f4... (91 %)
+Writing at 0x000ec4e4... (94 %)
+Writing at 0x000f26c6... (97 %)
+Writing at 0x000f7cfc... (100 %)
+Wrote 951696 bytes (591143 compressed) at 0x00010000 in 13.6 seconds (effective 559.0 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 984.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+/Scripts/python.exe;;D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/App/ESP32/smart_room/build -P D:/App/ESP32/Espressif/frameworks/esp-idf-v5.2.1/components/esptool_py/run_serial_tool.cmake"
